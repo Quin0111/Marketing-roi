@@ -1,0 +1,664 @@
+{
+  "sources_sha256": {
+    "common.py": "87e3e5dace31da8d62afc89d345c01408132ddb0b630bb17f101d8b66860828a",
+    "run_experiment.py": "6942ae8d65a656ebf55717cdb867436c3775ca2421abfa9cefa1f5907fd46027",
+    "experiment_config.json": "9cabbdf6266f33743054c4936dea897c8ba65fb249995718b8e2180f3eb2da95",
+    "phase4b2_evaluation_protocol.json": "9114f91eb9f393ac5e65ec63def4fe5dbdcf974d627461ddcfe952a8daf4c9bb"
+  },
+  "protocol_id": "DM-DEV-170K-v1",
+  "data_access": {
+    "status": "PASS",
+    "protocol_sha256": "9114f91eb9f393ac5e65ec63def4fe5dbdcf974d627461ddcfe952a8daf4c9bb",
+    "config_sha256": "9cabbdf6266f33743054c4936dea897c8ba65fb249995718b8e2180f3eb2da95",
+    "dataset_sha256": "f06c1b95a8207b4631c35e6b83b4a2a7872892a8bfa133967e1e7ec401c7bb60",
+    "membership_sha256": "7d5def28615c7a35f2a5e1cbe6167c81f5fc6d1ee117855a5f6f4d62fabf7f17",
+    "schedule_sha256": "2fd371979ddcba94b907308209cd2c18b958e1f539c84a8143844ae63bed9e96",
+    "development_order_sha256": "ab9ad10f48531464b11a35d9328e7e85af69b2e85dfecbf5894da145399a697b",
+    "parsed_rows": 170000,
+    "test_rows_excluded_before_parsing": 30000,
+    "test_roi_materialized": false,
+    "split_joblib_loaded": false,
+    "feature_columns": [
+      "Campaign_Type",
+      "Channel_Used",
+      "Target_Audience",
+      "Customer_Segment",
+      "Duration_days"
+    ],
+    "outer_manifest": [
+      {
+        "repeat": 1,
+        "seed": 42,
+        "fold": 1,
+        "fit_rows": 136000,
+        "assessment_rows": 34000,
+        "fit_ids_sha256": "3ff4334b29b6b1d829da3424e7f151339445678bdf89a9d097e8c5c511bb34da",
+        "assessment_ids_sha256": "f0f88f80333bf255770356580c409e5549a06c94398553fa4429b9181d84aba0"
+      },
+      {
+        "repeat": 1,
+        "seed": 42,
+        "fold": 2,
+        "fit_rows": 136000,
+        "assessment_rows": 34000,
+        "fit_ids_sha256": "d0c70b70f1985e1eff45f64ba107de6aef172996680f31d0f86d7671448fa053",
+        "assessment_ids_sha256": "a5b340588e9ac7b0abb771e9ea62363531ea4daf5d8d485dca00c84279826c72"
+      },
+      {
+        "repeat": 1,
+        "seed": 42,
+        "fold": 3,
+        "fit_rows": 136000,
+        "assessment_rows": 34000,
+        "fit_ids_sha256": "6d8a4dd2321e79107ed2e27206736f358dd79054059270311c78b06e0303a4ba",
+        "assessment_ids_sha256": "4e2851a9e80d79a6f1976acc0caf15c213a5602ce04b47d3c4c7b3160acb261f"
+      },
+      {
+        "repeat": 1,
+        "seed": 42,
+        "fold": 4,
+        "fit_rows": 136000,
+        "assessment_rows": 34000,
+        "fit_ids_sha256": "36128ad8ccb319a26a9bb8fd0641aeed06dc70661a1c88d9ace00926c1c117b1",
+        "assessment_ids_sha256": "c0454d15e1c68e0da597dc7061f220b555325fd651b35ef47cbd102f96faa4a5"
+      },
+      {
+        "repeat": 1,
+        "seed": 42,
+        "fold": 5,
+        "fit_rows": 136000,
+        "assessment_rows": 34000,
+        "fit_ids_sha256": "6501e109e96fb8d159ac457aa14afe8cf247459c189b15d585b17bded80a1fa7",
+        "assessment_ids_sha256": "f458781361b3de9a8b988c6251dfbc40d6a8433e5b718d10ac90fb862bab9241"
+      },
+      {
+        "repeat": 2,
+        "seed": 2026,
+        "fold": 1,
+        "fit_rows": 136000,
+        "assessment_rows": 34000,
+        "fit_ids_sha256": "980ae2240ce594f3adfca83e8f0e1335cc200b1a1ddb4fb5944fa314152cb1f0",
+        "assessment_ids_sha256": "60127e2bffdb9b69565995c313162743d1c3ded77209e87b072da64313db79d6"
+      },
+      {
+        "repeat": 2,
+        "seed": 2026,
+        "fold": 2,
+        "fit_rows": 136000,
+        "assessment_rows": 34000,
+        "fit_ids_sha256": "f733bffa915ebdc18a3aca00c135e99fa60ad8ecb6e01f8f1657b862c0eaa041",
+        "assessment_ids_sha256": "d6460840bea956c93b00d5d4acc200c0d17040298a8f2a5239abc70f4c259c76"
+      },
+      {
+        "repeat": 2,
+        "seed": 2026,
+        "fold": 3,
+        "fit_rows": 136000,
+        "assessment_rows": 34000,
+        "fit_ids_sha256": "e5dd26b6082a0f96b2cef0711370a7576254cfa2b7c775e0432186455978589c",
+        "assessment_ids_sha256": "8e03e9778cb093e5ead504f7355c83561c5f3a2841d65ce32fa332f7c8dae9a3"
+      },
+      {
+        "repeat": 2,
+        "seed": 2026,
+        "fold": 4,
+        "fit_rows": 136000,
+        "assessment_rows": 34000,
+        "fit_ids_sha256": "fd2c5a00d5f6b07ad774068ac1ab4babe2297c3836bef49430b9caf60b391cdf",
+        "assessment_ids_sha256": "1819f2c51ca8a693b96523d9e594d842d77fc468ba8a71bf9bd35a56be985043"
+      },
+      {
+        "repeat": 2,
+        "seed": 2026,
+        "fold": 5,
+        "fit_rows": 136000,
+        "assessment_rows": 34000,
+        "fit_ids_sha256": "9a6903a7dfa9b4dc06ac1e874f6fb38557af26f77aa44c7a3a439851a915f2b1",
+        "assessment_ids_sha256": "89e1d1f73b7447934f6f07282483769908d8036794a86501c0ff3540d2665942"
+      },
+      {
+        "repeat": 3,
+        "seed": 20261103,
+        "fold": 1,
+        "fit_rows": 136000,
+        "assessment_rows": 34000,
+        "fit_ids_sha256": "6baa01fa8de9e08d10df87e16cf9c14626c6aec17cd863df94bb56f35db96752",
+        "assessment_ids_sha256": "0337f34f3a294fd318a04baf35c949fb6a806b176257696eaa1b7cdadb57d24f"
+      },
+      {
+        "repeat": 3,
+        "seed": 20261103,
+        "fold": 2,
+        "fit_rows": 136000,
+        "assessment_rows": 34000,
+        "fit_ids_sha256": "5199739ea7ddc0d25f14af79dcb16cb35ada50a1bd76fd2af986131c0ea03197",
+        "assessment_ids_sha256": "546fd3236ba875ee99d5c4ab5b78b45e73578d81b81e519b2cd5f199a6c37d0a"
+      },
+      {
+        "repeat": 3,
+        "seed": 20261103,
+        "fold": 3,
+        "fit_rows": 136000,
+        "assessment_rows": 34000,
+        "fit_ids_sha256": "52b0fd6ff265d3789055eba45616c8db26beae63ef63827f3ea25837a651d4f9",
+        "assessment_ids_sha256": "21c4c2869ea2f5fd4a18ef896a32b75e3400a8bbc8a2725f1d1102c924495d82"
+      },
+      {
+        "repeat": 3,
+        "seed": 20261103,
+        "fold": 4,
+        "fit_rows": 136000,
+        "assessment_rows": 34000,
+        "fit_ids_sha256": "d27274e4a2bddf266b6c7c810e7e2efd71ea3473c9c23e19a5a0ccbf779f7bf5",
+        "assessment_ids_sha256": "b202ab9cd09e6d45a79bdde07c06b00891bcb3591b12c2b75f795c04fdcddb2c"
+      },
+      {
+        "repeat": 3,
+        "seed": 20261103,
+        "fold": 5,
+        "fit_rows": 136000,
+        "assessment_rows": 34000,
+        "fit_ids_sha256": "d0d2089ceb7d5d0333748b09cf4a9ab88a904e57d239ae68d1b6cc566715ce7e",
+        "assessment_ids_sha256": "62e95e600d0d3f7e1fcf8d1877d7f89aa0285bb4fe2f29297d0324f9f45ba53e"
+      }
+    ],
+    "inner_manifest": [
+      {
+        "repeat": 1,
+        "outer_fold": 1,
+        "inner_seed": 101017,
+        "inner_fold": 1,
+        "fit_rows": 90666,
+        "assessment_rows": 45334,
+        "fit_ids_sha256": "ae30be0815849b6efc6e396ee887e10d6284d5069a4c5d21c3536c8de0bfce38",
+        "assessment_ids_sha256": "87e75c82e6b9d01c15b6dda79d87ae1a3e421a89c45f8170f2eab9edd8ce1d03"
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 1,
+        "inner_seed": 101017,
+        "inner_fold": 2,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "b7bc4654d9d820f52adc4d05253eccc35d5b7d59011feb16410c5fa04e20cb8e",
+        "assessment_ids_sha256": "f66a034d06bc191bab1f078747e658d341348b1f4eb8ee18befd68286085e49f"
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 1,
+        "inner_seed": 101017,
+        "inner_fold": 3,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "8879ca5a8da36bc27a5688e976e0f2bfd10d40f1c0a863be6bb4ac8f7562c891",
+        "assessment_ids_sha256": "4526954372ebeb08c0141fc2a45ee82efad67b67b227abadb9825ddf6fc3af10"
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 2,
+        "inner_seed": 102017,
+        "inner_fold": 1,
+        "fit_rows": 90666,
+        "assessment_rows": 45334,
+        "fit_ids_sha256": "1b5d1cc776f9db7b911f38aa0dff2535fcd493bd48ca6adb188b230baa3d422b",
+        "assessment_ids_sha256": "3793517182b33d34111619895dc3ac6de05e38769ca57032c498676a2c870f26"
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 2,
+        "inner_seed": 102017,
+        "inner_fold": 2,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "76de6bfa9999b77575804f1e3aabac4badaca6a92f5e6d391979f4c2e21e05e2",
+        "assessment_ids_sha256": "0c8da6b2f840de9e0dc6311a1b419325eb349582c66ff76f2ebde2c162a931bc"
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 2,
+        "inner_seed": 102017,
+        "inner_fold": 3,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "b37752f825a14a27b2a7120c806acf65fc5da0dd4f81d15369bd3d02927ababb",
+        "assessment_ids_sha256": "408062647fd30e07aaa2594d0f23efea9f4efb9d896a937eb43d9081e057db54"
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 3,
+        "inner_seed": 103017,
+        "inner_fold": 1,
+        "fit_rows": 90666,
+        "assessment_rows": 45334,
+        "fit_ids_sha256": "7abb23adbf15cc66ed58134a21943f831ae9106528299e009ed4f171ad3e0c82",
+        "assessment_ids_sha256": "309f43292de6817402caaca27cf380df3038575a380ba69263e657f4e06a7c1a"
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 3,
+        "inner_seed": 103017,
+        "inner_fold": 2,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "7f1b99e72e8b0d20e4446cfa0836404315f63de21732a4ec63ef6b8b83f0bbc9",
+        "assessment_ids_sha256": "5448aa436be1ffa2f73067523680777eefd647b4fd12ef0acc5db4f2ab370d06"
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 3,
+        "inner_seed": 103017,
+        "inner_fold": 3,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "aef8e4d64d4d6ce4b75a4c0cbfb1e63da14f1a85dce0fb044505123a758d1842",
+        "assessment_ids_sha256": "9dcd2732e0538090e311044950f40ae42ac303fb5c638147da0c0f3d654f96c2"
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 4,
+        "inner_seed": 104017,
+        "inner_fold": 1,
+        "fit_rows": 90666,
+        "assessment_rows": 45334,
+        "fit_ids_sha256": "de52cd47fabeb0b3c0d24d35269a4937e988d40be1f04a775248d1dcc226cdd9",
+        "assessment_ids_sha256": "8ca5c6329f2f711cd9bcb1432299d0a401c20be00c348bd707e0d6fd95631613"
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 4,
+        "inner_seed": 104017,
+        "inner_fold": 2,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "121387f675f91fba43af307afd63a487a5e7f092c0df061adfa8d9fde123de84",
+        "assessment_ids_sha256": "966bac5c2ee3f27c51ddd1dcbeb22bcc1d34f6048099cd7477c50d009e938f27"
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 4,
+        "inner_seed": 104017,
+        "inner_fold": 3,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "645e976f5d512920bd3c520e7814ff247dd7063a9b9d5db6106dff54717aa62c",
+        "assessment_ids_sha256": "fd87f1bb25fd6494849796c0a467b3a6873837b2d09356462a93decda913f9e5"
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 5,
+        "inner_seed": 105017,
+        "inner_fold": 1,
+        "fit_rows": 90666,
+        "assessment_rows": 45334,
+        "fit_ids_sha256": "b194f647c90c5528a37c1c47ca89b404720ff90594282474b9e8cdfa56d16d0b",
+        "assessment_ids_sha256": "bc3416769507cc69c08b53d588ed08900c35fbaf2a24dbe667903f9a907ae817"
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 5,
+        "inner_seed": 105017,
+        "inner_fold": 2,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "8dee311a88beca596ae83dd8480d7b941199fc83f5e1ee32dce701523b5a5300",
+        "assessment_ids_sha256": "77a8ad1de655dfdc047821505fcdc1771559bbfcbd8c75daca7dec69039140c5"
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 5,
+        "inner_seed": 105017,
+        "inner_fold": 3,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "50a0e2f7da1433561b7a3402fc6ecb4b9d60a4c5b27df1666429e69aa5dd327c",
+        "assessment_ids_sha256": "0bc6681d69791844b4c9ba05a19ee428a61a9251a3b549593f62eea4d1e2f768"
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 1,
+        "inner_seed": 201017,
+        "inner_fold": 1,
+        "fit_rows": 90666,
+        "assessment_rows": 45334,
+        "fit_ids_sha256": "c162d19ddf56a90039359c35618407d68ed090559a015e512950fa903779f109",
+        "assessment_ids_sha256": "6da63588a60b680a4d0a5bb120933a09978d9c567911390aee8df0a26a2ef5ca"
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 1,
+        "inner_seed": 201017,
+        "inner_fold": 2,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "77e15342bd5dda661a6cf8fbf9a5489f779d118cee7fe675c055abfffc36cbc0",
+        "assessment_ids_sha256": "1099f775228ca6709fc81266c02fb435d8cd4751f5165b169fea87df27c7b3a8"
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 1,
+        "inner_seed": 201017,
+        "inner_fold": 3,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "0d3840f88c37d49a19223710a303754d4730c43fbfecbe32ccc46e4ed2fd3097",
+        "assessment_ids_sha256": "6c3564afa48056221948e1fb1f2d912023fe4b04dca083f6abd560ea380a17a0"
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 2,
+        "inner_seed": 202017,
+        "inner_fold": 1,
+        "fit_rows": 90666,
+        "assessment_rows": 45334,
+        "fit_ids_sha256": "a49845a89403bdd767fc12576ec2557cb49ccd6e312b9a454e5fbd46ae36aed7",
+        "assessment_ids_sha256": "aa54fa8f26425a522a1a3ca877884d36ed5dc7161c0a162f446ae0abfa80f53f"
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 2,
+        "inner_seed": 202017,
+        "inner_fold": 2,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "12f73c33988269e60eab6566bb1af92ec46cf3c35052078f5657f6b1eb391466",
+        "assessment_ids_sha256": "4c91fc4c2b8a903e99f5c40e36f51a171e919f84d681116fe292e285bd6575b6"
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 2,
+        "inner_seed": 202017,
+        "inner_fold": 3,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "09909ed2136f65e255a0fa7da7453b86bfb7cf49341af1862868ca5fbe610c3d",
+        "assessment_ids_sha256": "bec3d11fae40c8df469b6852d69d882e440ace318539d628c160dfb7b612a8f6"
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 3,
+        "inner_seed": 203017,
+        "inner_fold": 1,
+        "fit_rows": 90666,
+        "assessment_rows": 45334,
+        "fit_ids_sha256": "173f88ac9ac62ec79dbea2c29b7f760afd4e061563b3b736888a8bb5439db949",
+        "assessment_ids_sha256": "d59e033c044190194e45d9222904fad88b1a62859cf0ae50ed4a49cf5934414d"
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 3,
+        "inner_seed": 203017,
+        "inner_fold": 2,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "502b81d2e67ffc644dfc4adf880797dbf059880c02d4d1c1afd1dd3786208802",
+        "assessment_ids_sha256": "68eac1e69cf5f14dc9cc9ef5d7f4b8bf5fe00a4b71f0365289e5491f7c4eac0f"
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 3,
+        "inner_seed": 203017,
+        "inner_fold": 3,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "4e1b2814557ca6f804a61a34cb808c78c250f9fd3f7c93e3ff5dac49980438ea",
+        "assessment_ids_sha256": "9642d97a26f4628234451154abe81a91bbcf823518675e4a950edccefd982199"
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 4,
+        "inner_seed": 204017,
+        "inner_fold": 1,
+        "fit_rows": 90666,
+        "assessment_rows": 45334,
+        "fit_ids_sha256": "51aa62c356af4d02439d5a228cc828217307ffea4695978acc49092d00a58578",
+        "assessment_ids_sha256": "7c5602cc1d588397318b5c4472ed0738b54b91347a1d3a7859dfb4c95c6a139c"
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 4,
+        "inner_seed": 204017,
+        "inner_fold": 2,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "879b051c6688c7faa09c440427a4cd8ebac67d15a2a14619b983ea881159ea79",
+        "assessment_ids_sha256": "4896348d22ec8934a51efbcf66cbbda47463cbb8f755f22dba4aaa2da7397beb"
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 4,
+        "inner_seed": 204017,
+        "inner_fold": 3,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "e681475c3ef4d16342d57c20fde8b37ecd8d33ea3314d243d3c521e3fcf7793e",
+        "assessment_ids_sha256": "a4be23cddaf1d805a88a09d9e5df6fa57988be810b036830d9bb43033b9ff47f"
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 5,
+        "inner_seed": 205017,
+        "inner_fold": 1,
+        "fit_rows": 90666,
+        "assessment_rows": 45334,
+        "fit_ids_sha256": "8d337c2076207acd4d0581a1196d1350f9a2c2a8358e55485bd82af99f74fc01",
+        "assessment_ids_sha256": "8bae44252c54c7eac53ea42f7ba732df44bbc0bff97b6882b9be219fc987dd80"
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 5,
+        "inner_seed": 205017,
+        "inner_fold": 2,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "f2f4ede0f0e199741878efe74ba5eee313f303afe87a6894e42fa6d22ef7103a",
+        "assessment_ids_sha256": "64a68b8ece02beee75eb4794f62fe5f3af0bdb543cfbaf4882ae16fab1c769a4"
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 5,
+        "inner_seed": 205017,
+        "inner_fold": 3,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "82b9cb49d4eb208074443a1ea16010353afa6cec0b72bf5a988b60e7aa918867",
+        "assessment_ids_sha256": "aa5af79314af6c1b44512dc7d58eebfc006ecaf86331b18af76e35f735ec45c3"
+      },
+      {
+        "repeat": 3,
+        "outer_fold": 1,
+        "inner_seed": 301017,
+        "inner_fold": 1,
+        "fit_rows": 90666,
+        "assessment_rows": 45334,
+        "fit_ids_sha256": "1da9393edcfd81a8527052a2d9818f41261c6ee05ae903dbbb52f791dfa6e110",
+        "assessment_ids_sha256": "40b006d3c1972f363ace13961b563734df2398b96fdaeb30cfb46404d7cdc310"
+      },
+      {
+        "repeat": 3,
+        "outer_fold": 1,
+        "inner_seed": 301017,
+        "inner_fold": 2,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "1f56e24b34e0ba8d020aecd970f425c3363790a57c2d6598987904af4516c520",
+        "assessment_ids_sha256": "57e9cad15c8fbd437e26839dddf39b1fcf204cd96c29d23b5311e123984ca20e"
+      },
+      {
+        "repeat": 3,
+        "outer_fold": 1,
+        "inner_seed": 301017,
+        "inner_fold": 3,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "05eea989fce3a3603c35757ae14337a435a01200b6987969db10642a17d76c9c",
+        "assessment_ids_sha256": "2ac292abd9e626e0c09a8d44c5f327e9f2d4c8b9e33f1d63acf1ce79da75a2cf"
+      },
+      {
+        "repeat": 3,
+        "outer_fold": 2,
+        "inner_seed": 302017,
+        "inner_fold": 1,
+        "fit_rows": 90666,
+        "assessment_rows": 45334,
+        "fit_ids_sha256": "9b7e7151a256dac0e43d7201ff1c5c3b73ad6ede80126bad9fcd02efd9e0b6f8",
+        "assessment_ids_sha256": "0e0c01ccacbadf09815ddd022330717b586130015626b2b87adae9bce8dbdc77"
+      },
+      {
+        "repeat": 3,
+        "outer_fold": 2,
+        "inner_seed": 302017,
+        "inner_fold": 2,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "7f183fb1d20b4ffa056bea0ab44cec6d642804caf1e4cfbad9bb029fcbea97a8",
+        "assessment_ids_sha256": "84c1abbcf53d367e65750405d2f0e9174beae00c08820b6f1e532ee609cb7dca"
+      },
+      {
+        "repeat": 3,
+        "outer_fold": 2,
+        "inner_seed": 302017,
+        "inner_fold": 3,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "8dc4b44f02869379b12957388f63db89021a3df2d2a4637720c60c048c4fcdad",
+        "assessment_ids_sha256": "d5ecdd4a3a4df1fb724122c0648279d66dfe1b7f9fa9700679579f76f484b518"
+      },
+      {
+        "repeat": 3,
+        "outer_fold": 3,
+        "inner_seed": 303017,
+        "inner_fold": 1,
+        "fit_rows": 90666,
+        "assessment_rows": 45334,
+        "fit_ids_sha256": "9301a5d60929f4fb9649ab3096b9063b1d507ff5b8db45ba945ba22ff8f189d6",
+        "assessment_ids_sha256": "4a55374df4717b17bf1f18b9adc029027845edd3f1db1a98a07b1406ecf056fd"
+      },
+      {
+        "repeat": 3,
+        "outer_fold": 3,
+        "inner_seed": 303017,
+        "inner_fold": 2,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "af9cdea123ba373ca33263a0792d809873de78ff02039ebbb06eb715b429908c",
+        "assessment_ids_sha256": "007971e0fa88368434c120d06b63fc08f5e2f8d5ecc760feb4efbe796a63f059"
+      },
+      {
+        "repeat": 3,
+        "outer_fold": 3,
+        "inner_seed": 303017,
+        "inner_fold": 3,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "e3b17d91457e450e14564a7b5ec9f022b38b428fc50699cea61d0c1349cd1349",
+        "assessment_ids_sha256": "043463c24f6f989658e663ccfe99b4aa58787520de5857f0cc2299c2f291c8db"
+      },
+      {
+        "repeat": 3,
+        "outer_fold": 4,
+        "inner_seed": 304017,
+        "inner_fold": 1,
+        "fit_rows": 90666,
+        "assessment_rows": 45334,
+        "fit_ids_sha256": "1d0a977abd96e23526328e5135d1418180789340ae72e3496ffc703d42ccf443",
+        "assessment_ids_sha256": "685a47b95389355fc23a3e3bbac6b5d17a0322ab948bb68f893a9ec064f5a566"
+      },
+      {
+        "repeat": 3,
+        "outer_fold": 4,
+        "inner_seed": 304017,
+        "inner_fold": 2,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "e2b1f750efd31a215a82556931096556af42b97cdde83c53cc850c9c95e9b5f3",
+        "assessment_ids_sha256": "55477bfe03d95e09e3cb4123964a752850f4e77ee46b703511b429c665e05bc5"
+      },
+      {
+        "repeat": 3,
+        "outer_fold": 4,
+        "inner_seed": 304017,
+        "inner_fold": 3,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "a51d5fc6b366dd794912037cb92d70ef179e46e9d12da7e75cec4331fd852158",
+        "assessment_ids_sha256": "d7540759c03b643631aeda5cdeff8c1a6f4863ddc159f19263c8412efd923861"
+      },
+      {
+        "repeat": 3,
+        "outer_fold": 5,
+        "inner_seed": 305017,
+        "inner_fold": 1,
+        "fit_rows": 90666,
+        "assessment_rows": 45334,
+        "fit_ids_sha256": "2886f39663c9afe01e4eec3a349deaaa7d3fe6ed4fff1ef829b1058ab938acfb",
+        "assessment_ids_sha256": "b179e1450d0511290bd431dc115e6a9411dde68f3451b7dc16e87ea1abe0ffcf"
+      },
+      {
+        "repeat": 3,
+        "outer_fold": 5,
+        "inner_seed": 305017,
+        "inner_fold": 2,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "9bf819ee4368a353cdbcb7541a2104cc4532b04afe831b74de63ff102f489330",
+        "assessment_ids_sha256": "89837f7bf6ed7093516fb422917ae888ccf9067da774e0266ae52a8c3941b160"
+      },
+      {
+        "repeat": 3,
+        "outer_fold": 5,
+        "inner_seed": 305017,
+        "inner_fold": 3,
+        "fit_rows": 90667,
+        "assessment_rows": 45333,
+        "fit_ids_sha256": "b4e979c5036f9d750acd456d978571103243545bae0e405d1d709981c3160723",
+        "assessment_ids_sha256": "437796dd70800798dc7e46ae97270ade0908d97125d0a1f316e875e6eab8d558"
+      }
+    ]
+  },
+  "environment": {
+    "python": "3.13.17",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "logical_cpus": 12,
+    "versions": {
+      "numpy": "2.4.6",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.6.1",
+      "joblib": "1.6.0",
+      "threadpoolctl": "3.7.0"
+    },
+    "threadpool_wide_enum_fallback": true,
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "D:\\HK7 ĐẠI HỌC\\MachineLearning\\Marketing ROI Intelligence\\backend\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+        "version": "0.3.31.188.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "vcomp",
+        "filepath": "D:\\HK7 ĐẠI HỌC\\MachineLearning\\Marketing ROI Intelligence\\backend\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "D:\\HK7 ĐẠI HỌC\\MachineLearning\\Marketing ROI Intelligence\\backend\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+        "version": "0.3.31.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "thread_budget": 2,
+    "fits_parallel": false
+  }
+}

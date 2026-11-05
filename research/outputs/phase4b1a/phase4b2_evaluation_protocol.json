@@ -1,0 +1,71 @@
+{
+  "protocol_id": "DM-DEV-170K-v1",
+  "status": "FROZEN_FOR_REVIEW_NOT_EXECUTED_PHASE4B2",
+  "dataset_sha256": "f06c1b95a8207b4631c35e6b83b4a2a7872892a8bfa133967e1e7ec401c7bb60",
+  "original_membership_sha256": "7d5def28615c7a35f2a5e1cbe6167c81f5fc6d1ee117855a5f6f4d62fabf7f17",
+  "development_order": "original Train140000 then original Validation30000, order preserved",
+  "development_row_order_sha256_int64_le": "ab9ad10f48531464b11a35d9328e7e85af69b2e85dfecbf5894da145399a697b",
+  "outer_cv": {
+    "n_splits": 5,
+    "shuffle": true,
+    "seeds": [
+      42,
+      2026,
+      20261103
+    ],
+    "schedule_file": "frozen_outer_fold_schedule.csv",
+    "schedule_sha256": "2fd371979ddcba94b907308209cd2c18b958e1f539c84a8143844ae63bed9e96"
+  },
+  "inner_cv": {
+    "n_splits": 3,
+    "shuffle": true,
+    "seed_rule": "100000 * repeat_1based + 1000 * outer_fold_1based + 17",
+    "scope": "outer fit rows only; fresh preprocessing per inner fit"
+  },
+  "dummy": {
+    "strategy": "mean",
+    "sample_weight": null,
+    "fit_scope": "fit fold only",
+    "target_transform": null
+  },
+  "aggregation": {
+    "primary_per_repeat": "arithmetic mean of five fold RMSEs",
+    "primary_over_repeats": "arithmetic mean of three per-repeat means",
+    "secondary": [
+      "pooled OOF RMSE per repeat",
+      "MAE",
+      "R2",
+      "paired delta_RMSE",
+      "fold SD (descriptive only)"
+    ]
+  },
+  "candidate_input_columns": [
+    "Campaign_Type",
+    "Channel_Used",
+    "Target_Audience",
+    "Customer_Segment",
+    "Duration_days"
+  ],
+  "excluded_inputs": [
+    "Date",
+    "Month",
+    "Weekday",
+    "Campaign_ID",
+    "Conversion_Rate",
+    "Clicks",
+    "Impressions",
+    "Engagement_Score",
+    "Acquisition_Cost"
+  ],
+  "duration_condition": "planned Duration must be confirmed before business use; current5 is a research benchmark only",
+  "fitting_rules": [
+    "all learned preprocessing inside fit folds",
+    "no target/sample weighting or target transforms unless separately preregistered",
+    "same fold schedule for every candidate",
+    "all trials recorded; no seed/split search for matching historical metrics",
+    "no final-Test targets loaded or evaluated during Phase4B2",
+    "Date blocked until timing and provenance verified"
+  ],
+  "quality_gate": "BASELINE_ONLY",
+  "optimization_allowed": false
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "model": "S_Learner",
+    "selected_C": 0.1,
+    "inner_Cs": [
+      0.1,
+      1.0
+    ],
+    "inner_mean_Qini": [
+      0.004292899336601308,
+      0.004291774633986928
+    ],
+    "validation": {
+      "AUUC": 0.010891935950980399,
+      "Qini": 0.004937033990196083,
+      "U1_descriptive_benchmark_contrast": 0.011909803921568632
+    },
+    "outer_fit_seconds": 3.2431529000168666,
+    "fit_rows": 600000,
+    "warnings": [
+      "Unknown solver options: iprint"
+    ]
+  },
+  {
+    "model": "T_Learner",
+    "selected_C": 1.0,
+    "inner_Cs": [
+      0.1,
+      1.0
+    ],
+    "inner_mean_Qini": [
+      0.0032335253921568635,
+      0.003406979339869283
+    ],
+    "validation": {
+      "AUUC": 0.010592470127450983,
+      "Qini": 0.004637568166666667,
+      "U1_descriptive_benchmark_contrast": 0.011909803921568632
+    },
+    "outer_fit_seconds": 3.3382112000253983,
+    "fit_rows": 600000,
+    "warnings": [
+      "Unknown solver options: iprint",
+      "Unknown solver options: iprint"
+    ]
+  }
+]

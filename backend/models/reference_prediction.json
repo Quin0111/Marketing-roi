@@ -1,0 +1,44 @@
+{
+  "feature_names": [
+    "Campaign_Type",
+    "Channel_Used",
+    "Target_Audience",
+    "Customer_Segment",
+    "Duration_days"
+  ],
+  "quality_gate": "BASELINE_ONLY",
+  "cases": [
+    {
+      "name": "Chien dich A",
+      "features": {
+        "Campaign_Type": "Social Media",
+        "Channel_Used": "Facebook",
+        "Target_Audience": "Women 25-34",
+        "Customer_Segment": "Fashionistas",
+        "Duration_days": 30
+      },
+      "expected_predictions": {
+        "Linear Regression": 4.991136884533976,
+        "Decision Tree": 4.932358757062151,
+        "Random Forest": 4.805764742906769,
+        "Dummy Regressor": 4.999906285714286
+      }
+    },
+    {
+      "name": "Chien dich B",
+      "features": {
+        "Campaign_Type": "Search",
+        "Channel_Used": "Google Ads",
+        "Target_Audience": "Women 25-34",
+        "Customer_Segment": "Fashionistas",
+        "Duration_days": 45
+      },
+      "expected_predictions": {
+        "Linear Regression": 4.997267870097019,
+        "Decision Tree": 5.003037668225301,
+        "Random Forest": 4.992430279098363,
+        "Dummy Regressor": 4.999906285714286
+      }
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "execution_status": "PASS",
+  "historical_reproduction": "FAIL_NOT_REPRODUCED_MISSING_PROVENANCE",
+  "pass_count": 13,
+  "fail_count": 3,
+  "checks": [
+    {
+      "id": "R01",
+      "check": "Đọc và bảo toàn ba báo cáo Phase 4B.1",
+      "status": "PASS",
+      "evidence": "SHA256 ba báo cáo có trong protected_integrity.json"
+    },
+    {
+      "id": "R02",
+      "check": "Khôi phục mã và fold indices tạo benchmark lịch sử",
+      "status": "FAIL",
+      "evidence": "Chín notebook Marketing và phạm vi tìm script chưa có nguồn 5-Fold; archive chỉ chứa bảy artifact; Drive không có kết quả truy cập được"
+    },
+    {
+      "id": "R03",
+      "check": "Khôi phục membership/order Development mới đúng split gốc",
+      "status": "PASS",
+      "evidence": "Replay hai bước seed 42 khớp membership Phase 4B.1; không giao Test"
+    },
+    {
+      "id": "R04",
+      "check": "Tái lập RMSE mới bằng Dummy/cross_validate/pipeline",
+      "status": "PASS",
+      "evidence": "Mean RMSE = 1.7344738959662471; sai số với Phase 4B.1 < 1e-12"
+    },
+    {
+      "id": "R05",
+      "check": "Tái lập RMSE lịch sử 1.732275",
+      "status": "FAIL",
+      "evidence": "Không khớp: chênh 0.002198895966247116; số gốc giữ nguyên"
+    },
+    {
+      "id": "R06",
+      "check": "Đối soát mean-fold và pooled OOF",
+      "status": "PASS",
+      "evidence": "Gap = 4.795504011223528e-06, không đủ giải thích chênh lịch sử"
+    },
+    {
+      "id": "R07",
+      "check": "Kiểm tra ảnh hưởng preprocessing của Dummy",
+      "status": "PASS",
+      "evidence": "Clone preprocessor trong research; max chênh fold = 0; không fit production"
+    },
+    {
+      "id": "R08",
+      "check": "Đối soát sai số số học",
+      "status": "PASS",
+      "evidence": "fsum và float32 sensitivity nhỏ hơn nhiều chênh cần giải thích"
+    },
+    {
+      "id": "R09",
+      "check": "Kiểm tra hữu hạn các khả năng mẫu/order/shuffle",
+      "status": "PASS",
+      "evidence": "Sáu profile đã ghi trước; không dò seed/split; một-step 85/15 không chấm vì giao Test"
+    },
+    {
+      "id": "R10",
+      "check": "Xác định duy nhất nguyên nhân của lần chạy lịch sử",
+      "status": "FAIL",
+      "evidence": "Thiếu dataset/row/fold/run provenance, raw scores và scoring code; không suy đoán thành sự thật"
+    },
+    {
+      "id": "R11",
+      "check": "Kiểm tra lại Date–Campaign_ID",
+      "status": "PASS",
+      "evidence": "170000/170000 khớp; Date không dùng để fit"
+    },
+    {
+      "id": "R12",
+      "check": "Không materialize ROI Test cho nghiên cứu",
+      "status": "PASS",
+      "evidence": "skiprows trước DataFrame; không nạp split joblib; lịch folds chỉ có Development"
+    },
+    {
+      "id": "R13",
+      "check": "Giữ nguyên production, artifact và lịch sử",
+      "status": "PASS",
+      "evidence": "105 tệp được bảo vệ khớp hash trước/sau và hiện tại"
+    },
+    {
+      "id": "R14",
+      "check": "Đóng băng giao thức Development mới và lịch fold",
+      "status": "PASS",
+      "evidence": "DM-DEV-170K-v1; ba repeat, mỗi row được assessment đúng một lần/repeat; không có ROI"
+    },
+    {
+      "id": "R15",
+      "check": "Giữ Quality Gate BASELINE_ONLY",
+      "status": "PASS",
+      "evidence": "Không sửa metadata hoặc bật khuyến nghị"
+    },
+    {
+      "id": "R16",
+      "check": "Không thực hiện Phase 4B.2",
+      "status": "PASS",
+      "evidence": "Chỉ Dummy đối soát và tạo lịch indices; không thuật toán nâng cấp/tuning"
+    }
+  ]
+}

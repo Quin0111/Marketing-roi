@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "count": 20,
+  "checks": [
+    {
+      "check": "All 433 preexisting files byte-identical",
+      "status": "PASS"
+    },
+    {
+      "check": "Executed research checks PASS",
+      "status": "PASS"
+    },
+    {
+      "check": "Three fresh classifier refits reproduced",
+      "status": "PASS"
+    },
+    {
+      "check": "Real-marketing recommendation remains NOT VALIDATED",
+      "status": "PASS"
+    },
+    {
+      "check": "Honest zero gain vs response baseline recorded",
+      "status": "PASS"
+    },
+    {
+      "check": "UTF8 populated: final_ml_research_summary.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Local evidence links resolve: final_ml_research_summary.md",
+      "status": "PASS"
+    },
+    {
+      "check": "No unresolved placeholders: final_ml_research_summary.md",
+      "status": "PASS"
+    },
+    {
+      "check": "UTF8 populated: final_ml_experiment_results.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Local evidence links resolve: final_ml_experiment_results.md",
+      "status": "PASS"
+    },
+    {
+      "check": "No unresolved placeholders: final_ml_experiment_results.md",
+      "status": "PASS"
+    },
+    {
+      "check": "UTF8 populated: ml_to_website_handoff.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Local evidence links resolve: ml_to_website_handoff.md",
+      "status": "PASS"
+    },
+    {
+      "check": "No unresolved placeholders: ml_to_website_handoff.md",
+      "status": "PASS"
+    },
+    {
+      "check": "UTF8 populated: dataset_readiness_report.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Local evidence links resolve: dataset_readiness_report.md",
+      "status": "PASS"
+    },
+    {
+      "check": "No unresolved placeholders: dataset_readiness_report.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Final status RESEARCH_LIMITED in all handoff reports",
+      "status": "PASS"
+    },
+    {
+      "check": "All seven artifacts match trusted production manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "BASELINE_ONLY and no automatic ranking/optimization",
+      "status": "PASS"
+    }
+  ],
+  "protected_files": 433,
+  "scientific_status": "RESEARCH_LIMITED",
+  "production_quality_gate": "BASELINE_ONLY",
+  "models_fitted_in_this_check": 0,
+  "old_test_loaded": false,
+  "deliverable_sha256": {
+    "research\\final_ml_research_summary.md": "e816dc1e564c995247bdb76edd0dcc44cd9a3d00af1dca17506dc8730970ca9e",
+    "research\\final_ml_experiment_results.md": "12d6860a842588441cfcd095a989832504946ebcf08e4cf5c1a4ddecd7d647aa",
+    "research\\ml_to_website_handoff.md": "3dc7676d3b5ef9ffd1870de67e7a88793390526ecd3717c85129267bf4045455",
+    "research\\phase4b4\\reassessment\\dataset_readiness_report.md": "6e5f9d5522e75606446d161f4dd6071e2d164a90a45b18fba07098d20fd52554"
+  },
+  "scope": "Document and integrity checks; separate from 41 executed model/protocol checks and causal-assumption validity."
+}

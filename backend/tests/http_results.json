@@ -1,0 +1,302 @@
+{
+  "executed_at": "2026-11-03T07:57:11.038580+00:00",
+  "base_url": "http://127.0.0.1:8000",
+  "responses": [
+    {
+      "method": "GET",
+      "endpoint": "/health",
+      "request": null,
+      "status_code": 200,
+      "response": {
+        "status": "ok",
+        "application_running": true,
+        "model_ready": true,
+        "model_name": "Linear Regression",
+        "api_version": "1.0.0"
+      }
+    },
+    {
+      "method": "GET",
+      "endpoint": "/model-info",
+      "request": null,
+      "status_code": 200,
+      "response": {
+        "model_name": "Linear Regression",
+        "model_version": "1.0.0",
+        "features": [
+          "Campaign_Type",
+          "Channel_Used",
+          "Target_Audience",
+          "Customer_Segment",
+          "Duration_days"
+        ],
+        "target": "ROI",
+        "model_ready": true,
+        "quality_status": "BASELINE_ONLY",
+        "is_research_only": true,
+        "quality_gate_rules": {
+          "allow_prediction": true,
+          "allow_automatic_ranking": false,
+          "allow_optimization_recommendation": false
+        },
+        "metrics": {
+          "MAE_mean": 1.500916,
+          "RMSE_mean": 1.732384,
+          "R2_mean": -0.000171
+        },
+        "cross_validation": {
+          "evaluation_method": "5-Fold Cross-Validation",
+          "development_samples": 170000,
+          "n_splits": 5,
+          "random_state": 42,
+          "scoring": [
+            "MAE",
+            "RMSE",
+            "R2"
+          ],
+          "results": {
+            "Dummy Regressor": {
+              "MAE_mean": 1.500843,
+              "RMSE_mean": 1.732275,
+              "R2_mean": -4.5e-05
+            },
+            "Linear Regression": {
+              "MAE_mean": 1.500916,
+              "RMSE_mean": 1.732384,
+              "R2_mean": -0.000171
+            },
+            "Decision Tree": {
+              "MAE_mean": 1.501221,
+              "RMSE_mean": 1.732903,
+              "R2_mean": -0.000771
+            },
+            "Random Forest": {
+              "MAE_mean": 1.502294,
+              "RMSE_mean": 1.734325,
+              "R2_mean": -0.002413
+            }
+          },
+          "quality_gate": "BASELINE_ONLY",
+          "models_beating_baseline": 0,
+          "notes": "Không mô hình học nào vượt Dummy Regressor theo RMSE trong cả 5 Fold."
+        },
+        "allowed_categories": {
+          "Campaign_Type": [
+            "Display",
+            "Email",
+            "Influencer",
+            "Search",
+            "Social Media"
+          ],
+          "Channel_Used": [
+            "Email",
+            "Facebook",
+            "Google Ads",
+            "Instagram",
+            "Website",
+            "YouTube"
+          ],
+          "Target_Audience": [
+            "All Ages",
+            "Men 18-24",
+            "Men 25-34",
+            "Women 25-34",
+            "Women 35-44"
+          ],
+          "Customer_Segment": [
+            "Fashionistas",
+            "Foodies",
+            "Health & Wellness",
+            "Outdoor Adventurers",
+            "Tech Enthusiasts"
+          ]
+        },
+        "allowed_duration_days": [
+          15,
+          30,
+          45,
+          60
+        ],
+        "duration_validation_source": "marketing_campaign_dataset.csv; quy trình Duration trong notebook Colab; deployment_metadata.json",
+        "warning": "Mô hình chưa vượt Dummy Regressor trong kiểm định chéo 5-Fold. Kết quả chỉ phục vụ minh họa nghiên cứu, không dùng để xếp hạng chiến dịch hoặc khuyến nghị tối ưu Marketing."
+      }
+    },
+    {
+      "method": "POST",
+      "endpoint": "/predict",
+      "request": {
+        "Campaign_Type": "Social Media",
+        "Channel_Used": "Facebook",
+        "Target_Audience": "Women 25-34",
+        "Customer_Segment": "Fashionistas",
+        "Duration_days": 30
+      },
+      "status_code": 200,
+      "response": {
+        "predicted_roi": 4.991136884533976,
+        "model_name": "Linear Regression",
+        "model_version": "1.0.0",
+        "quality_status": "BASELINE_ONLY",
+        "is_research_only": true,
+        "warning": "Mô hình chưa vượt Dummy Regressor trong kiểm định chéo 5-Fold. Kết quả chỉ phục vụ minh họa nghiên cứu, không dùng để xếp hạng chiến dịch hoặc khuyến nghị tối ưu Marketing."
+      }
+    },
+    {
+      "method": "POST",
+      "endpoint": "/predict",
+      "request": {
+        "Campaign_Type": "Search",
+        "Channel_Used": "Google Ads",
+        "Target_Audience": "Women 25-34",
+        "Customer_Segment": "Fashionistas",
+        "Duration_days": 45
+      },
+      "status_code": 200,
+      "response": {
+        "predicted_roi": 4.997267870097019,
+        "model_name": "Linear Regression",
+        "model_version": "1.0.0",
+        "quality_status": "BASELINE_ONLY",
+        "is_research_only": true,
+        "warning": "Mô hình chưa vượt Dummy Regressor trong kiểm định chéo 5-Fold. Kết quả chỉ phục vụ minh họa nghiên cứu, không dùng để xếp hạng chiến dịch hoặc khuyến nghị tối ưu Marketing."
+      }
+    },
+    {
+      "method": "POST",
+      "endpoint": "/predict",
+      "request": {
+        "Campaign_Type": "Social Media",
+        "Channel_Used": "Facebook",
+        "Target_Audience": "Women 25-34",
+        "Customer_Segment": "Fashionistas",
+        "Duration_days": 15
+      },
+      "status_code": 200,
+      "response": {
+        "predicted_roi": 4.991863311218091,
+        "model_name": "Linear Regression",
+        "model_version": "1.0.0",
+        "quality_status": "BASELINE_ONLY",
+        "is_research_only": true,
+        "warning": "Mô hình chưa vượt Dummy Regressor trong kiểm định chéo 5-Fold. Kết quả chỉ phục vụ minh họa nghiên cứu, không dùng để xếp hạng chiến dịch hoặc khuyến nghị tối ưu Marketing."
+      }
+    },
+    {
+      "method": "POST",
+      "endpoint": "/predict",
+      "request": {
+        "Campaign_Type": "Social Media",
+        "Channel_Used": "Facebook",
+        "Target_Audience": "Women 25-34",
+        "Customer_Segment": "Fashionistas",
+        "Duration_days": 30
+      },
+      "status_code": 200,
+      "response": {
+        "predicted_roi": 4.991136884533976,
+        "model_name": "Linear Regression",
+        "model_version": "1.0.0",
+        "quality_status": "BASELINE_ONLY",
+        "is_research_only": true,
+        "warning": "Mô hình chưa vượt Dummy Regressor trong kiểm định chéo 5-Fold. Kết quả chỉ phục vụ minh họa nghiên cứu, không dùng để xếp hạng chiến dịch hoặc khuyến nghị tối ưu Marketing."
+      }
+    },
+    {
+      "method": "POST",
+      "endpoint": "/predict",
+      "request": {
+        "Campaign_Type": "Social Media",
+        "Channel_Used": "Facebook",
+        "Target_Audience": "Women 25-34",
+        "Customer_Segment": "Fashionistas",
+        "Duration_days": 45
+      },
+      "status_code": 200,
+      "response": {
+        "predicted_roi": 4.99041045784986,
+        "model_name": "Linear Regression",
+        "model_version": "1.0.0",
+        "quality_status": "BASELINE_ONLY",
+        "is_research_only": true,
+        "warning": "Mô hình chưa vượt Dummy Regressor trong kiểm định chéo 5-Fold. Kết quả chỉ phục vụ minh họa nghiên cứu, không dùng để xếp hạng chiến dịch hoặc khuyến nghị tối ưu Marketing."
+      }
+    },
+    {
+      "method": "POST",
+      "endpoint": "/predict",
+      "request": {
+        "Campaign_Type": "Social Media",
+        "Channel_Used": "Facebook",
+        "Target_Audience": "Women 25-34",
+        "Customer_Segment": "Fashionistas",
+        "Duration_days": 60
+      },
+      "status_code": 200,
+      "response": {
+        "predicted_roi": 4.989684031165745,
+        "model_name": "Linear Regression",
+        "model_version": "1.0.0",
+        "quality_status": "BASELINE_ONLY",
+        "is_research_only": true,
+        "warning": "Mô hình chưa vượt Dummy Regressor trong kiểm định chéo 5-Fold. Kết quả chỉ phục vụ minh họa nghiên cứu, không dùng để xếp hạng chiến dịch hoặc khuyến nghị tối ưu Marketing."
+      }
+    },
+    {
+      "method": "POST",
+      "endpoint": "/predict",
+      "request": {
+        "Campaign_Type": "Social Media",
+        "Channel_Used": "Facebook",
+        "Target_Audience": "Women 25-34",
+        "Customer_Segment": "Fashionistas",
+        "Duration_days": 31
+      },
+      "status_code": 422,
+      "response": {
+        "detail": [
+          {
+            "loc": [
+              "body",
+              "Duration_days"
+            ],
+            "msg": "Thời lượng phải là 15, 30, 45 hoặc 60 ngày.",
+            "type": "value_error"
+          }
+        ]
+      }
+    }
+  ],
+  "predictions": [
+    {
+      "case": "Chien dich A",
+      "predicted_roi": 4.991136884533976,
+      "reference": 4.991136884533976,
+      "absolute_error": 0.0
+    },
+    {
+      "case": "Chien dich B",
+      "predicted_roi": 4.997267870097019,
+      "reference": 4.997267870097019,
+      "absolute_error": 0.0
+    }
+  ],
+  "artifact_sha256_before": {
+    "decision_tree_pipeline.joblib": "385652846c12e7a2846d15b445872df286a416a73dfbff33aad0689210978cae",
+    "dummy_regressor_pipeline.joblib": "26a1fbeb9d62114ba46d3d7bcb3c8d6e4c365ddeb16218db85ca6667d2e5527e",
+    "linear_regression_pipeline.joblib": "d99fb493de5f4972d2670d713a0f7d8996cb9c2751ab465e788c09af2fb3ed50",
+    "model_metadata.json": "89b3661708f3b2e38c56d55ac38ce07bff23a1651673c2c575945bb001684639",
+    "model_metrics.json": "97c3ac45bab448d37fd4da181ee76f0b01645b868533af5dc60312d24f699df2",
+    "random_forest_pipeline.joblib": "d1a605d0498718d2b20270b6463cb3fd93bc7546a9eef9ba3145c40e8da5bcc0",
+    "reference_prediction.json": "e8128d06d9383ac70795bc522b9b95e7a5c6bc068c1dc60a290cddad56f07784"
+  },
+  "artifact_sha256_after": {
+    "decision_tree_pipeline.joblib": "385652846c12e7a2846d15b445872df286a416a73dfbff33aad0689210978cae",
+    "dummy_regressor_pipeline.joblib": "26a1fbeb9d62114ba46d3d7bcb3c8d6e4c365ddeb16218db85ca6667d2e5527e",
+    "linear_regression_pipeline.joblib": "d99fb493de5f4972d2670d713a0f7d8996cb9c2751ab465e788c09af2fb3ed50",
+    "model_metadata.json": "89b3661708f3b2e38c56d55ac38ce07bff23a1651673c2c575945bb001684639",
+    "model_metrics.json": "97c3ac45bab448d37fd4da181ee76f0b01645b868533af5dc60312d24f699df2",
+    "random_forest_pipeline.joblib": "d1a605d0498718d2b20270b6463cb3fd93bc7546a9eef9ba3145c40e8da5bcc0",
+    "reference_prediction.json": "e8128d06d9383ac70795bc522b9b95e7a5c6bc068c1dc60a290cddad56f07784"
+  },
+  "status": "PASS"
+}

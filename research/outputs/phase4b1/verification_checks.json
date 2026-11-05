@@ -1,0 +1,161 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "Original archived split index/order matched",
+      "status": "PASS"
+    },
+    {
+      "check": "Exactly 200000 unique row IDs partitioned",
+      "status": "PASS"
+    },
+    {
+      "check": "Original 170000 Development and 30000 final Test",
+      "status": "PASS"
+    },
+    {
+      "check": "All assessment rows are Development; no final Test",
+      "status": "PASS"
+    },
+    {
+      "check": "Each Development row assessed exactly once",
+      "status": "PASS"
+    },
+    {
+      "check": "Exactly five assessment folds of 34000",
+      "status": "PASS"
+    },
+    {
+      "check": "Each feature group count sums to Development only",
+      "status": "PASS"
+    },
+    {
+      "check": "All CV fits/assessments use 136000/34000",
+      "status": "PASS"
+    },
+    {
+      "check": "Each diagnostic model has five folds",
+      "status": "PASS"
+    },
+    {
+      "check": "Historical metrics not represented as reproduction",
+      "status": "PASS"
+    },
+    {
+      "check": "Production models not fitted; no Test outcome research",
+      "status": "PASS"
+    },
+    {
+      "check": "Holm adjusted p >= raw: Campaign_Type",
+      "status": "PASS"
+    },
+    {
+      "check": "Holm adjusted p >= raw: Channel_Used",
+      "status": "PASS"
+    },
+    {
+      "check": "Holm adjusted p >= raw: Target_Audience",
+      "status": "PASS"
+    },
+    {
+      "check": "Holm adjusted p >= raw: Customer_Segment",
+      "status": "PASS"
+    },
+    {
+      "check": "Holm adjusted p >= raw: Duration_days",
+      "status": "PASS"
+    },
+    {
+      "check": "Holm adjusted p >= raw: Company",
+      "status": "PASS"
+    },
+    {
+      "check": "Holm adjusted p >= raw: Location",
+      "status": "PASS"
+    },
+    {
+      "check": "Holm adjusted p >= raw: Language",
+      "status": "PASS"
+    },
+    {
+      "check": "Holm adjusted p >= raw: Month",
+      "status": "PASS"
+    },
+    {
+      "check": "Holm adjusted p >= raw: Weekday",
+      "status": "PASS"
+    },
+    {
+      "check": "Fold mean aggregation: Dummy_mean",
+      "status": "PASS"
+    },
+    {
+      "check": "Fold mean aggregation: Fresh_linear_current5",
+      "status": "PASS"
+    },
+    {
+      "check": "Fold mean aggregation: Fresh_linear_plus_Company_Location_Language",
+      "status": "PASS"
+    },
+    {
+      "check": "Fold mean aggregation: GroupMean_Campaign_Type",
+      "status": "PASS"
+    },
+    {
+      "check": "Fold mean aggregation: GroupMean_Channel_Used",
+      "status": "PASS"
+    },
+    {
+      "check": "Fold mean aggregation: GroupMean_Target_Audience",
+      "status": "PASS"
+    },
+    {
+      "check": "Fold mean aggregation: GroupMean_Customer_Segment",
+      "status": "PASS"
+    },
+    {
+      "check": "Fold mean aggregation: GroupMean_Duration_days",
+      "status": "PASS"
+    },
+    {
+      "check": "Fold mean aggregation: GroupMean_joint_current5",
+      "status": "PASS"
+    },
+    {
+      "check": "Protected before/after snapshots identical",
+      "status": "PASS"
+    },
+    {
+      "check": "All 66 original protected files still byte-identical",
+      "status": "PASS"
+    },
+    {
+      "check": "Source unchanged: marketing_campaign_dataset.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "Source unchanged: MachineLearningcki (8).ipynb",
+      "status": "PASS"
+    },
+    {
+      "check": "Source unchanged: models_roi (4).zip",
+      "status": "PASS"
+    },
+    {
+      "check": "Quality gate still BASELINE_ONLY",
+      "status": "PASS"
+    },
+    {
+      "check": "Report rendered UTF-8: phase4b1_data_audit.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Report rendered UTF-8: phase4b1_feature_assessment.md",
+      "status": "PASS"
+    },
+    {
+      "check": "Report rendered UTF-8: phase4b1_recommendations.md",
+      "status": "PASS"
+    }
+  ]
+}

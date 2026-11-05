@@ -1,0 +1,16 @@
+{
+  "url": "https://huggingface.co/datasets/criteo/criteo-uplift/resolve/2424920019e49d52d72c13ac1143ec5d53af276b/criteo-research-uplift-v2.1.csv.gz",
+  "revision": "2424920019e49d52d72c13ac1143ec5d53af276b",
+  "expected_sha256": "2716e1bf0fd157a93b5bf86924d9088419dfbac2022c6cd90030220634f616dc",
+  "expected_bytes": 311422618,
+  "purpose": "Schema/count/power audit only",
+  "license": "CC BY-NC-SA 4.0; publisher terms and pinned dataset card",
+  "license_url": "https://ailab.criteo.com/criteo-uplift-prediction-dataset/",
+  "http_status": 200,
+  "resolved_url_host": "us.aws.cdn.hf.co",
+  "content_length": "311422618",
+  "actual_sha256": "2716e1bf0fd157a93b5bf86924d9088419dfbac2022c6cd90030220634f616dc",
+  "actual_bytes": 311422618,
+  "status": "PASS",
+  "elapsed_seconds": 17.161102500045672
+}

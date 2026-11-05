@@ -1,0 +1,55 @@
+{
+  "Campaign_Type": [
+    {
+      "name": "Display",
+      "count": 34012
+    },
+    {
+      "name": "Email",
+      "count": 33818
+    },
+    {
+      "name": "Influencer",
+      "count": 34121
+    },
+    {
+      "name": "Search",
+      "count": 34085
+    },
+    {
+      "name": "Social Media",
+      "count": 33964
+    }
+  ],
+  "Channel_Used": [
+    {
+      "name": "Email",
+      "count": 28470
+    },
+    {
+      "name": "Facebook",
+      "count": 27954
+    },
+    {
+      "name": "Google Ads",
+      "count": 28433
+    },
+    {
+      "name": "Instagram",
+      "count": 28404
+    },
+    {
+      "name": "Website",
+      "count": 28409
+    },
+    {
+      "name": "YouTube",
+      "count": 28330
+    }
+  ],
+  "dataset_rows": 200000,
+  "development_rows": 170000,
+  "source": "research/outputs/phase4b1/development_group_statistics.csv",
+  "source_sha256": "462998cbc0197a0778a9f9b96658f11c7fcae504f3fb94a6e9c6ba82ce0bff97",
+  "scope": "Development; thống kê nghiên cứu đã công bố, không phải dữ liệu vận hành"
+}

@@ -1,0 +1,262 @@
+{
+  "executed_at": "2026-11-05T15:41:13.739616+00:00",
+  "python": "3.13.17",
+  "executable": "D:\\HK7 ĐẠI HỌC\\MachineLearning\\Marketing ROI Intelligence\\backend\\.venv\\Scripts\\python.exe",
+  "versions": {
+    "scikit-learn": "1.6.1",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "joblib": "1.6.0",
+    "scipy": "1.18.1"
+  },
+  "checks": [
+    {
+      "check": "Python 3.13",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Version scikit-learn",
+      "status": "PASS",
+      "detail": "1.6.1"
+    },
+    {
+      "check": "Version numpy",
+      "status": "PASS",
+      "detail": "2.4.6"
+    },
+    {
+      "check": "Version pandas",
+      "status": "PASS",
+      "detail": "2.2.3"
+    },
+    {
+      "check": "Version joblib",
+      "status": "PASS",
+      "detail": "1.6.0"
+    },
+    {
+      "check": "Feature contract",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Target ROI",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Quality gate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No ranking or optimization",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Illustration model",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Artifact file contract",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Two reference campaigns",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy Regressor: fitted Pipeline",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy Regressor: five input features",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy Regressor: Chien dich A",
+      "status": "PASS",
+      "detail": "absolute_error=0"
+    },
+    {
+      "check": "Dummy Regressor: Chien dich B",
+      "status": "PASS",
+      "detail": "absolute_error=0"
+    },
+    {
+      "check": "Dummy Regressor: no load/predict warnings",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Linear Regression: fitted Pipeline",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Linear Regression: five input features",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Linear Regression: Chien dich A",
+      "status": "PASS",
+      "detail": "absolute_error=0"
+    },
+    {
+      "check": "Linear Regression: Chien dich B",
+      "status": "PASS",
+      "detail": "absolute_error=0"
+    },
+    {
+      "check": "Linear Regression: no load/predict warnings",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Decision Tree: fitted Pipeline",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Decision Tree: five input features",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Decision Tree: Chien dich A",
+      "status": "PASS",
+      "detail": "absolute_error=0"
+    },
+    {
+      "check": "Decision Tree: Chien dich B",
+      "status": "PASS",
+      "detail": "absolute_error=0"
+    },
+    {
+      "check": "Decision Tree: no load/predict warnings",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Random Forest: fitted Pipeline",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Random Forest: five input features",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Random Forest: Chien dich A",
+      "status": "PASS",
+      "detail": "absolute_error=1.7763568394e-15"
+    },
+    {
+      "check": "Random Forest: Chien dich B",
+      "status": "PASS",
+      "detail": "absolute_error=1.7763568394e-15"
+    },
+    {
+      "check": "Random Forest: no load/predict warnings",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Original artifacts unchanged (SHA256)",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "predictions": [
+    {
+      "model": "Dummy Regressor",
+      "case": "Chien dich A",
+      "prediction": 4.999906285714286,
+      "reference": 4.999906285714286,
+      "absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "Dummy Regressor",
+      "case": "Chien dich B",
+      "prediction": 4.999906285714286,
+      "reference": 4.999906285714286,
+      "absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "Linear Regression",
+      "case": "Chien dich A",
+      "prediction": 4.991136884533976,
+      "reference": 4.991136884533976,
+      "absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "Linear Regression",
+      "case": "Chien dich B",
+      "prediction": 4.997267870097019,
+      "reference": 4.997267870097019,
+      "absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "Decision Tree",
+      "case": "Chien dich A",
+      "prediction": 4.932358757062151,
+      "reference": 4.932358757062151,
+      "absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "Decision Tree",
+      "case": "Chien dich B",
+      "prediction": 5.003037668225301,
+      "reference": 5.003037668225301,
+      "absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "Random Forest",
+      "case": "Chien dich A",
+      "prediction": 4.805764742906767,
+      "reference": 4.805764742906769,
+      "absolute_error": 1.7763568394002505e-15,
+      "status": "PASS"
+    },
+    {
+      "model": "Random Forest",
+      "case": "Chien dich B",
+      "prediction": 4.992430279098365,
+      "reference": 4.992430279098363,
+      "absolute_error": 1.7763568394002505e-15,
+      "status": "PASS"
+    }
+  ],
+  "runtime_differences": {
+    "python": {
+      "actual": "3.13.17",
+      "export": "3.13.18",
+      "note": "Patch version differs; numerical compatibility checked below."
+    }
+  },
+  "artifact_sha256": {
+    "decision_tree_pipeline.joblib": "385652846c12e7a2846d15b445872df286a416a73dfbff33aad0689210978cae",
+    "dummy_regressor_pipeline.joblib": "26a1fbeb9d62114ba46d3d7bcb3c8d6e4c365ddeb16218db85ca6667d2e5527e",
+    "linear_regression_pipeline.joblib": "d99fb493de5f4972d2670d713a0f7d8996cb9c2751ab465e788c09af2fb3ed50",
+    "model_metadata.json": "89b3661708f3b2e38c56d55ac38ce07bff23a1651673c2c575945bb001684639",
+    "model_metrics.json": "97c3ac45bab448d37fd4da181ee76f0b01645b868533af5dc60312d24f699df2",
+    "random_forest_pipeline.joblib": "d1a605d0498718d2b20270b6463cb3fd93bc7546a9eef9ba3145c40e8da5bcc0",
+    "reference_prediction.json": "e8128d06d9383ac70795bc522b9b95e7a5c6bc068c1dc60a290cddad56f07784"
+  },
+  "status": "PASS"
+}

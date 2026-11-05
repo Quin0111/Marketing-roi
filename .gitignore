@@ -1,0 +1,55 @@
+﻿# Node.js / Vite
+node_modules/
+dist/
+coverage/
+.vite/
+
+# Python virtual environments
+.venv/
+venv/
+**/.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+**/.pytest_cache/
+backend/temp-tests/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Testing
+playwright-report/
+test-results/
+htmlcov/
+.coverage
+
+# Local backups
+backups/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+
+# Generated research runs and test results
+/research/phase5/run_*/
+/tests/results/
+/**/e2e-artifacts/
+/**/e2e-artifacts-*/
+/**/browser-artifacts/
+/**/playwright-report/
+
+# Large research datasets
+/research/phase4b4/reassessment/raw/
+
+# Generated evidence files
+/research/phase5/evidence/prior_generated/tests/results/

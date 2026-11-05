@@ -1,0 +1,85 @@
+{
+  "status": "PASS_STRUCTURAL_AUDIT_ONLY",
+  "rows": 13979592,
+  "columns": [
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "treatment",
+    "conversion",
+    "visit",
+    "exposure"
+  ],
+  "schema": {
+    "f0": "float64",
+    "f1": "float64",
+    "f2": "float64",
+    "f3": "float64",
+    "f4": "float64",
+    "f5": "float64",
+    "f6": "float64",
+    "f7": "float64",
+    "f8": "float64",
+    "f9": "float64",
+    "f10": "float64",
+    "f11": "float64",
+    "treatment": "int64",
+    "conversion": "int64",
+    "visit": "int64",
+    "exposure": "int64"
+  },
+  "sha256": "2716e1bf0fd157a93b5bf86924d9088419dfbac2022c6cd90030220634f616dc",
+  "bytes_compressed": 311422618,
+  "missing_cells": 0,
+  "nonfinite_cells": 0,
+  "invalid_binary_cells": 0,
+  "control_exposed_rows": 0,
+  "conversion_without_visit_rows": 0,
+  "groups_descriptive_not_causal": {
+    "0": {
+      "rows": 2096937,
+      "conversion": 4063,
+      "visit": 80105,
+      "exposure": 0,
+      "conversion_rate_descriptive": 0.0019375880152813366,
+      "visit_rate_descriptive": 0.03820095691954503,
+      "exposure_rate_descriptive": 0.0
+    },
+    "1": {
+      "rows": 11882655,
+      "conversion": 36711,
+      "visit": 576824,
+      "exposure": 428212,
+      "conversion_rate_descriptive": 0.0030894610674129645,
+      "visit_rate_descriptive": 0.048543360048743316,
+      "exposure_rate_descriptive": 0.036036727482199896
+    }
+  },
+  "treatment_ratio_descriptive": 0.8500001287591226,
+  "whole_release_aggregate_audited": true,
+  "evaluation_holdout_created": false,
+  "old_dataset_or_test_loaded": false,
+  "models_fitted": 0,
+  "policy_evaluated": false,
+  "limitations": [
+    "No user/advertiser IDs or timestamps to independently check identity/dependence/timing.",
+    "No selection probabilities: aggregate group differences are not asserted causal.",
+    "Power table is IID-RCT design sensitivity, not achieved causal power or policy-model power.",
+    "Feature-tuple duplicates are not automatically duplicate users; no identity-based deduplication invented."
+  ],
+  "versions": {
+    "python": "3.13.17",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3"
+  },
+  "elapsed_seconds": 40.78620059997775
+}

@@ -1,0 +1,12 @@
+{
+  "csv_sha256": "f06c1b95a8207b4631c35e6b83b4a2a7872892a8bfa133967e1e7ec401c7bb60",
+  "membership_sha256": "7d5def28615c7a35f2a5e1cbe6167c81f5fc6d1ee117855a5f6f4d62fabf7f17",
+  "development_row_order_sha256_int64_le": "ab9ad10f48531464b11a35d9328e7e85af69b2e85dfecbf5894da145399a697b",
+  "parsed_rows": 170000,
+  "heldout_rows_excluded_before_parsing": 30000,
+  "skiprows_before_roi_materialization": true,
+  "test_roi_read_for_analysis": false,
+  "split_joblib_loaded": false,
+  "date_used_for_fitting": false,
+  "csv_bytes_hashed_without_interpreting_test_targets": true
+}

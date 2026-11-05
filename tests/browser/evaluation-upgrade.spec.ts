@@ -1,0 +1,77 @@
+import { test, expect } from '@playwright/test';
+import { readFileSync } from 'node:fs';
+const reference=JSON.parse(readFileSync('backend/models/reference_prediction.json','utf8'));
+for(const width of [390,1440]) {
+  test(`E01 predict/save/compare preserves raw API precision and existing configurations ${width}`,async({page},info)=>{
+    test.setTimeout(45000);
+    await page.setViewportSize({width,height:900});
+    await page.goto('/#predict');
+    await expect(page.getByRole('button',{name:'Dự đoán ROI',exact:true})).toBeEnabled();
+    await expect(page.getByRole('button',{name:'Dự đoán ROI',exact:true})).toHaveCSS('background-color','rgb(184, 204, 215)');
+    const f=reference.cases[0].features;
+    await page.getByLabel(/1. Loại chiến dịch/).selectOption(f.Campaign_Type);
+    await page.getByLabel(/2. Kênh Marketing/).selectOption(f.Channel_Used);
+    await page.getByLabel(/3. Đối tượng mục tiêu/).selectOption(f.Target_Audience);
+    await page.getByLabel(/4. Phân khúc khách hàng/).selectOption(f.Customer_Segment);
+    await page.getByRole('button',{name:'30 ngày',exact:true}).click();
+    const requests:string[]=[];page.on('request',r=>{if(r.url().endsWith('/predict'))requests.push(r.postData()!);});
+    const pending=page.waitForResponse(r=>r.url().endsWith('/predict')&&r.request().method()==='POST');
+    await page.getByRole('button',{name:'Dự đoán ROI',exact:true}).click();
+    const body=await (await pending).json();
+    expect(body.predicted_roi).toBe(reference.cases[0].expected_predictions['Linear Regression']);
+    await expect(page.getByTestId('predicted-roi')).toHaveText(body.predicted_roi.toFixed(4).replace('.',','));
+    await expect(page.getByTestId('predicted-roi')).toHaveAttribute('data-value',String(body.predicted_roi));
+    await page.getByRole('button',{name:'Lưu thành kịch bản so sánh'}).click();
+    await expect(page).toHaveURL(/#scenarios$/);
+    await expect(page.getByTestId('scenario-api-roi')).toHaveCount(2);
+    const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('dm_scenarios')!));
+    expect(saved.scenarios).toHaveLength(3); // two existing examples + new configuration
+    const added=saved.scenarios[saved.scenarios.length-1];
+    expect(added.features.durationDays).toBe(30);expect(added).not.toHaveProperty('predictedRoi');
+    expect(JSON.stringify(added)).not.toContain('modelVersion');
+    const card=page.getByTestId(`scenario-card-${added.id}`);
+    await expect(card.getByTestId('scenario-api-result')).toHaveAttribute('data-source','MODEL_PREDICTION');
+    await expect(card.getByTestId('scenario-api-roi')).toHaveAttribute('data-value',String(body.predicted_roi));
+    await expect(page.getByTestId('comparison-chart-values').locator('li')).toHaveCount(1);
+    expect(requests).toHaveLength(1);
+    await card.screenshot({path:info.outputPath(`saved-api-${width}.png`)});
+    await info.attach('saved-reference-api',{body:JSON.stringify({request:JSON.parse(requests[0]),response:body,stored_configuration:added}),contentType:'application/json'});
+    await page.reload();await expect(card.getByRole('button',{name:'Dự đoán ROI kịch bản'})).toBeEnabled();
+    await expect(page.getByTestId('scenario-api-roi')).toHaveCount(0);
+    await expect(page.getByTestId('comparison-chart-empty')).toBeVisible();
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  });
+  test(`E02 Quality Gate tooltip stays within viewport and is keyboard dismissible ${width}`,async({page},info)=>{
+    await page.setViewportSize({width,height:740});await page.goto('/#predict');
+    const control=page.getByRole('button',{name:'Quality Gate: BASELINE_ONLY'});
+    await expect(control).toHaveCount(1);await control.focus();await page.keyboard.press('Enter');
+    const tip=page.getByRole('tooltip');await expect(tip).toBeVisible();
+    const box=await tip.boundingBox();expect(box).not.toBeNull();
+    expect(box!.x).toBeGreaterThanOrEqual(0);expect(box!.x+box!.width).toBeLessThanOrEqual(width);
+    expect(box!.y).toBeGreaterThanOrEqual(0);expect(box!.y+box!.height).toBeLessThanOrEqual(740);
+    await page.screenshot({path:info.outputPath(`quality-tooltip-${width}.png`)});
+    await page.keyboard.press('Escape');await expect(tip).toHaveCount(0);await expect(control).toBeFocused();
+  });
+}
+test('E03 verified Dashboard navigation and accessible model provenance/limits',async({page})=>{
+  await page.goto('/#dashboard');await expect(page.getByTestId('verified-distributions')).toBeVisible();
+  await expect(page.getByTestId('verified-distributions').locator('.recharts-bar-rectangle path')).toHaveCount(11);
+  await expect.poll(()=>page.getByTestId('verified-distributions').locator('.recharts-bar-rectangle path').evaluateAll(paths=>paths.every(p=>(p as SVGGraphicsElement).getBBox().height>180))).toBe(true);
+  await expect(page.getByText(/DEMO_DATA · Bảng mẫu riêng/)).toBeVisible();
+  await page.getByRole('link',{name:'Dự đoán ROI'}).click();await expect(page).toHaveURL(/#predict$/);
+  await page.getByText('Thông tin mô hình',{exact:true}).click();
+  await page.getByText('Bảng đánh giá và nghiên cứu chi tiết',{exact:true}).click();
+  const provenance=page.getByTestId('historical-provenance');await expect(provenance).not.toHaveAttribute('open','');
+  await provenance.locator('summary').click();await expect(provenance.getByText(/model_metrics.json/)).toBeVisible();
+  await page.getByText('Giới hạn mô hình',{exact:true}).click();
+  await expect(page.getByText(/Date có chu kỳ trùng Campaign_ID/)).toBeVisible();
+  await page.getByText('Nghiên cứu bổ sung · RESEARCH_LIMITED',{exact:true}).click();
+  await expect(page.getByTestId('research-evidence')).toContainText('visit, không phải ROI');
+  await expect(page.getByRole('button',{name:/tối ưu|recommend/i})).toHaveCount(0);
+  await page.setViewportSize({width:390,height:844});
+  const table=page.getByTestId('historical-metrics-table');
+  expect(await table.evaluate(el=>el.parentElement!.scrollWidth>el.parentElement!.clientWidth)).toBe(true);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  await table.evaluate(el=>{el.parentElement!.scrollLeft=el.parentElement!.scrollWidth;});
+  expect(await table.evaluate(el=>el.parentElement!.scrollLeft)).toBeGreaterThan(0);
+});

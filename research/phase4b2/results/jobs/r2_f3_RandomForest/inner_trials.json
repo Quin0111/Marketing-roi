@@ -1,0 +1,200 @@
+[
+  {
+    "repeat": 2,
+    "outer_fold": 3,
+    "model": "RandomForest",
+    "candidate_order": 0,
+    "candidate": "trees32_depth4_leaf200",
+    "params": {
+      "n_estimators": 32,
+      "max_depth": 4,
+      "min_samples_leaf": 200,
+      "max_features": 1.0
+    },
+    "inner_fold": 1,
+    "inner_seed": 203017,
+    "fit_rows": 90666,
+    "assessment_rows": 45334,
+    "fit_ids_sha256": "173f88ac9ac62ec79dbea2c29b7f760afd4e061563b3b736888a8bb5439db949",
+    "assessment_ids_sha256": "d59e033c044190194e45d9222904fad88b1a62859cf0ae50ed4a49cf5934414d",
+    "metrics": {
+      "MAE": 1.5034062297347222,
+      "MSE": 3.0081820413962146,
+      "RMSE": 1.734411151196917,
+      "R2": -7.308120820037622e-05
+    },
+    "train_metrics": {
+      "MAE": 1.5037013984148724,
+      "MSE": 3.0122332277708397,
+      "RMSE": 1.7355786434992913,
+      "R2": 0.0009370247873418114
+    },
+    "fit_seconds": 1.137402500025928,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 3,
+    "model": "RandomForest",
+    "candidate_order": 0,
+    "candidate": "trees32_depth4_leaf200",
+    "params": {
+      "n_estimators": 32,
+      "max_depth": 4,
+      "min_samples_leaf": 200,
+      "max_features": 1.0
+    },
+    "inner_fold": 2,
+    "inner_seed": 203017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "502b81d2e67ffc644dfc4adf880797dbf059880c02d4d1c1afd1dd3786208802",
+    "assessment_ids_sha256": "68eac1e69cf5f14dc9cc9ef5d7f4b8bf5fe00a4b71f0365289e5491f7c4eac0f",
+    "metrics": {
+      "MAE": 1.5068201428482033,
+      "MSE": 3.0247009756495684,
+      "RMSE": 1.7391667475114536,
+      "R2": -0.00033086070697296854
+    },
+    "train_metrics": {
+      "MAE": 1.501903144345537,
+      "MSE": 3.0038411069783253,
+      "RMSE": 1.733159284941325,
+      "R2": 0.0011161324672271933
+    },
+    "fit_seconds": 1.4612138000084087,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 3,
+    "model": "RandomForest",
+    "candidate_order": 0,
+    "candidate": "trees32_depth4_leaf200",
+    "params": {
+      "n_estimators": 32,
+      "max_depth": 4,
+      "min_samples_leaf": 200,
+      "max_features": 1.0
+    },
+    "inner_fold": 3,
+    "inner_seed": 203017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "4e1b2814557ca6f804a61a34cb808c78c250f9fd3f7c93e3ff5dac49980438ea",
+    "assessment_ids_sha256": "9642d97a26f4628234451154abe81a91bbcf823518675e4a950edccefd982199",
+    "metrics": {
+      "MAE": 1.502374864517807,
+      "MSE": 3.0072698446381563,
+      "RMSE": 1.7341481610975908,
+      "R2": -0.000284061102178379
+    },
+    "train_metrics": {
+      "MAE": 1.5043079011410248,
+      "MSE": 3.0129690961775544,
+      "RMSE": 1.7357906256739475,
+      "R2": 0.0009528465226060767
+    },
+    "fit_seconds": 1.0870196999749169,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 3,
+    "model": "RandomForest",
+    "candidate_order": 1,
+    "candidate": "trees32_depth8_leaf100",
+    "params": {
+      "n_estimators": 32,
+      "max_depth": 8,
+      "min_samples_leaf": 100,
+      "max_features": 1.0
+    },
+    "inner_fold": 1,
+    "inner_seed": 203017,
+    "fit_rows": 90666,
+    "assessment_rows": 45334,
+    "fit_ids_sha256": "173f88ac9ac62ec79dbea2c29b7f760afd4e061563b3b736888a8bb5439db949",
+    "assessment_ids_sha256": "d59e033c044190194e45d9222904fad88b1a62859cf0ae50ed4a49cf5934414d",
+    "metrics": {
+      "MAE": 1.5037816414077212,
+      "MSE": 3.0107680908855077,
+      "RMSE": 1.7351565032830634,
+      "R2": -0.000932815906873552
+    },
+    "train_metrics": {
+      "MAE": 1.500390545496507,
+      "MSE": 2.999867407262086,
+      "RMSE": 1.7320125309194752,
+      "R2": 0.005038378332785531
+    },
+    "fit_seconds": 1.6400670999428257,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 3,
+    "model": "RandomForest",
+    "candidate_order": 1,
+    "candidate": "trees32_depth8_leaf100",
+    "params": {
+      "n_estimators": 32,
+      "max_depth": 8,
+      "min_samples_leaf": 100,
+      "max_features": 1.0
+    },
+    "inner_fold": 2,
+    "inner_seed": 203017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "502b81d2e67ffc644dfc4adf880797dbf059880c02d4d1c1afd1dd3786208802",
+    "assessment_ids_sha256": "68eac1e69cf5f14dc9cc9ef5d7f4b8bf5fe00a4b71f0365289e5491f7c4eac0f",
+    "metrics": {
+      "MAE": 1.507504769268815,
+      "MSE": 3.0281470960697066,
+      "RMSE": 1.7401572044127813,
+      "R2": -0.0014705636507446052
+    },
+    "train_metrics": {
+      "MAE": 1.4986247555298216,
+      "MSE": 2.9911264171925147,
+      "RMSE": 1.7294873278496476,
+      "R2": 0.005344218459600425
+    },
+    "fit_seconds": 1.9795070000109263,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 3,
+    "model": "RandomForest",
+    "candidate_order": 1,
+    "candidate": "trees32_depth8_leaf100",
+    "params": {
+      "n_estimators": 32,
+      "max_depth": 8,
+      "min_samples_leaf": 100,
+      "max_features": 1.0
+    },
+    "inner_fold": 3,
+    "inner_seed": 203017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "4e1b2814557ca6f804a61a34cb808c78c250f9fd3f7c93e3ff5dac49980438ea",
+    "assessment_ids_sha256": "9642d97a26f4628234451154abe81a91bbcf823518675e4a950edccefd982199",
+    "metrics": {
+      "MAE": 1.502870210772958,
+      "MSE": 3.0103206600280377,
+      "RMSE": 1.735027567512412,
+      "R2": -0.0012988293689186747
+    },
+    "train_metrics": {
+      "MAE": 1.5009538503687503,
+      "MSE": 3.0005654730177285,
+      "RMSE": 1.7322140378768809,
+      "R2": 0.005065668133140022
+    },
+    "fit_seconds": 1.7652611000230536,
+    "warnings": []
+  }
+]

@@ -1,0 +1,3467 @@
+<!DOCTYPE html>
+<html class='v2' dir='ltr' lang='en'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/2872013778-css_bundle_v2.css' rel='stylesheet' type='text/css'/>
+<meta content='width=1100' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='https://blog.minethatdata.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Kevin Hillstrom:  MineThatData - Atom" href="https://blog.minethatdata.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Kevin Hillstrom:  MineThatData - RSS" href="https://blog.minethatdata.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Kevin Hillstrom:  MineThatData - Atom" href="https://www.blogger.com/feeds/32202893/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Kevin Hillstrom:  MineThatData - Atom" href="https://blog.minethatdata.com/feeds/2827883219638156231/comments/default" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<meta content='https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html' property='og:url'/>
+<meta content='The MineThatData E-Mail Analytics And Data Mining Challenge' property='og:title'/>
+<meta content='Database Marketing, Data Mining, Analytics, Big Data, Forecasting, Segmentation, Predictive Modeling, Measurement, Catalog, Business' property='og:description'/>
+<title>Kevin Hillstrom:  MineThatData: The MineThatData E-Mail Analytics And Data Mining Challenge</title>
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Simple
+Designer: Blogger
+URL:      www.blogger.com
+----------------------------------------------- */
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 16px 'Trebuchet MS', Trebuchet, Verdana, sans-serif;
+color: #666666;
+background: #ffffff none repeat scroll top left;
+padding: 0 0 0 0;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+h2 {
+font-size: 22px;
+}
+a:link {
+text-decoration:none;
+color: #2288bb;
+}
+a:visited {
+text-decoration:none;
+color: #888888;
+}
+a:hover {
+text-decoration:underline;
+color: #33aaff;
+}
+.body-fauxcolumn-outer .fauxcolumn-inner {
+background: transparent none repeat scroll top left;
+_background-image: none;
+}
+.body-fauxcolumn-outer .cap-top {
+position: absolute;
+z-index: 1;
+height: 400px;
+width: 100%;
+}
+.body-fauxcolumn-outer .cap-top .cap-left {
+width: 100%;
+background: transparent none repeat-x scroll top left;
+_background-image: none;
+}
+.content-outer {
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 0 #333333;
+box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+margin-bottom: 1px;
+}
+.content-inner {
+padding: 10px 40px;
+}
+.content-inner {
+background-color: #ffffff;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+background: transparent none repeat-x scroll 0 -400px;
+_background-image: none;
+}
+.Header h1 {
+font: normal normal 40px 'Trebuchet MS',Trebuchet,Verdana,sans-serif;
+color: #000000;
+text-shadow: 0 0 0 rgba(0, 0, 0, .2);
+}
+.Header h1 a {
+color: #000000;
+}
+.Header .description {
+font-size: 18px;
+color: #000000;
+}
+.header-inner .Header .titlewrapper {
+padding: 22px 0;
+}
+.header-inner .Header .descriptionwrapper {
+padding: 0 0;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner .section:first-child {
+border-top: 0 solid #dddddd;
+}
+.tabs-inner .section:first-child ul {
+margin-top: -1px;
+border-top: 1px solid #dddddd;
+border-left: 1px solid #dddddd;
+border-right: 1px solid #dddddd;
+}
+.tabs-inner .widget ul {
+background: transparent none repeat-x scroll 0 -800px;
+_background-image: none;
+border-bottom: 1px solid #dddddd;
+margin-top: 0;
+margin-left: -30px;
+margin-right: -30px;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .6em 1em;
+font: normal normal 12px 'Trebuchet MS', Trebuchet, Verdana, sans-serif;
+color: #000000;
+border-left: 1px solid #ffffff;
+border-right: 1px solid #dddddd;
+}
+.tabs-inner .widget li:first-child a {
+border-left: none;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+color: #000000;
+background-color: #eeeeee;
+text-decoration: none;
+}
+/* Columns
+----------------------------------------------- */
+.main-outer {
+border-top: 0 solid transparent;
+}
+.fauxcolumn-left-outer .fauxcolumn-inner {
+border-right: 1px solid transparent;
+}
+.fauxcolumn-right-outer .fauxcolumn-inner {
+border-left: 1px solid transparent;
+}
+/* Headings
+----------------------------------------------- */
+div.widget > h2,
+div.widget h2.title {
+margin: 0 0 1em 0;
+font: normal bold 11px 'Trebuchet MS',Trebuchet,Verdana,sans-serif;
+color: #000000;
+}
+/* Widgets
+----------------------------------------------- */
+.widget .zippy {
+color: #999999;
+text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+}
+.widget .popular-posts ul {
+list-style: none;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+}
+.date-header span {
+background-color: #bbbbbb;
+color: #ffffff;
+padding: 0.4em;
+letter-spacing: 3px;
+margin: inherit;
+}
+.main-inner {
+padding-top: 35px;
+padding-bottom: 65px;
+}
+.main-inner .column-center-inner {
+padding: 0 0;
+}
+.main-inner .column-center-inner .section {
+margin: 0 1em;
+}
+.post {
+margin: 0 0 45px 0;
+}
+h3.post-title, .comments h4 {
+font: normal normal 22px 'Trebuchet MS',Trebuchet,Verdana,sans-serif;
+margin: .75em 0 0;
+}
+.post-body {
+font-size: 110%;
+line-height: 1.4;
+position: relative;
+}
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
+.BlogList .item-thumbnail img {
+padding: 2px;
+background: #ffffff;
+border: 1px solid #eeeeee;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+}
+.post-body img, .post-body .tr-caption-container {
+padding: 5px;
+}
+.post-body .tr-caption-container {
+color: #666666;
+}
+.post-body .tr-caption-container img {
+padding: 0;
+background: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+}
+.post-header {
+margin: 0 0 1.5em;
+line-height: 1.6;
+font-size: 90%;
+}
+.post-footer {
+margin: 20px -2px 0;
+padding: 5px 10px;
+color: #666666;
+background-color: #eeeeee;
+border-bottom: 1px solid #eeeeee;
+line-height: 1.6;
+font-size: 90%;
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: 1px solid transparent;
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+#comments .avatar-image-container img {
+border: 1px solid #eeeeee;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #999999;
+border-bottom: 1px solid #999999;
+}
+.comments .comment-thread.inline-thread {
+background-color: #eeeeee;
+}
+.comments .continue {
+border-top: 2px solid #999999;
+}
+/* Accents
+---------------------------------------------- */
+.section-columns td.columns-cell {
+border-left: 1px solid transparent;
+}
+.blog-pager {
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/simple/paging_dot.png) repeat-x scroll top center;
+}
+.blog-pager-older-link, .home-link,
+.blog-pager-newer-link {
+background-color: #ffffff;
+padding: 5px;
+}
+.footer-outer {
+border-top: 1px dashed #bbbbbb;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+background-size: auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+.mobile .body-fauxcolumn-outer .cap-top {
+background-size: 100% auto;
+}
+.mobile .content-outer {
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+}
+.mobile .tabs-inner .widget ul {
+margin-left: 0;
+margin-right: 0;
+}
+.mobile .post {
+margin: 0;
+}
+.mobile .main-inner .column-center-inner .section {
+margin: 0;
+}
+.mobile .date-header span {
+padding: 0.1em 10px;
+margin: 0 -10px;
+}
+.mobile h3.post-title {
+margin: 0;
+}
+.mobile .blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.mobile .footer-outer {
+border-top: none;
+}
+.mobile .main-inner, .mobile .footer-inner {
+background-color: #ffffff;
+}
+.mobile-index-contents {
+color: #666666;
+}
+.mobile-link-button {
+background-color: #2288bb;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile .tabs-inner .section:first-child {
+border-top: none;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background-color: #eeeeee;
+color: #000000;
+border-top: 1px solid #dddddd;
+border-bottom: 1px solid #dddddd;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #dddddd;
+}
+
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body {
+min-width: 960px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 960px;
+max-width: 960px;
+_width: 960px;
+}
+.main-inner .columns {
+padding-left: 0;
+padding-right: 310px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0;
+right: 310px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0") -
+parseInt("310px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 310px;
+}
+.main-inner .column-left-outer {
+width: 0;
+right: 100%;
+margin-left: -0;
+}
+.main-inner .column-right-outer {
+width: 310px;
+margin-right: -310px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+body#layout div.add_widget {
+padding: 8px;
+}
+body#layout div.add_widget a {
+margin-left: 32px;
+}
+--></style>
+<script type='text/javascript'>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-668525-1', 'auto', 'blogger');
+        ga('blogger.send', 'pageview');
+      </script>
+<link href='https://www.blogger.com/dyncss/32202893/authorization.css?zx=7731ce74-6008-4324-8aa1-9b7cf6df1521' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyncss/32202893/authorization.css?zx=7731ce74-6008-4324-8aa1-9b7cf6df1521' rel='stylesheet'/></noscript>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+</head>
+<body class='loading variant-simplysimple'>
+<div class='navbar section' id='navbar' name='Navbar'><div class='widget Navbar' data-version='1' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
+<script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: 'https://www.blogger.com/navbar/32202893?po\x3d2827883219638156231\x26origin\x3dhttps://blog.minethatdata.com',
+              where: document.getElementById("navbar-iframe-container"),
+              id: "navbar-iframe"
+          });
+        }
+      });
+    </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div class='body-fauxcolumns'>
+<div class='fauxcolumn-outer body-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content'>
+<div class='content-fauxcolumns'>
+<div class='fauxcolumn-outer content-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content-outer'>
+<div class='content-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left content-fauxborder-left'>
+<div class='fauxborder-right content-fauxborder-right'></div>
+<div class='content-inner'>
+<header>
+<div class='header-outer'>
+<div class='header-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left header-fauxborder-left'>
+<div class='fauxborder-right header-fauxborder-right'></div>
+<div class='region-inner header-inner'>
+<div class='header section' id='header' name='Header'><div class='widget Header' data-version='1' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+<a href='https://blog.minethatdata.com/'>
+Kevin Hillstrom:  MineThatData
+</a>
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>Helping CEOs Understand How Customers Interact With Advertising, Products, Brands, and Channels</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class='header-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</header>
+<div class='tabs-outer'>
+<div class='tabs-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left tabs-fauxborder-left'>
+<div class='fauxborder-right tabs-fauxborder-right'></div>
+<div class='region-inner tabs-inner'>
+<div class='tabs no-items section' id='crosscol' name='Cross-Column'></div>
+<div class='tabs no-items section' id='crosscol-overflow' name='Cross-Column 2'></div>
+</div>
+</div>
+<div class='tabs-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='main-outer'>
+<div class='main-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left main-fauxborder-left'>
+<div class='fauxborder-right main-fauxborder-right'></div>
+<div class='region-inner main-inner'>
+<div class='columns fauxcolumns'>
+<div class='fauxcolumn-outer fauxcolumn-center-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-left-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-right-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class='columns-inner'>
+<div class='column-center-outer'>
+<div class='column-center-inner'>
+<div class='main section' id='main' name='Main'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>March 20, 2008</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='32202893' itemprop='blogId'/>
+<meta content='2827883219638156231' itemprop='postId'/>
+<a name='2827883219638156231'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+The MineThatData E-Mail Analytics And Data Mining Challenge
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-2827883219638156231' itemprop='description articleBody'>
+<span style="font-family:arial;">It is time to find a few smart individuals in the world of e-mail analytics and data mining!  And honestly, what follows is a dataset that you can manipulate using Excel pivot tables, so you don't have to be a data mining wizard, just be clever!<br /><br /><a href="http://www.minethatdata.com/Kevin_Hillstrom_MineThatData_E-MailAnalytics_DataMiningChallenge_2008.03.20.csv">Here is a link to the MineThatData E-Mail Analytics And Data Mining Challenge dataset</a>:  The dataset is in .csv format, and is about the size of a typical mp3 file.  I recommend saving the file to disk, then open the file (read only) in the software tool of your choice.<br /><br />This dataset contains 64,000 customers who last purchased within twelve months.  The customers were involved in an e-mail test.<br /></span><ul  style="font-family:arial;"><li>1/3 were randomly chosen to receive an e-mail campaign featuring Mens merchandise.</li><li>1/3 were randomly chosen to receive an e-mail campaign featuring Womens merchandise.</li><li>1/3 were randomly chosen to not receive an e-mail campaign.</li></ul><span style="font-family:arial;">During a period of two weeks following the e-mail campaign, results were tracked.  Your job is to tell the world if the Mens or Womens e-mail campaign was successful.</span><br /><br /><span style="font-family:arial;">Historical customer attributes at your disposal include:</span><br /><ul  style="font-family:arial;"><li><span style="font-weight: bold; color: rgb(51, 51, 255);">Recency:</span>  Months since last purchase.</li><li><span style="font-weight: bold; color: rgb(51, 51, 255);">History_Segment:</span>  Categorization of dollars spent in the past year.</li><li><span style="font-weight: bold; color: rgb(51, 51, 255);">History:</span>  Actual dollar value spent in the past year.</li><li><span style="font-weight: bold; color: rgb(51, 51, 255);">Mens:</span>  1/0 indicator, 1 = customer purchased Mens merchandise in the past year.</li><li><span style="font-weight: bold; color: rgb(51, 51, 255);">Womens: </span> 1/0 indicator, 1 = customer purchased Womens merchandise in the past year.</li><li><span style="font-weight: bold; color: rgb(51, 51, 255);">Zip_Code: </span> Classifies zip code as Urban, Suburban, or Rural.</li><li><span style="font-weight: bold; color: rgb(51, 51, 255);">Newbie: </span> 1/0 indicator, 1 = New customer in the past twelve months.</li><li><span style="font-weight: bold; color: rgb(51, 51, 255);">Channel: </span> Describes the channels the customer purchased from in the past year.</li></ul><span style="font-family:arial;">Another variable describes the e-mail campaign the customer received:</span><br /><ul  style="font-family:arial;"><li style="font-weight: bold; color: rgb(51, 51, 255);">Segment</li><ul><li>Mens E-Mail</li><li>Womens E-Mail</li><li>No E-Mail</li></ul></ul><span style="font-family:arial;">Finally, we have a series of variables describing activity in the two weeks following delivery of the e-mail campaign:</span><br /><ul face="arial"><li><span style="font-weight: bold; color: rgb(51, 51, 255);">Visit:</span>  1/0 indicator, 1 = Customer visited website in the following two weeks.</li><li><span style="font-weight: bold; color: rgb(51, 51, 255);">Conversion:</span>  1/0 indicator, 1 = Customer purchased merchandise in the following two weeks.</li><li><span style="font-weight: bold; color: rgb(51, 51, 255);">Spend:</span>  Actual dollars spent in the following two weeks.</li></ul><span style="font-family:arial;">Ok, that represents the basics.<br /><br />By April 30, you are encouraged to write a paper that answers the following questions.  Winning submissions will receive a copy of my book, <a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FHillstroms-Multichannel-Forensics-Kevin-Hillstrom%2Fdp%2F0977148955%3Fie%3DUTF8%26s%3Dbooks%26qid%3D1193800984%26sr%3D8-1&amp;tag=httpminethatd-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325">Hillstrom's Multichannel Forensics</a>, currently available at <a href="http://www.forbetterbooks.com/docs/forensics_description.html">ForBetterBooks</a> and <a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FHillstroms-Multichannel-Forensics-Kevin-Hillstrom%2Fdp%2F0977148955%3Fie%3DUTF8%26s%3Dbooks%26qid%3D1193800984%26sr%3D8-1&amp;tag=httpminethatd-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325">Amazon.com</a>.  There's nothing wrong with winning a book valued at $95, is there??<br /><br />I will give away at least one book, and as many as three books, depending upon entries within the following categories:<br /></span><ul face="arial"><li><span style="font-weight: bold;">The E-Mail Blogosphere:</span>  If we get enough entries, I will give away one book to the e-mail blogger who provides the most insightful answer.</li></ul><ul style="font-family: arial;"><li><span style="font-weight: bold;">The Direct Marketing Industry: </span> The best answer among direct marketing and e-mail marketing professionals and e-mail marketing vendors will receive a book.  <span style="font-weight: bold; font-style: italic; color: rgb(51, 51, 255);">In addition, I'll publish well-written and insightful answers received from any qualified e-mail marketing vendor.  In other words, you'll earn an opportunity to advertise for free to the MineThatData community, a community of more than 1,200 subscribers and daily visitors.</span></li></ul><ul style="font-family: arial;"><li><span style="font-weight: bold;">The Data Mining Community:</span>  Data Mining professionals and University students are encouraged to send in entries, with the best-written and most insightful response receiving a free book.</li></ul><span style="font-family:arial;">Here are the questions you are encouraged to answer.</span><br /><ul style="font-family: arial;"><li>Which e-mail campaign performed the best, the Mens version, or the Womens version?<br /></li></ul><ul style="font-family: arial;"><li>How much incremental sales per customer did the Mens version of the e-mail campaign drive?  How much incremental sales per customer did the Womens version of the e-mail campaign drive?<br /></li></ul><ul style="font-family: arial;"><li>If you could only send an e-mail campaign to the best 10,000 customers, which customers would receive the e-mail campaign?  Why?<br /></li></ul><ul style="font-family: arial;"><li>If you had to eliminate 10,000 customers from receiving an e-mail campaign, which customers would you suppress from the campaign?  Why?<br /></li></ul><ul style="font-family: arial;"><li>Did the Mens version of the e-mail campaign perform different than the Womens version of the e-mail campaign, across various customer segments?</li></ul><ul style="font-family: arial;"><li>Did the campaigns perform different when measured across different metrics, like Visitors, Conversion, and Total Spend?</li></ul><ul><li><span style="font-family:arial;">Did you observe any anomalies, or odd findings?</span><br /></li></ul><ul style="font-family: arial;"><li>Which audience would you target the Mens version to, and the Womens version to, given the results of the test?  What data do you have to support your recommendation?</li></ul><span style="font-family:arial;"><a href="mailto:kevinh@minethatdata.com">E-mail your responses to me</a> by <span style="font-weight: bold; color: rgb(0, 153, 0);">11:59pm on Wednesday, April 30, 2008</span>.  Good luck, and have fun analyzing the information!  Dazzle our readers with your insights --- feel free to share your findings in the comments section of this post.</span>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+</span>
+<span class='post-timestamp'>
+-
+<meta content='https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html' itemprop='url'/>
+<a class='timestamp-link' href='https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2008-03-20T19:05:00-07:00'>March 20, 2008</abbr></a>
+</span>
+<span class='post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='https://www.blogger.com/email-post/32202893/2827883219638156231' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='https://resources.blogblog.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+<span class='item-control blog-admin pid-142275918'>
+<a href='https://www.blogger.com/post-edit.g?blogID=32202893&postID=2827883219638156231&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='https://www.blogger.com/share-post/32202893/2827883219638156231?https=true&target=email' target='_blank' title='Email This'><span class='share-button-link-text'>Email This</span></a><a class='goog-inline-block share-button sb-blog' href='https://www.blogger.com/share-post/32202893/2827883219638156231?https=true&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='https://www.blogger.com/share-post/32202893/2827883219638156231?https=true&target=twitter' target='_blank' title='Share to X'><span class='share-button-link-text'>Share to X</span></a><a class='goog-inline-block share-button sb-facebook' href='https://www.blogger.com/share-post/32202893/2827883219638156231?https=true&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'><span class='share-button-link-text'>Share to Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='https://www.blogger.com/share-post/32202893/2827883219638156231?https=true&target=pinterest' target='_blank' title='Share to Pinterest'><span class='share-button-link-text'>Share to Pinterest</span></a>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='https://blog.minethatdata.com/search/label/Data%20Mining%20Challenge' rel='tag'>Data Mining Challenge</a>,
+<a href='https://blog.minethatdata.com/search/label/E-Mail%20Analytics' rel='tag'>E-Mail Analytics</a>,
+<a href='https://blog.minethatdata.com/search/label/MineThatData' rel='tag'>MineThatData</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<h4>4 comments:</h4>
+<div class='comments-content'>
+<script async='async' src='' type='text/javascript'></script>
+<script type='text/javascript'>
+    (function() {
+      var items = null;
+      var msgs = null;
+      var config = {};
+
+// <![CDATA[
+      var cursor = null;
+      if (items && items.length > 0) {
+        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+      }
+
+      var bodyFromEntry = function(entry) {
+        var text = (entry &&
+                    ((entry.content && entry.content.$t) ||
+                     (entry.summary && entry.summary.$t))) ||
+            '';
+        if (entry && entry.gd$extendedProperty) {
+          for (var k in entry.gd$extendedProperty) {
+            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+              return '<span class="deleted-comment">' + text + '</span>';
+            }
+          }
+        }
+        return text;
+      }
+
+      var parse = function(data) {
+        cursor = null;
+        var comments = [];
+        if (data && data.feed && data.feed.entry) {
+          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+            var comment = {};
+            // comment ID, parsed out of the original id format
+            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+            comment.id = id ? id[2] : null;
+            comment.body = bodyFromEntry(entry);
+            comment.timestamp = Date.parse(entry.published.$t) + '';
+            if (entry.author && entry.author.constructor === Array) {
+              var auth = entry.author[0];
+              if (auth) {
+                comment.author = {
+                  name: (auth.name ? auth.name.$t : undefined),
+                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                };
+              }
+            }
+            if (entry.link) {
+              if (entry.link[2]) {
+                comment.link = comment.permalink = entry.link[2].href;
+              }
+              if (entry.link[3]) {
+                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                if (pid && pid[1]) {
+                  comment.parentId = pid[1];
+                }
+              }
+            }
+            comment.deleteclass = 'item-control blog-admin';
+            if (entry.gd$extendedProperty) {
+              for (var k in entry.gd$extendedProperty) {
+                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                }
+              }
+            }
+            comments.push(comment);
+          }
+        }
+        return comments;
+      };
+
+      var paginator = function(callback) {
+        if (hasMore()) {
+          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+          if (cursor) {
+            url += '&published-min=' + new Date(cursor).toISOString();
+          }
+          window.bloggercomments = function(data) {
+            var parsed = parse(data);
+            cursor = parsed.length < 50 ? null
+                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+            callback(parsed);
+            window.bloggercomments = null;
+          }
+          url += '&callback=bloggercomments';
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      };
+      var hasMore = function() {
+        return !!cursor;
+      };
+      var getMeta = function(key, comment) {
+        if ('iswriter' == key) {
+          var matches = !!comment.author
+              && comment.author.name == config.authorName
+              && comment.author.profileUrl == config.authorUrl;
+          return matches ? 'true' : '';
+        } else if ('deletelink' == key) {
+          return config.baseUri + '/comment/delete/'
+               + config.blogId + '/' + comment.id;
+        } else if ('deleteclass' == key) {
+          return comment.deleteclass;
+        }
+        return '';
+      };
+
+      var replybox = null;
+      var replyUrlParts = null;
+      var replyParent = undefined;
+
+      var onReply = function(commentId, domId) {
+        if (replybox == null) {
+          // lazily cache replybox, and adjust to suit this style:
+          replybox = document.getElementById('comment-editor');
+          if (replybox != null) {
+            replybox.height = '250px';
+            replybox.style.display = 'block';
+            replyUrlParts = replybox.src.split('#');
+          }
+        }
+        if (replybox && (commentId !== replyParent)) {
+          replybox.src = '';
+          document.getElementById(domId).insertBefore(replybox, null);
+          replybox.src = replyUrlParts[0]
+              + (commentId ? '&parentID=' + commentId : '')
+              + '#' + replyUrlParts[1];
+          replyParent = commentId;
+        }
+      };
+
+      var hash = (window.location.hash || '#').substring(1);
+      var startThread, targetComment;
+      if (/^comment-form_/.test(hash)) {
+        startThread = hash.substring('comment-form_'.length);
+      } else if (/^c[0-9]+$/.test(hash)) {
+        targetComment = hash.substring(1);
+      }
+
+      // Configure commenting API:
+      var configJso = {
+        'maxDepth': config.maxThreadDepth
+      };
+      var provider = {
+        'id': config.postId,
+        'data': items,
+        'loadNext': paginator,
+        'hasMore': hasMore,
+        'getMeta': getMeta,
+        'onReply': onReply,
+        'rendered': true,
+        'initComment': targetComment,
+        'initReplyThread': startThread,
+        'config': configJso,
+        'messages': msgs
+      };
+
+      var render = function() {
+        if (window.goog && window.goog.comments) {
+          var holder = document.getElementById('comment-holder');
+          window.goog.comments.render(holder, provider);
+        }
+      };
+
+      // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
+    })();
+// ]]>
+  </script>
+<div id='comment-holder'>
+<div class="comment-thread toplevel-thread"><ol id="top-ra"><li class="comment" id="c8897533850845570995"><div class="avatar-image-container"><img src="//www.blogger.com/img/blogger_logo_round_35.png" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/03101229542067527299" rel="nofollow">Pavel</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html?showComment=1452841627858#c8897533850845570995">11:07 PM</a></span></div><p class="comment-content">Big thanks from snowy Russia for this data set!</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="8897533850845570995">Reply</a><span class="item-control blog-admin blog-admin pid-79653964"><a target="_self" href="https://www.blogger.com/comment/delete/32202893/8897533850845570995">Delete</a></span></span></div><div class="comment-replies"><div id="c8897533850845570995-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Replies</a></span></span><ol id="c8897533850845570995-ra" class="thread-chrome thread-expanded"><div></div><div id="c8897533850845570995-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="8897533850845570995">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c8897533850845570995-ce"></div></li><li class="comment" id="c8611598326306146819"><div class="avatar-image-container"><img src="//www.blogger.com/img/blogger_logo_round_35.png" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/03716413406441137261" rel="nofollow">Unknown</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html?showComment=1458579244750#c8611598326306146819">9:54 AM</a></span></div><p class="comment-content">I was planning on doing this exercise and was curious to see who my answers fared with the winner. Where is the winning paper posted?</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="8611598326306146819">Reply</a><span class="item-control blog-admin blog-admin pid-789867616"><a target="_self" href="https://www.blogger.com/comment/delete/32202893/8611598326306146819">Delete</a></span></span></div><div class="comment-replies"><div id="c8611598326306146819-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Replies</a></span></span><ol id="c8611598326306146819-ra" class="thread-chrome thread-expanded"><div></div><div id="c8611598326306146819-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="8611598326306146819">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c8611598326306146819-ce"></div></li><li class="comment" id="c5610694718500729194"><div class="avatar-image-container"><img src="//www.blogger.com/img/blogger_logo_round_35.png" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/14014200122021988374" rel="nofollow">MineThatData</a></cite><span class="icon user blog-author"></span><span class="datetime secondary-text"><a rel="nofollow" href="https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html?showComment=1458838829601#c5610694718500729194">10:00 AM</a></span></div><p class="comment-content">http://blog.minethatdata.com/2008/05/best-answer-e-mail-analytics-challenge.html</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="5610694718500729194">Reply</a><span class="item-control blog-admin blog-admin pid-142275918"><a target="_self" href="https://www.blogger.com/comment/delete/32202893/5610694718500729194">Delete</a></span></span></div><div class="comment-replies"><div id="c5610694718500729194-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Replies</a></span></span><ol id="c5610694718500729194-ra" class="thread-chrome thread-expanded"><div></div><div id="c5610694718500729194-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="5610694718500729194">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c5610694718500729194-ce"></div></li><li class="comment" id="c1198202253248107047"><div class="avatar-image-container"><img src="//www.blogger.com/img/blogger_logo_round_35.png" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/02349201946670312332" rel="nofollow">farnandas</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html?showComment=1460841970469#c1198202253248107047">2:26 PM</a></span></div><p class="comment-content">Nice post. </p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="1198202253248107047">Reply</a><span class="item-control blog-admin blog-admin pid-1003667246"><a target="_self" href="https://www.blogger.com/comment/delete/32202893/1198202253248107047">Delete</a></span></span></div><div class="comment-replies"><div id="c1198202253248107047-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Replies</a></span></span><ol id="c1198202253248107047-ra" class="thread-chrome thread-expanded"><div></div><div id="c1198202253248107047-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="1198202253248107047">Reply</a></div></ol></div></div><div class="comment-replybox-single" id="c1198202253248107047-ce"></div></li></ol><div id="top-continue" class="continue"><a class="comment-reply" target="_self">Add comment</a></div><div class="comment-replybox-thread" id="top-ce"></div><div class="loadmore hidden" data-post-id="2827883219638156231"><a target="_self">Load more...</a></div></div>
+</div>
+</div>
+<p class='comment-footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<p>
+</p>
+<p>Note: Only a member of this blog may post a comment.</p>
+<a href='https://www.blogger.com/comment/frame/32202893?po=2827883219638156231&hl=en&saa=85391&origin=https://blog.minethatdata.com' id='comment-editor-src'></a>
+<iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410px' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+<script src='https://www.blogger.com/static/v1/jsbin/1815367283-comment_from_post_iframe.js' type='text/javascript'></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+    </script>
+</div>
+</p>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='https://blog.minethatdata.com/2008/03/customer-modeling.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='https://blog.minethatdata.com/2008/03/profit-week-prospect-catalogs-and-page.html' id='Blog1_blog-pager-older-link' title='Older Post'>Older Post</a>
+</span>
+<a class='home-link' href='https://blog.minethatdata.com/'>Home</a>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='https://blog.minethatdata.com/feeds/2827883219638156231/comments/default' target='_blank' type='application/atom+xml'>Post Comments (Atom)</a>
+</div>
+</div>
+</div><div class='widget FeaturedPost' data-version='1' id='FeaturedPost1'>
+<div class='post-summary'>
+<h3><a href='https://blog.minethatdata.com/2026/11/gap-year.html'>Gap Year</a></h3>
+<p>
+There&#39;s an election tomorrow. Take advantage of your right to vote. In sports, it is common for coaches to be fired. The LinkedIn crowd ...
+</p>
+</div>
+<style type='text/css'>
+    .image {
+      width: 100%;
+    }
+  </style>
+<div class='clear'></div>
+</div><div class='widget PopularPosts' data-version='1' id='PopularPosts1'>
+<div class='widget-content popular-posts'>
+<ul>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html'>The MineThatData E-Mail Analytics And Data Mining Challenge</a></div>
+<div class='item-snippet'>It is time to find a few smart individuals in the world of e-mail analytics and data mining!  And honestly, what follows is a dataset that y...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='https://blog.minethatdata.com/2015/02/the-co-op-feedback-loop-one-final-time.html'>The Co-Op Feedback Loop - One Final Time</a></div>
+<div class='item-snippet'>It&#39;s the story of 2015 among catalogers.    &quot;Our housefile performance is reasonable, but our co-op customer acquisition efforts ar...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='https://blog.minethatdata.com/2020/11/does-covid-bump-help-you-in-2022.html'>Does The COVID-Bump Help You In 2022?</a></div>
+<div class='item-snippet'>If you are a restaurant in Los Angeles, you don&#39;t get a COVID-Bump. You get to be closed, with no assistance from anybody. Good luck!! B...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+</ul>
+<div class='clear'></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class='column-left-outer'>
+<div class='column-left-inner'>
+<aside>
+</aside>
+</div>
+</div>
+<div class='column-right-outer'>
+<div class='column-right-inner'>
+<aside>
+<div class='sidebar section' id='sidebar-right-1'><div class='widget PageList' data-version='1' id='PageList1'>
+<h2>Hire Kevin - Costs &amp; File Layouts</h2>
+<div class='widget-content'>
+<ul>
+<li>
+<a href='https://blog.minethatdata.com/p/hire-kevin.html'>Hire Kevin!</a>
+</li>
+</ul>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' data-version='1' id='HTML1'>
+<div class='widget-content'>
+<h2 class="sidebar-title">Subscribe Via E-Mail (I publish 5 Days A Week)</h2>
+      <form action="http://www.feedblitz.com/f/f.fbz?AddNewUserDirect" method="POST">
+      Enter Your E-mail Address<br /><input maxlength="255" value="" name="EMAIL" size="30" type="text" /><br />
+      <input value="62297" name="FEEDID" type="hidden" />
+      <input value="Subscribe Me!" type="submit" />
+      <br /><a href="http://www.feedblitz.com/f?previewfeed=62297">Preview</a> | Powered by <a href="http://www.feedblitz.com">FeedBlitz</a></form>
+</div>
+<div class='clear'></div>
+</div><div class='widget HTML' data-version='1' id='HTML2'>
+<h2 class='title'>Subscribe To MineThatData Updates</h2>
+<div class='widget-content'>
+<a href="http://feeds2.feedburner.com/MineThatData" rel="alternate" title="Subscribe To The MineThatData Blog" type="application/rss+xml"><img alt="" style="border:0" src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_txFlYX4DqRXxESCU3AsQk_FRxbzM6TaiMhYJHnyZRGiA3OTy4bcLFVdO1j1eG3i-X8B1JMWF5ATNDCqL-gXDR-f572U5cBu30mHpebIFccxC2vLDT6n83_rTlUzw=s0-d"></a><a href="http://feeds2.feedburner.com/MineThatData" rel="alternate" title="Subscribe To The MineThatData Blog" type="application/rss+xml">Subscribe Via A Reader</a>
+</div>
+<div class='clear'></div>
+</div><div class='widget Text' data-version='1' id='Text1'>
+<h2 class='title'>Kevin Hillstrom, President, MineThatData</h2>
+<div class='widget-content'>
+Kevin is President of MineThatData, a consultancy that helps CEOs understand the complex relationship between Customers, Advertising, Products, Brands, and Channels.  Kevin supports a diverse set of clients, including <span style="color: #3333ff; font-weight: bold;">internet startups</span>, <span style="color: #3333ff; font-weight: bold;">thirty million dollar catalog merchants, international brands, </span>and <span style="color: #3333ff; font-weight: bold;">billion dollar multichannel retailers</span>.  Kevin is frequently quoted in the mainstream media, including the New York Times, Boston Globe, and Forbes Magazine.<br /><br />Prior to founding <a href="http://minethatdata.com/" style="font-weight: normal;">MineThatData</a>, Kevin held various roles at leading multichannel brands, including Vice President of Database Marketing at <span style="font-weight: bold;">Nordstrom</span>, Director of Circulation at <span style="font-weight: bold;">Eddie Bauer</span>, and Manager of Analytical Services at <span style="font-weight: bold;">Lands' End</span>.<br /><div style="font-weight: normal;"><br /></div><div style="font-weight: normal;">You may contact kevin at kevinh@minethatdata.com.</div><div style="font-weight: normal;"><br /></div><div style="font-weight: normal;"><br /></div><div><b>How Is Your Information Used?</b></div><div style="font-weight: normal;"><br /></div><div style="font-weight: normal;">When you subscribe to this blog, your information and email address will never be bought/sold. Ever. You are simply subscribing to the newsletter. You are welcome to unsubscribe at any time, no worries.</div><div style="font-weight: normal;"><br /></div><div style="font-weight: normal;">Cookies are used to measure website usage via Google Analytics and StatCounter.</div>
+</div>
+<div class='clear'></div>
+</div><div class='widget LinkList' data-version='1' id='LinkList1'>
+<h2>Important MineThatData Resources</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://blog.minethatdata.com/p/hire-kevin.html'>Hire Kevin For A Project: Project Cost and File Format Information</a></li>
+<li><a href='http://twitter.com/minethatdata'>Kevin on Twitter</a></li>
+<li><a href='http://blog.minethatdata.com/2013/12/project-endorsement-from-dancewear.html'>Recommendation: Dancewear Solutions</a></li>
+<li><a href='http://www.marketingsherpa.com/article.php?ident=31529#'>Marketing Sherpa: Paul Fredrick Catalog PhD Project</a></li>
+<li><a href='http://www.linkedin.com/profile/view?id=10287365&trk=nav_responsive_tab_profile'>My Biography via LinkedIn</a></li>
+<li><a href='http://blog.minethatdata.com/2015/02/the-co-op-feedback-loop-one-final-time.html'>Post: The Co-Op Feedback Loop (For Catalogers)</a></li>
+</ul>
+<div class='clear'></div>
+</div>
+</div><div class='widget BlogSearch' data-version='1' id='BlogSearch1'>
+<h2 class='title'>Search This Blog</h2>
+<div class='widget-content'>
+<div id='BlogSearch1_form'>
+<form action='https://blog.minethatdata.com/search' class='gsc-search-box' target='_top'>
+<table cellpadding='0' cellspacing='0' class='gsc-search-box'>
+<tbody>
+<tr>
+<td class='gsc-input'>
+<input autocomplete='off' class='gsc-input' name='q' size='10' title='search' type='text' value=''/>
+</td>
+<td class='gsc-search-button'>
+<input class='gsc-search-button' title='search' type='submit' value='Search'/>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+</div>
+<div class='clear'></div>
+</div><div class='widget Image' data-version='1' id='Image1'>
+<h2>Kevin Hillstrom</h2>
+<div class='widget-content'>
+<img alt='Kevin Hillstrom' class='image-widget-shrink-to-fit' height='222' id='Image1_img' loading='lazy' sizes='auto, 100vw' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggL8HjTny-w9ztTaKlK7SD99FXke1jP7NsXWXPzvN96mzz6xDYCx8nzULpB84i0jUJk6Pkg2avVCuxJOMpPMpoIX5KsKc3BXqX2ix870E-vkuIQHbybSKV2VBvFesdc_mO-ccp/s296/Kevin_Hillstrom_MineThatData_HeadShot.JPG' srcset='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggL8HjTny-w9ztTaKlK7SD99FXke1jP7NsXWXPzvN96mzz6xDYCx8nzULpB84i0jUJk6Pkg2avVCuxJOMpPMpoIX5KsKc3BXqX2ix870E-vkuIQHbybSKV2VBvFesdc_mO-ccp/s72/Kevin_Hillstrom_MineThatData_HeadShot.JPG 72w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggL8HjTny-w9ztTaKlK7SD99FXke1jP7NsXWXPzvN96mzz6xDYCx8nzULpB84i0jUJk6Pkg2avVCuxJOMpPMpoIX5KsKc3BXqX2ix870E-vkuIQHbybSKV2VBvFesdc_mO-ccp/s128/Kevin_Hillstrom_MineThatData_HeadShot.JPG 128w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggL8HjTny-w9ztTaKlK7SD99FXke1jP7NsXWXPzvN96mzz6xDYCx8nzULpB84i0jUJk6Pkg2avVCuxJOMpPMpoIX5KsKc3BXqX2ix870E-vkuIQHbybSKV2VBvFesdc_mO-ccp/s220/Kevin_Hillstrom_MineThatData_HeadShot.JPG 220w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggL8HjTny-w9ztTaKlK7SD99FXke1jP7NsXWXPzvN96mzz6xDYCx8nzULpB84i0jUJk6Pkg2avVCuxJOMpPMpoIX5KsKc3BXqX2ix870E-vkuIQHbybSKV2VBvFesdc_mO-ccp/s400/Kevin_Hillstrom_MineThatData_HeadShot.JPG 400w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggL8HjTny-w9ztTaKlK7SD99FXke1jP7NsXWXPzvN96mzz6xDYCx8nzULpB84i0jUJk6Pkg2avVCuxJOMpPMpoIX5KsKc3BXqX2ix870E-vkuIQHbybSKV2VBvFesdc_mO-ccp/s640/Kevin_Hillstrom_MineThatData_HeadShot.JPG 640w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggL8HjTny-w9ztTaKlK7SD99FXke1jP7NsXWXPzvN96mzz6xDYCx8nzULpB84i0jUJk6Pkg2avVCuxJOMpPMpoIX5KsKc3BXqX2ix870E-vkuIQHbybSKV2VBvFesdc_mO-ccp/s800/Kevin_Hillstrom_MineThatData_HeadShot.JPG 800w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggL8HjTny-w9ztTaKlK7SD99FXke1jP7NsXWXPzvN96mzz6xDYCx8nzULpB84i0jUJk6Pkg2avVCuxJOMpPMpoIX5KsKc3BXqX2ix870E-vkuIQHbybSKV2VBvFesdc_mO-ccp/s1024/Kevin_Hillstrom_MineThatData_HeadShot.JPG 1024w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggL8HjTny-w9ztTaKlK7SD99FXke1jP7NsXWXPzvN96mzz6xDYCx8nzULpB84i0jUJk6Pkg2avVCuxJOMpPMpoIX5KsKc3BXqX2ix870E-vkuIQHbybSKV2VBvFesdc_mO-ccp/s1280/Kevin_Hillstrom_MineThatData_HeadShot.JPG 1280w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggL8HjTny-w9ztTaKlK7SD99FXke1jP7NsXWXPzvN96mzz6xDYCx8nzULpB84i0jUJk6Pkg2avVCuxJOMpPMpoIX5KsKc3BXqX2ix870E-vkuIQHbybSKV2VBvFesdc_mO-ccp/s1600/Kevin_Hillstrom_MineThatData_HeadShot.JPG 1600w' width='296'>
+</img>
+<br/>
+</div>
+<div class='clear'></div>
+<style type='text/css'>
+      .image-widget-shrink-to-fit {
+        max-width: 100%;
+        height: auto;
+        object-fit: scale-down;
+      }
+    </style>
+</div><div class='widget Image' data-version='1' id='Image2'>
+<h2>Purchase Hillstrom's Total Package</h2>
+<div class='widget-content'>
+<a href='https://www.amazon.com/Hillstroms-Total-Package-Marketing-Management-ebook/dp/B07J9QWSNN/ref=sr_1_1?ie=UTF8&qid=1539878173&sr=8-1&keywords=hillstrom%27s+total+package'>
+<img alt='Purchase Hillstrom&#39;s Total Package' class='image-widget-shrink-to-fit' height='453' id='Image2_img' src='https://images-na.ssl-images-amazon.com/images/I/513%2BkyAKm9L.jpg' width='302'>
+</img>
+</a>
+<br/>
+<span class='caption'>A Simple Framework for the New Marketing Leader</span>
+</div>
+<div class='clear'></div>
+<style type='text/css'>
+      .image-widget-shrink-to-fit {
+        max-width: 100%;
+        height: auto;
+        object-fit: scale-down;
+      }
+    </style>
+</div><div class='widget BlogArchive' data-version='1' id='BlogArchive1'>
+<h2>A History Of The MineThatData Blog</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2026/'>
+2026
+</a>
+<span class='post-count' dir='ltr'>(213)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2026/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2026/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2026/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2026/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2026/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2026/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2026/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2026/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2026/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(25)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2026/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2026/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2025/'>
+2025
+</a>
+<span class='post-count' dir='ltr'>(248)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2025/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2025/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2025/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2025/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2025/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2025/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2025/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2025/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2025/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2025/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2025/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2025/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2024/'>
+2024
+</a>
+<span class='post-count' dir='ltr'>(242)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2024/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2024/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2024/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2024/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2024/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2024/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2024/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2024/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2024/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2024/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2024/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2024/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2023/'>
+2023
+</a>
+<span class='post-count' dir='ltr'>(230)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2023/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2023/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2023/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2023/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2023/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2023/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2023/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2023/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2023/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2023/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2023/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2023/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2022/'>
+2022
+</a>
+<span class='post-count' dir='ltr'>(236)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2022/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2022/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2022/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2022/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2022/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2022/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2022/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2022/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2022/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2022/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2022/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2022/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2021/'>
+2021
+</a>
+<span class='post-count' dir='ltr'>(237)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2021/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2021/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2021/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2021/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2021/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2021/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2021/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2021/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2021/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2021/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2021/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2021/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2020/'>
+2020
+</a>
+<span class='post-count' dir='ltr'>(238)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2020/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2020/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2020/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2020/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2020/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2020/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(14)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2020/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2020/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2020/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2020/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2020/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2020/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2019/'>
+2019
+</a>
+<span class='post-count' dir='ltr'>(234)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2019/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2019/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2019/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2019/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2019/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2019/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2019/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(14)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2019/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2019/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2019/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2019/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2019/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2018/'>
+2018
+</a>
+<span class='post-count' dir='ltr'>(241)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2018/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2018/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2018/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2018/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2018/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2018/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2018/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(13)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2018/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2018/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2018/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2018/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2018/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2017/'>
+2017
+</a>
+<span class='post-count' dir='ltr'>(291)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2017/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2017/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2017/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2017/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2017/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(27)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2017/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2017/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2017/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(28)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2017/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2017/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2017/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2017/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(27)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2016/'>
+2016
+</a>
+<span class='post-count' dir='ltr'>(289)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2016/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2016/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2016/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2016/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2016/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(25)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2016/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2016/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(25)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2016/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(25)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2016/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2016/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2016/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2016/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2015/'>
+2015
+</a>
+<span class='post-count' dir='ltr'>(304)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2015/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(25)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2015/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(28)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2015/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2015/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2015/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(27)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2015/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2015/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(28)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2015/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2015/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2015/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2015/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2015/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(32)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2014/'>
+2014
+</a>
+<span class='post-count' dir='ltr'>(281)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2014/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2014/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2014/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2014/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2014/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2014/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2014/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2014/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2014/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(29)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2014/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(25)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2014/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2014/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2013/'>
+2013
+</a>
+<span class='post-count' dir='ltr'>(287)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2013/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2013/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2013/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2013/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2013/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2013/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2013/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2013/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2013/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2013/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(27)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2013/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2013/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(29)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2012/'>
+2012
+</a>
+<span class='post-count' dir='ltr'>(246)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2012/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2012/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2012/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2012/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2012/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2012/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2012/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2012/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2012/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(28)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2012/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2012/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2012/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2011/'>
+2011
+</a>
+<span class='post-count' dir='ltr'>(265)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2011/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(27)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2011/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2011/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2011/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2011/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2011/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2011/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2011/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2011/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(25)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2011/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(29)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2011/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2011/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(27)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2010/'>
+2010
+</a>
+<span class='post-count' dir='ltr'>(273)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2010/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(25)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2010/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2010/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2010/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2010/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2010/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2010/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2010/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2010/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(25)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2010/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2010/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2010/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(25)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2009/'>
+2009
+</a>
+<span class='post-count' dir='ltr'>(358)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2009/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2009/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(28)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2009/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2009/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(27)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2009/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2009/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2009/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2009/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(27)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2009/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(39)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2009/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(43)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2009/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(34)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2009/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(41)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>
+
+        &#9660;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2008/'>
+2008
+</a>
+<span class='post-count' dir='ltr'>(481)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2008/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(43)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2008/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(43)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2008/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(50)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2008/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(41)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2008/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(43)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2008/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(35)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2008/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(34)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2008/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(42)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2008/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(39)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2008/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(35)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2008/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(39)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2008/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(37)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2007/'>
+2007
+</a>
+<span class='post-count' dir='ltr'>(438)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2007/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(34)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2007/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(38)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2007/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(34)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2007/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(34)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2007/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(35)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2007/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(44)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2007/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(29)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2007/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(40)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2007/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(37)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2007/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(36)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2007/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(35)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2007/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(42)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://blog.minethatdata.com/2006/'>
+2006
+</a>
+<span class='post-count' dir='ltr'>(190)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2006/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(42)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2006/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(46)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2006/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(38)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2006/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(28)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='post-count-link' href='https://blog.minethatdata.com/2006/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(36)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+</div>
+</div></div>
+<table border='0' cellpadding='0' cellspacing='0' class='section-columns columns-2'>
+<tbody>
+<tr>
+<td class='first columns-cell'>
+<div class='sidebar section' id='sidebar-right-2-1'><div class='widget HTML' data-version='1' id='HTML4'>
+<h2 class='title'>StatCounter</h2>
+<div class='widget-content'>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10448513; 
+var sc_invisible=1; 
+var sc_security="981d4ace"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify
+analytics ecommerce" href="http://statcounter.com/shopify/"
+target="_blank"><img class="statcounter" src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_ua0CkAKAKDdTMuz1hgu2bvY4D9Py3YX3OXHLPg1VFKpf4CmKcmQdfV3bPpVkf2PRAbIRT3KTN4Azk87cm2Uv8xiYzhuE7JjvNK4hvfTb6slk3d=s0-d" alt="shopify analytics ecommerce"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</div>
+<div class='clear'></div>
+</div></div>
+</td>
+<td class='columns-cell'>
+<div class='sidebar section' id='sidebar-right-2-2'><div class='widget HTML' data-version='1' id='HTML3'>
+<div class='widget-content'>
+<script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-668525-1";
+urchinTracker();
+</script>
+</div>
+<div class='clear'></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='sidebar section' id='sidebar-right-3'><div class='widget Text' data-version='1' id='Text2'>
+<h2 class='title'>FAQ For Vendors / Content Providers</h2>
+<div class='widget-content'>
+1 - I do not accept advertising on this blog.<div><br/></div><div>2 - I do not accept unsolicited content, including interviews, press releases, podcasts, discussions, posts, or other associated content promoting your products, services, or events.  This blog is designed to promote my products, services, and content.</div><div><br/></div><div>3 - As a continuation of (2), I do not accept guest blog posts, regardless of your situation.  And I will not link to your blog post or white paper.</div><div><br/></div><div>4 - I do not exchange links.  In fact, I no longer publish reciprocal links to other websites.</div>
+</div>
+<div class='clear'></div>
+</div></div>
+</aside>
+</div>
+</div>
+</div>
+<div style='clear: both'></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class='main-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<footer>
+<div class='footer-outer'>
+<div class='footer-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left footer-fauxborder-left'>
+<div class='fauxborder-right footer-fauxborder-right'></div>
+<div class='region-inner footer-inner'>
+<div class='foot no-items section' id='footer-1'></div>
+<table border='0' cellpadding='0' cellspacing='0' class='section-columns columns-2'>
+<tbody>
+<tr>
+<td class='first columns-cell'>
+<div class='foot no-items section' id='footer-2-1'></div>
+</td>
+<td class='columns-cell'>
+<div class='foot no-items section' id='footer-2-2'></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class='foot section' id='footer-3' name='Footer'><div class='widget Attribution' data-version='1' id='Attribution1'>
+<div class='widget-content' style='text-align: center;'>
+Kevin Hillstrom, President, MineThatData. Simple theme. Powered by <a href='https://www.blogger.com' target='_blank'>Blogger</a>.
+</div>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<div class='footer-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class='content-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<script type='text/javascript'>
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/207833187-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AKZvMzu09dGkYC3wooRdPuG2QiTq:1793700594394';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d32202893','//blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html','32202893');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '32202893', 'title': 'Kevin Hillstrom:  MineThatData', 'url': 'https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html', 'canonicalUrl': 'https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html', 'homepageUrl': 'https://blog.minethatdata.com/', 'searchUrl': 'https://blog.minethatdata.com/search', 'canonicalHomepageUrl': 'https://blog.minethatdata.com/', 'blogspotFaviconUrl': 'https://blog.minethatdata.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': true, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': 'UA-668525-1', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Kevin Hillstrom:  MineThatData - Atom\x22 href\x3d\x22https://blog.minethatdata.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Kevin Hillstrom:  MineThatData - RSS\x22 href\x3d\x22https://blog.minethatdata.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Kevin Hillstrom:  MineThatData - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/32202893/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Kevin Hillstrom:  MineThatData - Atom\x22 href\x3d\x22https://blog.minethatdata.com/feeds/2827883219638156231/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'boqCommentIframeForm': true, 'loginRedirectParam': '', 'isGoogleEverywhereLinkTooltipEnabled': true, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/de67cdcffbc8a898', 'plusOneApiSrc': 'https://apis.google.com/js/platform.js', 'disableGComments': true, 'interstitialAccepted': false, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'X', 'key': 'twitter', 'shareMessage': 'Share to X', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'item', 'postId': '2827883219638156231', 'pageName': 'The MineThatData E-Mail Analytics And Data Mining Challenge', 'pageTitle': 'Kevin Hillstrom:  MineThatData: The MineThatData E-Mail Analytics And Data Mining Challenge', 'metaDescription': ''}}, {'name': 'features', 'data': {}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'Simple', 'localizedName': 'Simple', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': false, 'variant': 'simplysimple', 'variantId': 'simplysimple'}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'The MineThatData E-Mail Analytics And Data Mining Challenge', 'description': 'Database Marketing, Data Mining, Analytics, Big Data, Forecasting, Segmentation, Predictive Modeling, Measurement, Catalog, Business', 'url': 'https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 2827883219638156231}}]);
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/2554106989-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/828616780-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FeaturedPostView', new _WidgetInfo('FeaturedPost1', 'main', document.getElementById('FeaturedPost1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'main', document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'sidebar-right-1', document.getElementById('PageList1'), {'title': 'Hire Kevin - Costs \x26amp; File Layouts', 'links': [{'isCurrentPage': false, 'href': 'https://blog.minethatdata.com/p/hire-kevin.html', 'id': '6735321253375876541', 'title': 'Hire Kevin!'}], 'mobile': false, 'showPlaceholder': true, 'hasCurrentPage': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar-right-1', document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar-right-1', document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_TextView', new _WidgetInfo('Text1', 'sidebar-right-1', document.getElementById('Text1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'sidebar-right-1', document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch1', 'sidebar-right-1', document.getElementById('BlogSearch1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image1', 'sidebar-right-1', document.getElementById('Image1'), {'resize': true}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image2', 'sidebar-right-1', document.getElementById('Image2'), {'resize': true}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-right-1', document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Loading\x26hellip;'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'sidebar-right-2-1', document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebar-right-2-2', document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_TextView', new _WidgetInfo('Text2', 'sidebar-right-3', document.getElementById('Text2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', document.getElementById('Attribution1'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>

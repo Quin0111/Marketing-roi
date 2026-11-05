@@ -1,0 +1,28 @@
+[
+  {
+    "file": "lazada_data_license.txt",
+    "url": "https://raw.githubusercontent.com/kailiang-zhong/DESCN/80fd11e02d05af241eeaf67d701be599da528cb1/data/Lazada_dataset/LICENSE",
+    "status": "PASS",
+    "sha256": "3ae95b8e3fa8f3cae1af3c44274586179e7dda9f3cddba6bc7565d249c7cc7a3",
+    "bytes": 1713
+  },
+  {
+    "file": "lazada_data_readme.md",
+    "url": "https://raw.githubusercontent.com/kailiang-zhong/DESCN/80fd11e02d05af241eeaf67d701be599da528cb1/data/Lazada_dataset/README.md",
+    "status": "PASS",
+    "sha256": "8c29f42b9b2fb1d091a112b266832f59d1a417b6c511a799b916c10e1a05b6ff",
+    "bytes": 1516
+  },
+  {
+    "file": "criteo_paper.pdf",
+    "url": "https://arxiv.org/pdf/2111.10106",
+    "status": "FAIL",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+  },
+  {
+    "file": "lazada_paper.pdf",
+    "url": "https://arxiv.org/pdf/2207.09920",
+    "status": "FAIL",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "evaluation_method": "5-Fold Cross-Validation",
+  "development_samples": 170000,
+  "n_splits": 5,
+  "random_state": 42,
+  "scoring": [
+    "MAE",
+    "RMSE",
+    "R2"
+  ],
+  "results": {
+    "Dummy Regressor": {
+      "MAE_mean": 1.500843,
+      "RMSE_mean": 1.732275,
+      "R2_mean": -4.5e-05
+    },
+    "Linear Regression": {
+      "MAE_mean": 1.500916,
+      "RMSE_mean": 1.732384,
+      "R2_mean": -0.000171
+    },
+    "Decision Tree": {
+      "MAE_mean": 1.501221,
+      "RMSE_mean": 1.732903,
+      "R2_mean": -0.000771
+    },
+    "Random Forest": {
+      "MAE_mean": 1.502294,
+      "RMSE_mean": 1.734325,
+      "R2_mean": -0.002413
+    }
+  },
+  "quality_gate": "BASELINE_ONLY",
+  "models_beating_baseline": 0,
+  "notes": "Không mô hình học nào vượt Dummy Regressor theo RMSE trong cả 5 Fold."
+}

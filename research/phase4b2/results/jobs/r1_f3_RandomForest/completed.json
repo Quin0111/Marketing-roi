@@ -1,0 +1,72 @@
+{
+  "status": "COMPLETE",
+  "sources_sha256": {
+    "common.py": "87e3e5dace31da8d62afc89d345c01408132ddb0b630bb17f101d8b66860828a",
+    "run_experiment.py": "6942ae8d65a656ebf55717cdb867436c3775ca2421abfa9cefa1f5907fd46027",
+    "experiment_config.json": "9cabbdf6266f33743054c4936dea897c8ba65fb249995718b8e2180f3eb2da95",
+    "phase4b2_evaluation_protocol.json": "9114f91eb9f393ac5e65ec63def4fe5dbdcf974d627461ddcfe952a8daf4c9bb"
+  },
+  "repeat": 1,
+  "outer_seed": 42,
+  "outer_fold": 3,
+  "model": "RandomForest",
+  "feature_group": "current5",
+  "selected": {
+    "candidate_order": 0,
+    "candidate": "trees32_depth4_leaf200",
+    "mean_inner_RMSE": 1.734516189837322,
+    "params": {
+      "n_estimators": 32,
+      "max_depth": 4,
+      "min_samples_leaf": 200,
+      "max_features": 1.0
+    }
+  },
+  "all_candidate_means": [
+    {
+      "candidate_order": 0,
+      "candidate": "trees32_depth4_leaf200",
+      "mean_inner_RMSE": 1.734516189837322,
+      "params": {
+        "n_estimators": 32,
+        "max_depth": 4,
+        "min_samples_leaf": 200,
+        "max_features": 1.0
+      }
+    },
+    {
+      "candidate_order": 1,
+      "candidate": "trees32_depth8_leaf100",
+      "mean_inner_RMSE": 1.7353434852846539,
+      "params": {
+        "n_estimators": 32,
+        "max_depth": 8,
+        "min_samples_leaf": 100,
+        "max_features": 1.0
+      }
+    }
+  ],
+  "inner_trials": 6,
+  "inner_total_fit_seconds": 8.264737999939825,
+  "fit_rows": 136000,
+  "assessment_rows": 34000,
+  "fit_ids_sha256": "6d8a4dd2321e79107ed2e27206736f358dd79054059270311c78b06e0303a4ba",
+  "assessment_ids_sha256": "4e2851a9e80d79a6f1976acc0caf15c213a5602ce04b47d3c4c7b3160acb261f",
+  "train_metrics": {
+    "MAE": 1.502060024235393,
+    "MSE": 3.006271243249352,
+    "RMSE": 1.7338602144490634,
+    "R2": 0.0006147566113415825
+  },
+  "assessment_metrics": {
+    "MAE": 1.503690701351685,
+    "MSE": 3.009932249232403,
+    "RMSE": 1.7349156317332561,
+    "R2": -0.00013973371284037306
+  },
+  "train_assessment_RMSE_gap": 0.0010554172841927834,
+  "outer_refit_seconds": 2.2738967000041157,
+  "prediction_sha256_f64_le": "037b8a3be91111d54332e119281de4c568895223d23c3f1134458f196f07d33e",
+  "prediction_file_sha256": "ae4c8b4b5d9f8cfb8be89d1719aa155c22bcfb1be745b4fdbdf6a13866ae7d12",
+  "warnings": []
+}

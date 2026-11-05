@@ -1,0 +1,35 @@
+{
+  "experiment_id": "DM-ROI-PHASE4B2-CURRENT5-001",
+  "protocol_id": "DM-DEV-170K-v1",
+  "outer_seeds": [42, 2026, 20261103],
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "inner_seed_rule": "100000 * repeat_1based + 1000 * outer_fold_1based + 17",
+  "model_random_state": 314159,
+  "threads": 2,
+  "features": ["Campaign_Type", "Channel_Used", "Target_Audience", "Customer_Segment", "Duration_days"],
+  "extended_features": "NOT_RUN: availability-before-deployment not verified beyond semantic assumptions",
+  "catboost": "NOT_RUN: optional; no added feature/provenance evidence justifying extra search budget",
+  "selection": "minimum arithmetic mean inner RMSE; deterministic tie break by candidate order",
+  "models": {
+    "Dummy": [{"candidate": "mean", "params": {"strategy": "mean"}}],
+    "LinearRegression": [{"candidate": "ols", "params": {}}],
+    "DecisionTree": [
+      {"candidate": "depth3_leaf200", "params": {"max_depth": 3, "min_samples_leaf": 200}},
+      {"candidate": "depth6_leaf100", "params": {"max_depth": 6, "min_samples_leaf": 100}}
+    ],
+    "RandomForest": [
+      {"candidate": "trees32_depth4_leaf200", "params": {"n_estimators": 32, "max_depth": 4, "min_samples_leaf": 200, "max_features": 1.0}},
+      {"candidate": "trees32_depth8_leaf100", "params": {"n_estimators": 32, "max_depth": 8, "min_samples_leaf": 100, "max_features": 1.0}}
+    ],
+    "HistGradientBoosting": [
+      {"candidate": "iter80_leaf7_l210", "params": {"max_iter": 80, "max_leaf_nodes": 7, "max_depth": 3, "min_samples_leaf": 200, "l2_regularization": 10.0, "learning_rate": 0.05, "early_stopping": false}},
+      {"candidate": "iter120_leaf15_l21", "params": {"max_iter": 120, "max_leaf_nodes": 15, "max_depth": 5, "min_samples_leaf": 100, "l2_regularization": 1.0, "learning_rate": 0.05, "early_stopping": false}}
+    ]
+  },
+  "expected_inner_fits": 360,
+  "expected_outer_refits": 75,
+  "preflight": "First 10000 fit rows of outer repeat1/fold1; first candidate each model; finite predictions only, no configuration change from scores",
+  "reproducibility": "Refit all 75 selected outer models independently and compare OOF predictions; repeat all 24 inner fits of repeat1/fold1 (includes fixed Dummy/OLS)",
+  "quality_gate": "BASELINE_ONLY"
+}

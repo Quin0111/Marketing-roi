@@ -1,0 +1,7 @@
+{
+  "allowed_duration_days": [15, 30, 45, 60],
+  "source": "Original marketing_campaign_dataset.csv, verified against Duration conversion in MachineLearningcki (8).ipynb cells 34 and 115 (zero based).",
+  "dataset_sha256": "f06c1b95a8207b4631c35e6b83b4a2a7872892a8bfa133967e1e7ec401c7bb60",
+  "evidence": "backend/tests/duration_verification.json",
+  "notes": "Deployment input contract only. Original model metadata, reference cases, fitted pipelines and quality gate remain unchanged."
+}

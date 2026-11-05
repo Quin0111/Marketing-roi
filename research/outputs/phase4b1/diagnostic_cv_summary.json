@@ -1,0 +1,128 @@
+[
+  {
+    "model": "Dummy_mean",
+    "MAE_mean": 1.5028088747448098,
+    "RMSE_mean": 1.7344738959662471,
+    "RMSE_fold_sd": 0.004560067988389547,
+    "R2_mean": -1.556823571604582e-05,
+    "delta_RMSE_mean": 0.0,
+    "folds_beating_dummy": 0,
+    "OOF_metrics": {
+      "MAE": 1.5028088747448096,
+      "RMSE": 1.7344786914702583,
+      "R2": -5.5781921721731464e-06
+    }
+  },
+  {
+    "model": "Fresh_linear_current5",
+    "MAE_mean": 1.5028588643821559,
+    "RMSE_mean": 1.734586255653187,
+    "RMSE_fold_sd": 0.004551240005605143,
+    "R2_mean": -0.00014516210001378483,
+    "delta_RMSE_mean": 0.00011235968693976695,
+    "folds_beating_dummy": 1,
+    "OOF_metrics": {
+      "MAE": 1.5028588643821559,
+      "RMSE": 1.734591032298223,
+      "R2": -0.00013512154523831477
+    }
+  },
+  {
+    "model": "Fresh_linear_plus_Company_Location_Language",
+    "MAE_mean": 1.502906159348764,
+    "RMSE_mean": 1.7346322957427038,
+    "RMSE_fold_sd": 0.004520530410639917,
+    "R2_mean": -0.00019832886344506306,
+    "delta_RMSE_mean": 0.00015839977645635273,
+    "folds_beating_dummy": 0,
+    "OOF_metrics": {
+      "MAE": 1.5029061593487643,
+      "RMSE": 1.734637008019187,
+      "R2": -0.00018813985537491362
+    }
+  },
+  {
+    "model": "GroupMean_Campaign_Type",
+    "MAE_mean": 1.5028455651927177,
+    "RMSE_mean": 1.734510738407171,
+    "RMSE_fold_sd": 0.004595693519229882,
+    "R2_mean": -5.796886449722649e-05,
+    "delta_RMSE_mean": 3.684244092378996e-05,
+    "folds_beating_dummy": 2,
+    "OOF_metrics": {
+      "MAE": 1.5028455651927182,
+      "RMSE": 1.7345156090300624,
+      "R2": -4.814793812224494e-05
+    }
+  },
+  {
+    "model": "GroupMean_Channel_Used",
+    "MAE_mean": 1.5027777305913173,
+    "RMSE_mean": 1.7345014543912627,
+    "RMSE_fold_sd": 0.004532744404336613,
+    "R2_mean": -4.741441441187266e-05,
+    "delta_RMSE_mean": 2.7558425015383747e-05,
+    "folds_beating_dummy": 2,
+    "OOF_metrics": {
+      "MAE": 1.5027777305913173,
+      "RMSE": 1.7345061925236454,
+      "R2": -3.728965101168491e-05
+    }
+  },
+  {
+    "model": "GroupMean_Target_Audience",
+    "MAE_mean": 1.5028298973102254,
+    "RMSE_mean": 1.7344907440242185,
+    "RMSE_fold_sd": 0.004561836522874262,
+    "R2_mean": -3.499838537497357e-05,
+    "delta_RMSE_mean": 1.6848057971285967e-05,
+    "folds_beating_dummy": 2,
+    "OOF_metrics": {
+      "MAE": 1.5028298973102256,
+      "RMSE": 1.734495543202016,
+      "R2": -2.5009860842084564e-05
+    }
+  },
+  {
+    "model": "GroupMean_Customer_Segment",
+    "MAE_mean": 1.502819788113257,
+    "RMSE_mean": 1.7344879508224473,
+    "RMSE_fold_sd": 0.004553181188042569,
+    "R2_mean": -3.1791940557690523e-05,
+    "delta_RMSE_mean": 1.4054856199985366e-05,
+    "folds_beating_dummy": 1,
+    "OOF_metrics": {
+      "MAE": 1.5028197881132568,
+      "RMSE": 1.7344927318139436,
+      "R2": -2.176804668208021e-05
+    }
+  },
+  {
+    "model": "GroupMean_Duration_days",
+    "MAE_mean": 1.5028171127274461,
+    "RMSE_mean": 1.734492880183658,
+    "RMSE_fold_sd": 0.004564444652184663,
+    "R2_mean": -3.744926043882657e-05,
+    "delta_RMSE_mean": 1.898421741084455e-05,
+    "folds_beating_dummy": 2,
+    "OOF_metrics": {
+      "MAE": 1.502817112727446,
+      "RMSE": 1.7344976848447473,
+      "R2": -2.7479394562046622e-05
+    }
+  },
+  {
+    "model": "GroupMean_joint_current5",
+    "MAE_mean": 1.51354510239014,
+    "RMSE_mean": 1.7533287497488126,
+    "RMSE_fold_sd": 0.00438040014846016,
+    "R2_mean": -0.021877465101719017,
+    "delta_RMSE_mean": 0.01885485378256533,
+    "folds_beating_dummy": 0,
+    "OOF_metrics": {
+      "MAE": 1.51354510239014,
+      "RMSE": 1.753333127223718,
+      "R2": -0.02186461744829349
+    }
+  }
+]

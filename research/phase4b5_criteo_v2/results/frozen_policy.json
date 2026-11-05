@@ -1,0 +1,13 @@
+{
+  "selected_model": "S_Learner",
+  "selected_C": 0.1,
+  "capacity": 0.2,
+  "primary_outcome": "visit",
+  "propensity": 0.85,
+  "selected_by": "Validation Qini only, prior to any final evaluation metric",
+  "model_sha256": "932e3fd920e44ef59a26a2f1ab76c6c5d6d942e99df30d2697ca16ecde359e00",
+  "validation_selection_sha256": "27aa25abec1a09bf233eafc54bc494bd44a3e2555145d7c4716116bf943cc9e6",
+  "protocol_sha256": "afedf0aa5039647a7cfffe86e8935ee0c6bd11bd8521c09032df30e8d3d70b7b",
+  "test_rows": 200000,
+  "test_outcomes_used_for_selection": false
+}

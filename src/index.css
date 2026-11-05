@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { color-scheme: light; }
+  body { @apply bg-canvas text-ink font-sans; margin:0; font-feature-settings:"cv02","cv03","cv04","cv11"; }
+  h1,h2,h3,h4 { text-wrap:balance; }
+  p,li,dd { overflow-wrap:anywhere; }
+  button,a,input,select,textarea { -webkit-tap-highlight-color:transparent; }
+  button { touch-action:manipulation; }
+  button:disabled { cursor:not-allowed; }
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),select,textarea {
+    @apply border-slate-300 rounded-lg bg-white text-ink;
+    max-width:100%; min-height:42px;
+  }
+  input[type="checkbox"],input[type="radio"],input[type="range"] { accent-color:#607E8F; }
+  th { white-space:nowrap; }
+  td { line-height:1.6; }
+  summary { line-height:1.6; }
+  ::selection { background:#DDE7ED; color:#35434C; }
+}
+@layer components {
+  aside nav button { min-height:48px; }
+  aside nav svg { stroke-width:1.65; }
+  header { background:#FAF9F6 !important; }
+  header h1 { font-size:1.125rem; font-weight:600; }
+  main { line-height:1.65; }
+  main > div { min-width:0; }
+  .recharts-default-tooltip { border:1px solid #DDE1E0 !important; border-radius:8px !important; box-shadow:0 2px 8px rgb(72 87 96 / 6%) !important; }
+  .recharts-cartesian-axis-tick text { fill:#60717A; }
+}
+:focus-visible { outline:2px solid #607E8F; outline-offset:3px; }
+input:focus,select:focus,textarea:focus { border-color:#91ADBD; --tw-ring-color:#B8CCD7; }
+::-webkit-scrollbar { width:6px; height:6px; }
+::-webkit-scrollbar-track { background:transparent; }
+::-webkit-scrollbar-thumb { background:#C3CDCF; border-radius:8px; }
+::-webkit-scrollbar-thumb:hover { background:#91ADBD; }
+@media(max-width:639px) {
+  header { padding:16px !important; }
+  header h1 { font-size:1rem; }
+  main .text-xs { line-height:1.65; }
+  main button { min-height:36px; }
+  .fixed.right-8 { right:16px; left:16px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after { animation-duration:0.01ms !important; transition-duration:0.01ms !important; scroll-behavior:auto !important; }
+}

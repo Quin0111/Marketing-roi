@@ -1,0 +1,72 @@
+{
+  "status": "COMPLETE",
+  "sources_sha256": {
+    "common.py": "87e3e5dace31da8d62afc89d345c01408132ddb0b630bb17f101d8b66860828a",
+    "run_experiment.py": "6942ae8d65a656ebf55717cdb867436c3775ca2421abfa9cefa1f5907fd46027",
+    "experiment_config.json": "9cabbdf6266f33743054c4936dea897c8ba65fb249995718b8e2180f3eb2da95",
+    "phase4b2_evaluation_protocol.json": "9114f91eb9f393ac5e65ec63def4fe5dbdcf974d627461ddcfe952a8daf4c9bb"
+  },
+  "repeat": 1,
+  "outer_seed": 42,
+  "outer_fold": 5,
+  "model": "RandomForest",
+  "feature_group": "current5",
+  "selected": {
+    "candidate_order": 0,
+    "candidate": "trees32_depth4_leaf200",
+    "mean_inner_RMSE": 1.7363250827427192,
+    "params": {
+      "n_estimators": 32,
+      "max_depth": 4,
+      "min_samples_leaf": 200,
+      "max_features": 1.0
+    }
+  },
+  "all_candidate_means": [
+    {
+      "candidate_order": 0,
+      "candidate": "trees32_depth4_leaf200",
+      "mean_inner_RMSE": 1.7363250827427192,
+      "params": {
+        "n_estimators": 32,
+        "max_depth": 4,
+        "min_samples_leaf": 200,
+        "max_features": 1.0
+      }
+    },
+    {
+      "candidate_order": 1,
+      "candidate": "trees32_depth8_leaf100",
+      "mean_inner_RMSE": 1.7368647844081917,
+      "params": {
+        "n_estimators": 32,
+        "max_depth": 8,
+        "min_samples_leaf": 100,
+        "max_features": 1.0
+      }
+    }
+  ],
+  "inner_trials": 6,
+  "inner_total_fit_seconds": 8.751863799989223,
+  "fit_rows": 136000,
+  "assessment_rows": 34000,
+  "fit_ids_sha256": "6501e109e96fb8d159ac457aa14afe8cf247459c189b15d585b17bded80a1fa7",
+  "assessment_ids_sha256": "f458781361b3de9a8b988c6251dfbc40d6a8433e5b718d10ac90fb862bab9241",
+  "train_metrics": {
+    "MAE": 1.504558643266919,
+    "MSE": 3.012669721682005,
+    "RMSE": 1.735704387757894,
+    "R2": 0.000697872332408922
+  },
+  "assessment_metrics": {
+    "MAE": 1.4935113835444116,
+    "MSE": 2.983559162574988,
+    "RMSE": 1.7272982262988021,
+    "R2": -0.00025783028974979416
+  },
+  "train_assessment_RMSE_gap": -0.008406161459091788,
+  "outer_refit_seconds": 2.3745939999935217,
+  "prediction_sha256_f64_le": "e67ce0c73d91d0ea70cd52ed776d7258d4b06d66d6b47348796df497f44d0eb1",
+  "prediction_file_sha256": "9486b8b86a2c6c978f48fd4453ebc45bb794ba67cc6f0931f47cf723629ffd57",
+  "warnings": []
+}

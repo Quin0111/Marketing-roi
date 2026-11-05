@@ -1,0 +1,3 @@
+model,published_RMSE_mean_unchanged,new_diagnostic_RMSE_mean,difference,historical_fold_provenance_available
+Dummy Regressor,1.732275,1.7344738959662471,0.0021988959662471164,False
+Linear Regression,1.732384,1.734586255653187,0.002202255653187102,False

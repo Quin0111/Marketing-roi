@@ -1,0 +1,57 @@
+[
+  {
+    "file": "criteo_paper.html",
+    "url": "https://arxiv.org/html/2111.10106v1",
+    "status": "FAIL",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+  },
+  {
+    "file": "criteo_publisher.html",
+    "url": "https://ailab.criteo.com/criteo-uplift-prediction-dataset/",
+    "status": "PASS",
+    "bytes": 71097,
+    "sha256": "4cbedf1dd4135f0feaf9d1ad1e61f117c0b644e03ec658650b22c64246fba3f8"
+  },
+  {
+    "file": "criteo_card.md",
+    "url": "https://huggingface.co/datasets/criteo/criteo-uplift/raw/2424920019e49d52d72c13ac1143ec5d53af276b/README.md",
+    "status": "PASS",
+    "bytes": 2682,
+    "sha256": "2bc94b6aa8a2496b57ae430f146588ac970e0cf6de9ee874940eecbdd8dbae99"
+  },
+  {
+    "file": "hillstrom_creator.html",
+    "url": "https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html",
+    "status": "PASS",
+    "bytes": 124226,
+    "sha256": "88cd3c6d934777da954074edf6da8c3d20f60a3289085a792f42070cc8e11d41"
+  },
+  {
+    "file": "lazada_tree.json",
+    "url": "https://api.github.com/repos/kailiang-zhong/DESCN/git/trees/main?recursive=1",
+    "status": "PASS",
+    "bytes": 12144,
+    "sha256": "51b5eeaf6f6671e9349512b9cbcbbb7eaa0b56ef4f8e5bcebf437cab00f89e37"
+  },
+  {
+    "file": "mtlift_tree.json",
+    "url": "https://api.github.com/repos/MTDJDSP/MT-LIFT/git/trees/main?recursive=1",
+    "status": "PASS",
+    "bytes": 397,
+    "sha256": "abf025fdc73dc54db7a126429ee93a0b3382b79b5f626d60f36988f563647cff"
+  },
+  {
+    "file": "lazada_license.txt",
+    "url": "https://raw.githubusercontent.com/kailiang-zhong/DESCN/main/LICENSE",
+    "status": "PASS",
+    "bytes": 1713,
+    "sha256": "3ae95b8e3fa8f3cae1af3c44274586179e7dda9f3cddba6bc7565d249c7cc7a3"
+  },
+  {
+    "file": "mtlift_readme.md",
+    "url": "https://raw.githubusercontent.com/MTDJDSP/MT-LIFT/main/README.md",
+    "status": "PASS",
+    "bytes": 3766,
+    "sha256": "1598c913bb2e715c384141ad716794d2c827356b492213bb864369419d5f8ca6"
+  }
+]

@@ -1,0 +1,139 @@
+# PHASE 4B.1 — Đánh giá feature và tín hiệu dự đoán
+
+Ngày: **03/11/2026**. Phân tích mới chỉ trên **Development 170.000 dòng**, split gốc đã đối chiếu với bản lưu Colab. Không sử dụng Test cuối để khảo sát, chọn feature hoặc mô hình.
+
+**Kết luận:** Chưa có bằng chứng năm feature hiện tại chứa tín hiệu đủ mạnh cho dự đoán phục vụ quyết định kinh doanh. Thêm ba cột có thể biết trước chiến dịch chưa tạo cải thiện trong chẩn đoán tuyến tính mới. Không thể từ kết quả này kết luận mọi thuật toán đều bất khả thi; cũng không có căn cứ hứa rằng boosting sẽ khắc phục được dữ liệu thiếu tín hiệu.
+
+## 1. Phân loại toàn bộ 16 cột
+
+Quy ước: **A** = thông tin có thể xác định khi lập kế hoạch theo nghĩa nghiệp vụ; **B** = outcome/chỉ số phát sinh trong hoặc sau triển khai; **C** = chưa xác minh được thời điểm hoặc ý nghĩa. Nhóm A phản ánh giả định thiết kế hợp lý từ tên cột, **không phải bằng chứng timestamp đã được kiểm chứng**. Trước triển khai thực tế phải có data dictionary và snapshot as-of.
+
+| Cột gốc | Nhóm | Ý nghĩa/thời điểm và lý do | Quyết định cho dự đoán trước chiến dịch |
+|---|---|---|---|
+| Campaign_ID | A | Mã có thể cấp trước triển khai, duy nhất cho từng dòng | Loại khỏi feature; là định danh, có quy luật liên hệ với Date |
+| Company | A | Doanh nghiệp triển khai thường được biết lúc lập kế hoạch | Ứng viên ngữ cảnh; cần xác minh ID ổn định và kiểm tra generalization theo doanh nghiệp |
+| Campaign_Type | A | Loại hoạt động được chọn khi lập kế hoạch | Giữ có điều kiện nguồn đúng trước triển khai |
+| Target_Audience | A | Nhóm khách hàng dự định tiếp cận | Giữ nếu là target kế hoạch, không thay bằng phân khúc người đã phản hồi |
+| Duration | C | Có thể là thời lượng dự kiến hoặc thời lượng đã thực hiện; tên cột không phân biệt | `Duration_days` hiện có trong mô hình; cần xác nhận planned/actual trước sử dụng kinh doanh |
+| Channel_Used | A | Kênh được chọn trước chạy chiến dịch | Giữ nếu là kênh cấu hình, không phải kênh attribution sau chuyển đổi |
+| Conversion_Rate | B | Tỷ lệ chuyển đổi thực tế cần quan sát kết quả | Không dùng làm input trước triển khai; chỉ xem xét riêng bài toán dự báo trong chiến dịch với cutoff rõ ràng |
+| Acquisition_Cost | C | Có thể là chi phí thực tế/CAC hoặc số kế hoạch; báo cáo cũ cũng chưa xác minh | Loại khỏi input trước triển khai cho đến khi làm rõ; nếu actual thì chuyển B, nếu planned cũng cần định nghĩa riêng |
+| ROI | B | Outcome mục tiêu của chiến dịch | Chỉ làm y, tuyệt đối không làm X hay thành phần tạo X |
+| Location | A | Địa bàn được nhắm tới có thể biết lúc lập kế hoạch | Ứng viên nếu là địa bàn target; nếu là vị trí thực tế của người phản hồi phải phân loại lại |
+| Language | A | Ngôn ngữ nội dung/chiến dịch thường được chọn trước | Ứng viên nếu là metadata của kế hoạch, không suy từ phản hồi sau chạy |
+| Clicks | B | Số lượt nhấp phát sinh sau phân phối quảng cáo | Loại khỏi input trước triển khai |
+| Impressions | B | Lượt hiển thị thực tế phát sinh sau triển khai | Loại; dự toán lượt hiển thị phải là cột forecast riêng, không thay thế bằng actual |
+| Engagement_Score | B | Điểm tương tác cần dữ liệu phản hồi, thuật toán tính chưa được mô tả | Loại khỏi input trước triển khai |
+| Customer_Segment | A | Có thể là phân khúc khách hàng được xác định từ lịch sử | Giữ nếu segment đã có trước cutoff; nếu tạo bằng hành vi trong chiến dịch sẽ gây leakage |
+| Date | C | Chưa rõ ngày bắt đầu, kết thúc hay ngày ghi nhận; còn trùng quy luật ID | Chưa dùng làm tín hiệu mùa vụ; cần timestamp có nghĩa nghiệp vụ |
+
+Các cột dẫn xuất được xử lý theo nguồn: `Duration_days` kế thừa nhóm C của Duration; `Acquisition_Cost_USD` kế thừa nhóm C; Month/Weekday kế thừa nhóm C của Date; CTR=Clicks/Impressions là nhóm B. Việc chuyển đổi kiểu không làm một biến sau chiến dịch trở thành biến biết trước.
+
+Tổng: **8 cột A, 5 cột B, 3 cột C**. A bao gồm Campaign_ID bị loại khỏi mô hình. Không tự bổ sung budget, giá sản phẩm, revenue hoặc lịch sử kênh vì dataset không có các cột này.
+
+## 2. Nguy cơ data leakage
+
+- **Theo thời điểm:** actual clicks/impressions/conversion/engagement không tồn tại lúc người dùng lập kế hoạch. Tương quan thấp hay cao đều không thay đổi thực tế này. Acquisition_Cost/Duration cần xác minh actual/planned.
+- **Theo target:** revenue được dựng từ ROI hoặc các thành phần của công thức ROI có thể tiết lộ trực tiếp y. Dataset chưa đủ thông tin để kiểm toán công thức; không đưa chúng vào bằng giả định.
+- **Theo quy trình:** scaler, imputer, encoder, target encoding, feature selection và tuning phải học trong phần fit của từng fold. Pipeline giúp tách đúng việc fit/transform; không được fit tiền xử lý trên cả Development rồi báo CV như dữ liệu mới. [Hướng dẫn tránh leakage, scikit-learn 1.6](https://scikit-learn.org/1.6/common_pitfalls.html).
+- **Theo lịch sử:** EDA toàn CSV trong notebook có trước split; hồ sơ chưa chứng minh Test luôn blinded. Nghiên cứu này chỉ mô tả hạn chế đó, không chạy lại hoặc sửa kết quả cũ.
+- **Theo đơn vị quan sát:** nếu chiến dịch dùng chung khách hàng/creative/doanh nghiệp thì random split có thể lạc quan. Dataset thiếu khóa khách hàng, sản phẩm và creative để kiểm tra đầy đủ. Kiểm tra theo nhóm/thời gian là bước bổ sung, không thay split gốc. [Cross-validation cho dữ liệu nhóm/thời gian](https://scikit-learn.org/1.6/modules/cross_validation.html).
+
+## 3. Mối liên hệ của năm feature hiện tại
+
+Eta² là tỷ lệ phương sai ROI giải thích bởi khác biệt trung bình nhóm **trong mẫu**. Duration được phân tích theo bốn mức để tránh bỏ sót quan hệ không đơn điệu. Không cộng eta² đơn biến để suy R² đa biến.
+
+| Feature | Số mức | Eta² (%) | ANOVA p | p Holm (10 kiểm tra) | Chênh mean lớn nhất |
+|---|---|---|---|---|---|
+| Campaign_Type | 5 | 0,003288 | 0,232027 | 1,000000 | 0,027260 |
+| Channel_Used | 6 | 0,005384 | 0,103126 | 0,870379 | 0,036203 |
+| Target_Audience | 5 | 0,004626 | 0,096709 | 0,870379 | 0,035381 |
+| Customer_Segment | 5 | 0,000686 | 0,883533 | 1,000000 | 0,012560 |
+| Duration_days | 4 | 0,001884 | 0,361525 | 1,000000 | 0,019147 |
+
+Từng feature giải thích dưới **0,006%** phương sai. Chênh lệch trung bình lớn nhất giữa các mức của một feature chỉ khoảng **0,0362 ROI**, trong khi độ lệch chuẩn ROI từng chiến dịch khoảng **1,7345**. Không nhóm nào trong năm feature có p ANOVA <0,05 ngay cả trước hiệu chỉnh; sau Holm trên 10 phép kiểm tra phân loại/ngày vẫn không có bằng chứng mạnh.
+
+ANOVA được dùng như chẩn đoán trung bình, không để khẳng định phân phối chuẩn. Có kiểm tra bổ sung bằng hoán vị nhãn trên Development, giữ feature cố định:
+
+| Feature | Eta² quan sát (%) | Eta² null TB (%) | p Monte Carlo |
+|---|---|---|---|
+| Campaign_Type | 0,003288 | 0,002330 | 0,225 |
+| Channel_Used | 0,005384 | 0,003116 | 0,140 |
+| Target_Audience | 0,004626 | 0,002584 | 0,130 |
+| Customer_Segment | 0,000686 | 0,002514 | 0,890 |
+| Duration_days | 0,001884 | 0,001775 | 0,365 |
+| Joint_five_features | 1,747865 | 1,761571 | 0,610 |
+
+199 phép hoán vị, seed 20261103, p Monte Carlo tính bằng `(1 + số thống kê null >= quan sát)/(199 + 1)`. Độ phân giải p là 0,005, sai số Monte Carlo còn đáng kể; đây không phải chứng minh tuyệt đối không có tín hiệu. Các p thăm dò không được dùng để tự chọn nhóm “tốt nhất”.
+
+Hoán vị nhãn toàn Development giả định khả năng trao đổi dưới giả thuyết không có liên hệ; nếu dữ liệu thực có phụ thuộc theo thời gian/khách hàng/chiến dịch, cần thiết kế permutation theo nhóm phù hợp. Các p ở đây là chẩn đoán khám phá dưới giả định đó, không phải chứng minh nhân quả.
+
+Không chạy mutual information trong Phase 4B.1: các kiểm tra effect size, hoán vị và dự đoán ngoài fold đã cung cấp bằng chứng chính; không bổ sung thêm thước đo chỉ để tìm một p nhỏ.
+
+## 4. Tương tác đầy đủ năm feature
+
+Development quan sát đủ **3.000 tổ hợp**, số mẫu mỗi tổ hợp **35–87**, trung vị **57**. Group means giải thích trong mẫu **1,7479%** phương sai, nhưng mức nền kỳ vọng dưới nhãn độc lập xấp xỉ **1,7641%** do có nhiều nhóm. Hoán vị joint cho p≈**0,61**: phần “giải thích” trong mẫu hoàn toàn có thể là nhiễu do chia nhỏ dữ liệu.
+
+Dùng trung bình tổ hợp được học **chỉ trên fit fold** để dự đoán assessment fold làm RMSE tăng khoảng **0,01885** so với Dummy, không thắng ở fold nào. Vì vậy không được trình bày việc chọn tổ hợp có trung bình ROI cao nhất là phát hiện chiến dịch tốt hơn.
+
+Kết quả này không loại trừ mọi tương tác nhỏ chưa đủ power để phát hiện. Nó cho thấy chưa có bằng chứng ngoài mẫu cho khả năng khai thác các tương tác hiện có.
+
+## 5. Các cột bổ sung
+
+Company, Location, Language có thể là bối cảnh trước chiến dịch, nhưng eta² trong Development lần lượt khoảng **0,00270%**, **0,00500%**, **0,00059%**. Không đủ bằng chứng cải thiện. Tính hữu dụng phải được xác nhận ngoài fold và theo thời điểm, không chỉ từ tương quan hoặc một lần chia.
+
+Chẩn đoán các cột số dưới đây **không phải danh sách được phép làm X trước chiến dịch**:
+
+| Cột | Pearson r | Pearson p | p Holm (7 kiểm tra) | Spearman r |
+|---|---|---|---|---|
+| Duration_days | 0,000484 | 0,841780 | 1,000000 | 0,000488 |
+| Conversion_Rate | -0,001778 | 0,463628 | 1,000000 | -0,001729 |
+| Acquisition_Cost_USD | 0,006058 | 0,012502 | 0,087511 | 0,006054 |
+| Clicks | -0,002216 | 0,360828 | 1,000000 | -0,002216 |
+| Impressions | 0,004481 | 0,064689 | 0,388131 | 0,004477 |
+| Engagement_Score | -0,001217 | 0,615701 | 1,000000 | -0,001216 |
+| Campaign_ID | -0,001065 | 0,660629 | 1,000000 | -0,001068 |
+
+Acquisition_Cost_USD có Pearson r≈**0,00606**, p chưa hiệu chỉnh≈**0,01250**, nhưng Holm trên bảy kiểm tra cho p≈**0,08751**; r² chỉ khoảng **0,00367%**. Dù p có nhỏ, điều đó cũng không giải quyết thời điểm có dữ liệu hoặc chứng minh chi phí là biến nguyên nhân. Các numeric còn lại đều có liên hệ rất nhỏ trong chẩn đoán này.
+
+Month/Weekday được khảo sát mô tả riêng trên Development, không đưa vào mô hình chẩn đoán trước chiến dịch: Date có nguồn gốc không rõ và khớp vòng lặp ID, nên chưa có cơ sở xem đây là mùa vụ thật.
+
+## 6. Kiểm tra khả năng dự đoán ngoài fold
+
+Đây là **thí nghiệm chẩn đoán mới**, không phải bảng CV đã công bố. Development nối Train rồi Validation, KFold(5, shuffle=True, random_state=42), mỗi assessment fold 34.000 và fit fold 136.000. Không tuning, không mở Test. Các mô hình tuyến tính là đối tượng research mới tạo trong bộ nhớ; không fit/clone/dump pipeline production.
+
+| Chẩn đoán mới | MAE TB | RMSE TB | SD RMSE qua fold | R² TB | Delta RMSE | Fold thắng Dummy |
+|---|---|---|---|---|---|---|
+| Dummy_mean | 1,502809 | 1,734474 | 0,004560 | -0,000016 | 0,000000 | — |
+| Fresh_linear_current5 | 1,502859 | 1,734586 | 0,004551 | -0,000145 | 0,000112 | 1/5 |
+| Fresh_linear_plus_Company_Location_Language | 1,502906 | 1,734632 | 0,004521 | -0,000198 | 0,000158 | 0/5 |
+| GroupMean_Campaign_Type | 1,502846 | 1,734511 | 0,004596 | -0,000058 | 0,000037 | 2/5 |
+| GroupMean_Channel_Used | 1,502778 | 1,734501 | 0,004533 | -0,000047 | 0,000028 | 2/5 |
+| GroupMean_Target_Audience | 1,502830 | 1,734491 | 0,004562 | -0,000035 | 0,000017 | 2/5 |
+| GroupMean_Customer_Segment | 1,502820 | 1,734488 | 0,004553 | -0,000032 | 0,000014 | 1/5 |
+| GroupMean_Duration_days | 1,502817 | 1,734493 | 0,004564 | -0,000037 | 0,000019 | 2/5 |
+| GroupMean_joint_current5 | 1,513545 | 1,753329 | 0,004380 | -0,021877 | 0,018855 | 0/5 |
+
+`delta RMSE` = RMSE model − RMSE Dummy, nên số dương là kém hơn. MAE/R² và từng fold nằm trong `diagnostic_cv_folds.csv`/`diagnostic_cv_summary.json`. Bảng lấy **trung bình metric từng fold**, khác với pooled OOF metric; cả hai được lưu để tránh nhầm. SD qua năm fold không phải khoảng tin cậy thống kê cho hiệu năng do các tập fit chồng lấn.
+
+![Chênh RMSE theo fold](outputs/phase4b1/development_cv_deltas.png)
+
+Linear với năm feature chỉ thắng **1/5** fold của chẩn đoán mới và kém hơn về trung bình; thêm Company/Location/Language thắng **0/5**. Các group mean đơn biến cũng không cải thiện trung bình. Việc thăm dò trên Development rồi chấm CV vẫn chỉ cho kết luận khám phá; cần kế hoạch khóa trước và dữ liệu độc lập để xác nhận.
+
+## 7. Vì sao mô hình hiện tại chưa vượt Dummy?
+
+1. **Không thấy mức chênh có thể khai thác ổn định:** trung bình nhóm rất gần nhau so với độ phân tán cá thể; kiểm tra hoán vị không phát hiện joint signal vượt nền ngẫu nhiên.
+2. **Dummy phù hợp với cấu trúc quan sát:** khi kỳ vọng có điều kiện gần như hằng số, dự đoán trung bình có thể cạnh tranh với mô hình phức tạp. Đây là giải thích phù hợp dữ liệu, không phải chứng minh cơ chế sinh độc lập.
+3. **Chia nhỏ nhóm tăng variance:** 3.000 tổ hợp chỉ có trung vị 57 dòng; ước lượng “tổ hợp tốt nhất” dễ là cực trị do nhiễu. Thử group mean ngoài fold đã minh họa việc giảm khả năng tổng quát hóa.
+4. **Thiếu biến có nghĩa kinh tế:** không có ngân sách kế hoạch, giá, margin, sản phẩm, creative, ưu đãi, mức cạnh tranh hay lịch sử được chốt trước chiến dịch. Chưa thể khẳng định biến nào sẽ hữu ích khi chưa thu thập.
+5. **Chưa kiểm chứng semantic/provenance:** Date theo khuôn, nguồn gốc và công thức ROI chưa rõ. Một learner khác không tự tạo thông tin còn thiếu.
+6. **Hồ sơ CV có điểm chưa khớp:** Dummy mới 1,734474 khác số công bố 1,732275. Không dùng khác biệt này để sửa số cũ hoặc thay gate; cần truy vết thực nghiệm riêng.
+
+Bảng metrics gốc vẫn ghi RMSE Dummy **1,732275**, Linear **1,732384**, Decision Tree **1,732903**, Random Forest **1,734325**. Chưa có mã/fold gốc để tái lập đúng bảng đó. Số fold thắng trong thí nghiệm mới **không thay thế** kết luận lịch sử đã công bố.
+
+## 8. Kết luận sử dụng feature
+
+- Tập trước chiến dịch tối thiểu có thể tiếp tục nghiên cứu: bốn biến phân loại hiện tại; Duration_days chỉ khi xác nhận planned duration. Các biến phải có snapshot trước thời điểm dự đoán.
+- Company/Location/Language là ứng viên hợp nghĩa, chưa có bằng chứng tăng độ chính xác; không tự thêm vào API.
+- Không dùng Conversion_Rate, Clicks, Impressions, Engagement_Score cho dự báo trước chiến dịch. Không dùng Acquisition_Cost/Date đến khi xác minh ý nghĩa/thời điểm.
+- Không có feature nào đủ căn cứ để cho phép lựa chọn chiến dịch tối ưu ở giai đoạn này. Cần thêm dữ liệu và thí nghiệm xác nhận; trạng thái giữ **BASELINE_ONLY**.

@@ -1,0 +1,92 @@
+[
+  {
+    "repeat": 2,
+    "outer_fold": 3,
+    "model": "Dummy",
+    "candidate_order": 0,
+    "candidate": "mean",
+    "params": {
+      "strategy": "mean"
+    },
+    "inner_fold": 1,
+    "inner_seed": 203017,
+    "fit_rows": 90666,
+    "assessment_rows": 45334,
+    "fit_ids_sha256": "173f88ac9ac62ec79dbea2c29b7f760afd4e061563b3b736888a8bb5439db949",
+    "assessment_ids_sha256": "d59e033c044190194e45d9222904fad88b1a62859cf0ae50ed4a49cf5934414d",
+    "metrics": {
+      "MAE": 1.5034082579770616,
+      "MSE": 3.0080018714575076,
+      "RMSE": 1.734359210618581,
+      "R2": -1.3183534700367261e-05
+    },
+    "train_metrics": {
+      "MAE": 1.5044465678937078,
+      "MSE": 3.0150584122383908,
+      "RMSE": 1.736392355499871,
+      "R2": 0.0
+    },
+    "fit_seconds": 0.14851550001185387,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 3,
+    "model": "Dummy",
+    "candidate_order": 0,
+    "candidate": "mean",
+    "params": {
+      "strategy": "mean"
+    },
+    "inner_fold": 2,
+    "inner_seed": 203017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "502b81d2e67ffc644dfc4adf880797dbf059880c02d4d1c1afd1dd3786208802",
+    "assessment_ids_sha256": "68eac1e69cf5f14dc9cc9ef5d7f4b8bf5fe00a4b71f0365289e5491f7c4eac0f",
+    "metrics": {
+      "MAE": 1.5067015753406396,
+      "MSE": 3.0237153526146185,
+      "RMSE": 1.7388833637178251,
+      "R2": -4.894885286432782e-06
+    },
+    "train_metrics": {
+      "MAE": 1.5028164123387335,
+      "MSE": 3.0071975377856135,
+      "RMSE": 1.7341273130268184,
+      "R2": 0.0
+    },
+    "fit_seconds": 0.1552261000033468,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 3,
+    "model": "Dummy",
+    "candidate_order": 0,
+    "candidate": "mean",
+    "params": {
+      "strategy": "mean"
+    },
+    "inner_fold": 3,
+    "inner_seed": 203017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "4e1b2814557ca6f804a61a34cb808c78c250f9fd3f7c93e3ff5dac49980438ea",
+    "assessment_ids_sha256": "9642d97a26f4628234451154abe81a91bbcf823518675e4a950edccefd982199",
+    "metrics": {
+      "MAE": 1.5022157685085078,
+      "MSE": 3.006421842189661,
+      "RMSE": 1.7339036427061514,
+      "R2": -1.996845617746601e-06
+    },
+    "train_metrics": {
+      "MAE": 1.5050567846794451,
+      "MSE": 3.0158427314369307,
+      "RMSE": 1.7366181881567782,
+      "R2": 0.0
+    },
+    "fit_seconds": 0.14159579999977723,
+    "warnings": []
+  }
+]

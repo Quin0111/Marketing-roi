@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE",
+  "inner_trials": 12,
+  "classifier_fits": 21,
+  "models": [
+    "S_Learner",
+    "T_Learner"
+  ],
+  "recorded_compatibility_warnings": 21,
+  "old_dataset_or_test_loaded": false,
+  "production_quality_gate": "BASELINE_ONLY",
+  "frozen_policy_sha256": "1c571e598217e5fffa9fae27543304f526acba96117ceb286698dc73fc15581d"
+}

@@ -1,0 +1,4852 @@
+{
+  "status": "PASS",
+  "count": 969,
+  "checks": [
+    {
+      "check": "Frozen protocol/config/data/schedule hashes match",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Experiment source unchanged: common.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Experiment source unchanged: run_experiment.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Experiment source unchanged: experiment_config.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Experiment source unchanged: phase4b2_evaluation_protocol.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Exactly current5; no outcome/ID/Date/post-campaign inputs",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No final-Test ROI materialized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "All five preflight pipelines passed before full evaluation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "All 75 outer jobs complete",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f1 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f1 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f1 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/DecisionTree/fold1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f1 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f1 DecisionTree/depth3_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f1 DecisionTree/depth6_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f1 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'DecisionTree', 'depth3_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'DecisionTree', 'depth3_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'DecisionTree', 'depth3_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'DecisionTree', 'depth6_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'DecisionTree', 'depth6_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'DecisionTree', 'depth6_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f1 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f1 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f1 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy mean fit-only r1 f1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/Dummy/fold1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f1 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f1 Dummy/mean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f1 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'Dummy', 'mean', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'Dummy', 'mean', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'Dummy', 'mean', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f1 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f1 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f1 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/HistGradientBoosting/fold1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f1 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f1 HistGradientBoosting/iter80_leaf7_l210",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f1 HistGradientBoosting/iter120_leaf15_l21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f1 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'HistGradientBoosting', 'iter80_leaf7_l210', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'HistGradientBoosting', 'iter80_leaf7_l210', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'HistGradientBoosting', 'iter80_leaf7_l210', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'HistGradientBoosting', 'iter120_leaf15_l21', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'HistGradientBoosting', 'iter120_leaf15_l21', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'HistGradientBoosting', 'iter120_leaf15_l21', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f1 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f1 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f1 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/LinearRegression/fold1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f1 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f1 LinearRegression/ols",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f1 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'LinearRegression', 'ols', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'LinearRegression', 'ols', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'LinearRegression', 'ols', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f1 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f1 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f1 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/RandomForest/fold1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f1 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f1 RandomForest/trees32_depth4_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f1 RandomForest/trees32_depth8_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f1 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'RandomForest', 'trees32_depth4_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'RandomForest', 'trees32_depth4_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'RandomForest', 'trees32_depth4_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'RandomForest', 'trees32_depth8_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'RandomForest', 'trees32_depth8_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 1, 'RandomForest', 'trees32_depth8_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f2 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f2 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f2 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/DecisionTree/fold2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f2 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f2 DecisionTree/depth3_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f2 DecisionTree/depth6_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f2 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'DecisionTree', 'depth3_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'DecisionTree', 'depth3_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'DecisionTree', 'depth3_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'DecisionTree', 'depth6_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'DecisionTree', 'depth6_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'DecisionTree', 'depth6_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f2 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f2 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f2 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy mean fit-only r1 f2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/Dummy/fold2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f2 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f2 Dummy/mean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f2 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'Dummy', 'mean', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'Dummy', 'mean', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'Dummy', 'mean', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f2 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f2 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f2 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/HistGradientBoosting/fold2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f2 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f2 HistGradientBoosting/iter80_leaf7_l210",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f2 HistGradientBoosting/iter120_leaf15_l21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f2 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'HistGradientBoosting', 'iter80_leaf7_l210', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'HistGradientBoosting', 'iter80_leaf7_l210', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'HistGradientBoosting', 'iter80_leaf7_l210', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'HistGradientBoosting', 'iter120_leaf15_l21', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'HistGradientBoosting', 'iter120_leaf15_l21', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'HistGradientBoosting', 'iter120_leaf15_l21', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f2 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f2 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f2 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/LinearRegression/fold2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f2 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f2 LinearRegression/ols",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f2 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'LinearRegression', 'ols', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'LinearRegression', 'ols', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'LinearRegression', 'ols', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f2 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f2 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f2 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/RandomForest/fold2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f2 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f2 RandomForest/trees32_depth4_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f2 RandomForest/trees32_depth8_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f2 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'RandomForest', 'trees32_depth4_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'RandomForest', 'trees32_depth4_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'RandomForest', 'trees32_depth4_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'RandomForest', 'trees32_depth8_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'RandomForest', 'trees32_depth8_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 2, 'RandomForest', 'trees32_depth8_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f3 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f3 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f3 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/DecisionTree/fold3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f3 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f3 DecisionTree/depth3_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f3 DecisionTree/depth6_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f3 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'DecisionTree', 'depth3_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'DecisionTree', 'depth3_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'DecisionTree', 'depth3_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'DecisionTree', 'depth6_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'DecisionTree', 'depth6_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'DecisionTree', 'depth6_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f3 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f3 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f3 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy mean fit-only r1 f3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/Dummy/fold3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f3 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f3 Dummy/mean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f3 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'Dummy', 'mean', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'Dummy', 'mean', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'Dummy', 'mean', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f3 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f3 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f3 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/HistGradientBoosting/fold3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f3 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f3 HistGradientBoosting/iter80_leaf7_l210",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f3 HistGradientBoosting/iter120_leaf15_l21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f3 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'HistGradientBoosting', 'iter80_leaf7_l210', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'HistGradientBoosting', 'iter80_leaf7_l210', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'HistGradientBoosting', 'iter80_leaf7_l210', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'HistGradientBoosting', 'iter120_leaf15_l21', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'HistGradientBoosting', 'iter120_leaf15_l21', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'HistGradientBoosting', 'iter120_leaf15_l21', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f3 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f3 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f3 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/LinearRegression/fold3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f3 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f3 LinearRegression/ols",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f3 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'LinearRegression', 'ols', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'LinearRegression', 'ols', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'LinearRegression', 'ols', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f3 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f3 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f3 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/RandomForest/fold3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f3 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f3 RandomForest/trees32_depth4_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f3 RandomForest/trees32_depth8_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f3 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'RandomForest', 'trees32_depth4_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'RandomForest', 'trees32_depth4_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'RandomForest', 'trees32_depth4_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'RandomForest', 'trees32_depth8_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'RandomForest', 'trees32_depth8_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 3, 'RandomForest', 'trees32_depth8_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f4 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f4 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f4 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/DecisionTree/fold4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f4 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f4 DecisionTree/depth3_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f4 DecisionTree/depth6_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f4 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'DecisionTree', 'depth3_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'DecisionTree', 'depth3_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'DecisionTree', 'depth3_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'DecisionTree', 'depth6_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'DecisionTree', 'depth6_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'DecisionTree', 'depth6_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f4 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f4 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f4 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy mean fit-only r1 f4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/Dummy/fold4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f4 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f4 Dummy/mean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f4 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'Dummy', 'mean', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'Dummy', 'mean', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'Dummy', 'mean', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f4 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f4 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f4 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/HistGradientBoosting/fold4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f4 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f4 HistGradientBoosting/iter80_leaf7_l210",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f4 HistGradientBoosting/iter120_leaf15_l21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f4 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'HistGradientBoosting', 'iter80_leaf7_l210', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'HistGradientBoosting', 'iter80_leaf7_l210', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'HistGradientBoosting', 'iter80_leaf7_l210', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'HistGradientBoosting', 'iter120_leaf15_l21', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'HistGradientBoosting', 'iter120_leaf15_l21', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'HistGradientBoosting', 'iter120_leaf15_l21', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f4 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f4 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f4 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/LinearRegression/fold4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f4 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f4 LinearRegression/ols",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f4 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'LinearRegression', 'ols', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'LinearRegression', 'ols', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'LinearRegression', 'ols', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f4 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f4 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f4 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/RandomForest/fold4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f4 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f4 RandomForest/trees32_depth4_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f4 RandomForest/trees32_depth8_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f4 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'RandomForest', 'trees32_depth4_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'RandomForest', 'trees32_depth4_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'RandomForest', 'trees32_depth4_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'RandomForest', 'trees32_depth8_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'RandomForest', 'trees32_depth8_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 4, 'RandomForest', 'trees32_depth8_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f5 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f5 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f5 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/DecisionTree/fold5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f5 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f5 DecisionTree/depth3_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f5 DecisionTree/depth6_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f5 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'DecisionTree', 'depth3_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'DecisionTree', 'depth3_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'DecisionTree', 'depth3_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'DecisionTree', 'depth6_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'DecisionTree', 'depth6_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'DecisionTree', 'depth6_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f5 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f5 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f5 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy mean fit-only r1 f5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/Dummy/fold5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f5 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f5 Dummy/mean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f5 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'Dummy', 'mean', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'Dummy', 'mean', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'Dummy', 'mean', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f5 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f5 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f5 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/HistGradientBoosting/fold5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f5 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f5 HistGradientBoosting/iter80_leaf7_l210",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f5 HistGradientBoosting/iter120_leaf15_l21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f5 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'HistGradientBoosting', 'iter80_leaf7_l210', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'HistGradientBoosting', 'iter80_leaf7_l210', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'HistGradientBoosting', 'iter80_leaf7_l210', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'HistGradientBoosting', 'iter120_leaf15_l21', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'HistGradientBoosting', 'iter120_leaf15_l21', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'HistGradientBoosting', 'iter120_leaf15_l21', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f5 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f5 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f5 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/LinearRegression/fold5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f5 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f5 LinearRegression/ols",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f5 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'LinearRegression', 'ols', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'LinearRegression', 'ols', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'LinearRegression', 'ols', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r1 f5 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r1 f5 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r1 f5 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 1/RandomForest/fold5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r1 f5 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f5 RandomForest/trees32_depth4_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r1 f5 RandomForest/trees32_depth8_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r1 f5 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'RandomForest', 'trees32_depth4_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'RandomForest', 'trees32_depth4_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'RandomForest', 'trees32_depth4_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'RandomForest', 'trees32_depth8_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'RandomForest', 'trees32_depth8_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (1, 5, 'RandomForest', 'trees32_depth8_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f1 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f1 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f1 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/DecisionTree/fold1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f1 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f1 DecisionTree/depth3_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f1 DecisionTree/depth6_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f1 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'DecisionTree', 'depth3_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'DecisionTree', 'depth3_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'DecisionTree', 'depth3_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'DecisionTree', 'depth6_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'DecisionTree', 'depth6_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'DecisionTree', 'depth6_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f1 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f1 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f1 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy mean fit-only r2 f1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/Dummy/fold1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f1 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f1 Dummy/mean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f1 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'Dummy', 'mean', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'Dummy', 'mean', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'Dummy', 'mean', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f1 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f1 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f1 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/HistGradientBoosting/fold1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f1 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f1 HistGradientBoosting/iter80_leaf7_l210",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f1 HistGradientBoosting/iter120_leaf15_l21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f1 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'HistGradientBoosting', 'iter80_leaf7_l210', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'HistGradientBoosting', 'iter80_leaf7_l210', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'HistGradientBoosting', 'iter80_leaf7_l210', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'HistGradientBoosting', 'iter120_leaf15_l21', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'HistGradientBoosting', 'iter120_leaf15_l21', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'HistGradientBoosting', 'iter120_leaf15_l21', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f1 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f1 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f1 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/LinearRegression/fold1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f1 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f1 LinearRegression/ols",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f1 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'LinearRegression', 'ols', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'LinearRegression', 'ols', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'LinearRegression', 'ols', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f1 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f1 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f1 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/RandomForest/fold1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f1 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f1 RandomForest/trees32_depth4_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f1 RandomForest/trees32_depth8_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f1 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'RandomForest', 'trees32_depth4_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'RandomForest', 'trees32_depth4_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'RandomForest', 'trees32_depth4_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'RandomForest', 'trees32_depth8_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'RandomForest', 'trees32_depth8_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 1, 'RandomForest', 'trees32_depth8_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f2 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f2 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f2 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/DecisionTree/fold2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f2 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f2 DecisionTree/depth3_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f2 DecisionTree/depth6_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f2 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'DecisionTree', 'depth3_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'DecisionTree', 'depth3_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'DecisionTree', 'depth3_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'DecisionTree', 'depth6_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'DecisionTree', 'depth6_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'DecisionTree', 'depth6_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f2 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f2 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f2 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy mean fit-only r2 f2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/Dummy/fold2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f2 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f2 Dummy/mean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f2 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'Dummy', 'mean', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'Dummy', 'mean', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'Dummy', 'mean', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f2 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f2 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f2 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/HistGradientBoosting/fold2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f2 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f2 HistGradientBoosting/iter80_leaf7_l210",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f2 HistGradientBoosting/iter120_leaf15_l21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f2 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'HistGradientBoosting', 'iter80_leaf7_l210', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'HistGradientBoosting', 'iter80_leaf7_l210', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'HistGradientBoosting', 'iter80_leaf7_l210', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'HistGradientBoosting', 'iter120_leaf15_l21', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'HistGradientBoosting', 'iter120_leaf15_l21', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'HistGradientBoosting', 'iter120_leaf15_l21', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f2 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f2 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f2 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/LinearRegression/fold2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f2 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f2 LinearRegression/ols",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f2 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'LinearRegression', 'ols', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'LinearRegression', 'ols', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'LinearRegression', 'ols', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f2 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f2 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f2 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/RandomForest/fold2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f2 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f2 RandomForest/trees32_depth4_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f2 RandomForest/trees32_depth8_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f2 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'RandomForest', 'trees32_depth4_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'RandomForest', 'trees32_depth4_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'RandomForest', 'trees32_depth4_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'RandomForest', 'trees32_depth8_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'RandomForest', 'trees32_depth8_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 2, 'RandomForest', 'trees32_depth8_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f3 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f3 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f3 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/DecisionTree/fold3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f3 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f3 DecisionTree/depth3_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f3 DecisionTree/depth6_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f3 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'DecisionTree', 'depth3_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'DecisionTree', 'depth3_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'DecisionTree', 'depth3_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'DecisionTree', 'depth6_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'DecisionTree', 'depth6_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'DecisionTree', 'depth6_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f3 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f3 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f3 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy mean fit-only r2 f3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/Dummy/fold3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f3 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f3 Dummy/mean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f3 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'Dummy', 'mean', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'Dummy', 'mean', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'Dummy', 'mean', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f3 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f3 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f3 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/HistGradientBoosting/fold3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f3 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f3 HistGradientBoosting/iter80_leaf7_l210",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f3 HistGradientBoosting/iter120_leaf15_l21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f3 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'HistGradientBoosting', 'iter80_leaf7_l210', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'HistGradientBoosting', 'iter80_leaf7_l210', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'HistGradientBoosting', 'iter80_leaf7_l210', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'HistGradientBoosting', 'iter120_leaf15_l21', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'HistGradientBoosting', 'iter120_leaf15_l21', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'HistGradientBoosting', 'iter120_leaf15_l21', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f3 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f3 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f3 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/LinearRegression/fold3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f3 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f3 LinearRegression/ols",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f3 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'LinearRegression', 'ols', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'LinearRegression', 'ols', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'LinearRegression', 'ols', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f3 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f3 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f3 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/RandomForest/fold3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f3 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f3 RandomForest/trees32_depth4_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f3 RandomForest/trees32_depth8_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f3 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'RandomForest', 'trees32_depth4_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'RandomForest', 'trees32_depth4_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'RandomForest', 'trees32_depth4_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'RandomForest', 'trees32_depth8_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'RandomForest', 'trees32_depth8_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 3, 'RandomForest', 'trees32_depth8_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f4 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f4 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f4 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/DecisionTree/fold4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f4 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f4 DecisionTree/depth3_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f4 DecisionTree/depth6_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f4 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'DecisionTree', 'depth3_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'DecisionTree', 'depth3_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'DecisionTree', 'depth3_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'DecisionTree', 'depth6_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'DecisionTree', 'depth6_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'DecisionTree', 'depth6_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f4 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f4 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f4 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy mean fit-only r2 f4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/Dummy/fold4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f4 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f4 Dummy/mean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f4 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'Dummy', 'mean', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'Dummy', 'mean', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'Dummy', 'mean', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f4 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f4 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f4 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/HistGradientBoosting/fold4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f4 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f4 HistGradientBoosting/iter80_leaf7_l210",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f4 HistGradientBoosting/iter120_leaf15_l21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f4 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'HistGradientBoosting', 'iter80_leaf7_l210', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'HistGradientBoosting', 'iter80_leaf7_l210', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'HistGradientBoosting', 'iter80_leaf7_l210', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'HistGradientBoosting', 'iter120_leaf15_l21', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'HistGradientBoosting', 'iter120_leaf15_l21', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'HistGradientBoosting', 'iter120_leaf15_l21', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f4 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f4 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f4 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/LinearRegression/fold4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f4 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f4 LinearRegression/ols",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f4 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'LinearRegression', 'ols', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'LinearRegression', 'ols', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'LinearRegression', 'ols', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f4 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f4 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f4 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/RandomForest/fold4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f4 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f4 RandomForest/trees32_depth4_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f4 RandomForest/trees32_depth8_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f4 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'RandomForest', 'trees32_depth4_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'RandomForest', 'trees32_depth4_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'RandomForest', 'trees32_depth4_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'RandomForest', 'trees32_depth8_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'RandomForest', 'trees32_depth8_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 4, 'RandomForest', 'trees32_depth8_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f5 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f5 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f5 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/DecisionTree/fold5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f5 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f5 DecisionTree/depth3_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f5 DecisionTree/depth6_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f5 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'DecisionTree', 'depth3_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'DecisionTree', 'depth3_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'DecisionTree', 'depth3_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'DecisionTree', 'depth6_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'DecisionTree', 'depth6_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'DecisionTree', 'depth6_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f5 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f5 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f5 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy mean fit-only r2 f5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/Dummy/fold5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f5 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f5 Dummy/mean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f5 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'Dummy', 'mean', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'Dummy', 'mean', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'Dummy', 'mean', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f5 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f5 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f5 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/HistGradientBoosting/fold5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f5 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f5 HistGradientBoosting/iter80_leaf7_l210",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f5 HistGradientBoosting/iter120_leaf15_l21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f5 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'HistGradientBoosting', 'iter80_leaf7_l210', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'HistGradientBoosting', 'iter80_leaf7_l210', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'HistGradientBoosting', 'iter80_leaf7_l210', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'HistGradientBoosting', 'iter120_leaf15_l21', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'HistGradientBoosting', 'iter120_leaf15_l21', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'HistGradientBoosting', 'iter120_leaf15_l21', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f5 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f5 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f5 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/LinearRegression/fold5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f5 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f5 LinearRegression/ols",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f5 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'LinearRegression', 'ols', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'LinearRegression', 'ols', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'LinearRegression', 'ols', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r2 f5 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r2 f5 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r2 f5 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 2/RandomForest/fold5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r2 f5 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f5 RandomForest/trees32_depth4_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r2 f5 RandomForest/trees32_depth8_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r2 f5 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'RandomForest', 'trees32_depth4_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'RandomForest', 'trees32_depth4_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'RandomForest', 'trees32_depth4_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'RandomForest', 'trees32_depth8_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'RandomForest', 'trees32_depth8_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (2, 5, 'RandomForest', 'trees32_depth8_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f1 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f1 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f1 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/DecisionTree/fold1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f1 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f1 DecisionTree/depth3_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f1 DecisionTree/depth6_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f1 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'DecisionTree', 'depth3_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'DecisionTree', 'depth3_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'DecisionTree', 'depth3_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'DecisionTree', 'depth6_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'DecisionTree', 'depth6_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'DecisionTree', 'depth6_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f1 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f1 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f1 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy mean fit-only r3 f1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/Dummy/fold1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f1 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f1 Dummy/mean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f1 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'Dummy', 'mean', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'Dummy', 'mean', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'Dummy', 'mean', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f1 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f1 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f1 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/HistGradientBoosting/fold1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f1 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f1 HistGradientBoosting/iter80_leaf7_l210",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f1 HistGradientBoosting/iter120_leaf15_l21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f1 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'HistGradientBoosting', 'iter80_leaf7_l210', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'HistGradientBoosting', 'iter80_leaf7_l210', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'HistGradientBoosting', 'iter80_leaf7_l210', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'HistGradientBoosting', 'iter120_leaf15_l21', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'HistGradientBoosting', 'iter120_leaf15_l21', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'HistGradientBoosting', 'iter120_leaf15_l21', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f1 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f1 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f1 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/LinearRegression/fold1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f1 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f1 LinearRegression/ols",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f1 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'LinearRegression', 'ols', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'LinearRegression', 'ols', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'LinearRegression', 'ols', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f1 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f1 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f1 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/RandomForest/fold1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f1 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f1 RandomForest/trees32_depth4_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f1 RandomForest/trees32_depth8_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f1 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'RandomForest', 'trees32_depth4_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'RandomForest', 'trees32_depth4_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'RandomForest', 'trees32_depth4_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'RandomForest', 'trees32_depth8_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'RandomForest', 'trees32_depth8_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 1, 'RandomForest', 'trees32_depth8_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f2 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f2 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f2 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/DecisionTree/fold2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f2 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f2 DecisionTree/depth3_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f2 DecisionTree/depth6_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f2 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'DecisionTree', 'depth3_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'DecisionTree', 'depth3_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'DecisionTree', 'depth3_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'DecisionTree', 'depth6_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'DecisionTree', 'depth6_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'DecisionTree', 'depth6_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f2 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f2 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f2 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy mean fit-only r3 f2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/Dummy/fold2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f2 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f2 Dummy/mean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f2 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'Dummy', 'mean', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'Dummy', 'mean', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'Dummy', 'mean', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f2 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f2 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f2 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/HistGradientBoosting/fold2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f2 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f2 HistGradientBoosting/iter80_leaf7_l210",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f2 HistGradientBoosting/iter120_leaf15_l21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f2 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'HistGradientBoosting', 'iter80_leaf7_l210', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'HistGradientBoosting', 'iter80_leaf7_l210', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'HistGradientBoosting', 'iter80_leaf7_l210', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'HistGradientBoosting', 'iter120_leaf15_l21', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'HistGradientBoosting', 'iter120_leaf15_l21', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'HistGradientBoosting', 'iter120_leaf15_l21', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f2 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f2 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f2 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/LinearRegression/fold2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f2 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f2 LinearRegression/ols",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f2 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'LinearRegression', 'ols', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'LinearRegression', 'ols', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'LinearRegression', 'ols', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f2 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f2 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f2 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/RandomForest/fold2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f2 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f2 RandomForest/trees32_depth4_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f2 RandomForest/trees32_depth8_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f2 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'RandomForest', 'trees32_depth4_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'RandomForest', 'trees32_depth4_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'RandomForest', 'trees32_depth4_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'RandomForest', 'trees32_depth8_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'RandomForest', 'trees32_depth8_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 2, 'RandomForest', 'trees32_depth8_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f3 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f3 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f3 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/DecisionTree/fold3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f3 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f3 DecisionTree/depth3_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f3 DecisionTree/depth6_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f3 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'DecisionTree', 'depth3_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'DecisionTree', 'depth3_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'DecisionTree', 'depth3_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'DecisionTree', 'depth6_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'DecisionTree', 'depth6_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'DecisionTree', 'depth6_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f3 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f3 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f3 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy mean fit-only r3 f3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/Dummy/fold3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f3 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f3 Dummy/mean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f3 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'Dummy', 'mean', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'Dummy', 'mean', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'Dummy', 'mean', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f3 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f3 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f3 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/HistGradientBoosting/fold3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f3 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f3 HistGradientBoosting/iter80_leaf7_l210",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f3 HistGradientBoosting/iter120_leaf15_l21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f3 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'HistGradientBoosting', 'iter80_leaf7_l210', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'HistGradientBoosting', 'iter80_leaf7_l210', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'HistGradientBoosting', 'iter80_leaf7_l210', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'HistGradientBoosting', 'iter120_leaf15_l21', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'HistGradientBoosting', 'iter120_leaf15_l21', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'HistGradientBoosting', 'iter120_leaf15_l21', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f3 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f3 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f3 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/LinearRegression/fold3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f3 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f3 LinearRegression/ols",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f3 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'LinearRegression', 'ols', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'LinearRegression', 'ols', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'LinearRegression', 'ols', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f3 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f3 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f3 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/RandomForest/fold3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f3 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f3 RandomForest/trees32_depth4_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f3 RandomForest/trees32_depth8_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f3 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'RandomForest', 'trees32_depth4_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'RandomForest', 'trees32_depth4_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'RandomForest', 'trees32_depth4_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'RandomForest', 'trees32_depth8_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'RandomForest', 'trees32_depth8_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 3, 'RandomForest', 'trees32_depth8_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f4 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f4 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f4 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/DecisionTree/fold4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f4 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f4 DecisionTree/depth3_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f4 DecisionTree/depth6_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f4 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'DecisionTree', 'depth3_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'DecisionTree', 'depth3_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'DecisionTree', 'depth3_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'DecisionTree', 'depth6_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'DecisionTree', 'depth6_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'DecisionTree', 'depth6_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f4 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f4 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f4 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy mean fit-only r3 f4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/Dummy/fold4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f4 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f4 Dummy/mean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f4 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'Dummy', 'mean', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'Dummy', 'mean', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'Dummy', 'mean', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f4 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f4 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f4 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/HistGradientBoosting/fold4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f4 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f4 HistGradientBoosting/iter80_leaf7_l210",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f4 HistGradientBoosting/iter120_leaf15_l21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f4 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'HistGradientBoosting', 'iter80_leaf7_l210', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'HistGradientBoosting', 'iter80_leaf7_l210', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'HistGradientBoosting', 'iter80_leaf7_l210', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'HistGradientBoosting', 'iter120_leaf15_l21', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'HistGradientBoosting', 'iter120_leaf15_l21', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'HistGradientBoosting', 'iter120_leaf15_l21', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f4 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f4 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f4 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/LinearRegression/fold4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f4 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f4 LinearRegression/ols",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f4 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'LinearRegression', 'ols', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'LinearRegression', 'ols', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'LinearRegression', 'ols', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f4 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f4 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f4 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/RandomForest/fold4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f4 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f4 RandomForest/trees32_depth4_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f4 RandomForest/trees32_depth8_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f4 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'RandomForest', 'trees32_depth4_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'RandomForest', 'trees32_depth4_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'RandomForest', 'trees32_depth4_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'RandomForest', 'trees32_depth8_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'RandomForest', 'trees32_depth8_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 4, 'RandomForest', 'trees32_depth8_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f5 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f5 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f5 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/DecisionTree/fold5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f5 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f5 DecisionTree/depth3_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f5 DecisionTree/depth6_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f5 DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'DecisionTree', 'depth3_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'DecisionTree', 'depth3_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'DecisionTree', 'depth3_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'DecisionTree', 'depth6_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'DecisionTree', 'depth6_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'DecisionTree', 'depth6_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f5 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f5 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f5 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Dummy mean fit-only r3 f5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/Dummy/fold5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f5 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f5 Dummy/mean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f5 Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'Dummy', 'mean', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'Dummy', 'mean', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'Dummy', 'mean', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f5 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f5 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f5 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/HistGradientBoosting/fold5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f5 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f5 HistGradientBoosting/iter80_leaf7_l210",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f5 HistGradientBoosting/iter120_leaf15_l21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f5 HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'HistGradientBoosting', 'iter80_leaf7_l210', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'HistGradientBoosting', 'iter80_leaf7_l210', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'HistGradientBoosting', 'iter80_leaf7_l210', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'HistGradientBoosting', 'iter120_leaf15_l21', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'HistGradientBoosting', 'iter120_leaf15_l21', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'HistGradientBoosting', 'iter120_leaf15_l21', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f5 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f5 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f5 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/LinearRegression/fold5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f5 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f5 LinearRegression/ols",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f5 LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'LinearRegression', 'ols', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'LinearRegression', 'ols', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'LinearRegression', 'ols', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Outer membership r3 f5 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "OOF identity/finite r3 f5 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Raw metrics recompute r3 f5 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No duplicate assessment rows per repeat 3/RandomForest/fold5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Complete candidate grid r3 f5 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f5 RandomForest/trees32_depth4_leaf200",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Three inner folds r3 f5 RandomForest/trees32_depth8_leaf100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner-only deterministic selection r3 f5 RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'RandomForest', 'trees32_depth4_leaf200', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'RandomForest', 'trees32_depth4_leaf200', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'RandomForest', 'trees32_depth4_leaf200', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'RandomForest', 'trees32_depth8_leaf100', 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'RandomForest', 'trees32_depth8_leaf100', 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Inner fit/validation scope (3, 5, 'RandomForest', 'trees32_depth8_leaf100', 3)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Exactly 360 inner fits recorded, no missing/duplicate trials",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Each model assesses all Development once per repeat",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "All experiment fits completed without warnings",
+      "status": "PASS",
+      "detail": "warning_count=0"
+    },
+    {
+      "check": "Paired Dummy deltas use identical outer folds",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Primary mean-of-repeat fold means: Dummy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Primary mean-of-repeat fold means: LinearRegression",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Primary mean-of-repeat fold means: DecisionTree",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Primary mean-of-repeat fold means: RandomForest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Primary mean-of-repeat fold means: HistGradientBoosting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Seed42 Dummy agrees with Phase4B1A new baseline",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "All 75 outer refits reproduced independently",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "First-fold complete inner searches reproduced (24 fits)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "All 75 replay preprocessors match fit-only statistics",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Production and all prior research unchanged",
+      "status": "PASS",
+      "detail": "121 protected files"
+    },
+    {
+      "check": "Quality gate and recommendation restrictions unchanged",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "model_validation_status": "NOT_VALIDATED: research verification does not establish predictive or causal benefit"
+}

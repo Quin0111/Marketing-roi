@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "allowed_duration_days": [
+    15,
+    30,
+    45,
+    60
+  ],
+  "dataset_file": "marketing_campaign_dataset.csv",
+  "dataset_sha256": "f06c1b95a8207b4631c35e6b83b4a2a7872892a8bfa133967e1e7ec401c7bb60",
+  "notebook_file": "MachineLearningcki (8).ipynb",
+  "notebook_sha256": "f66eace5d41e3a09b1b44ea51d2402ad8cee729551547b2aa3c2db56b2c22469",
+  "notebook_cell_indices_zero_based": [
+    34,
+    115
+  ],
+  "conversion": "Duration.str.extract(r'(\\d+)').astype(int)",
+  "rows": 200000,
+  "missing_duration": 0,
+  "raw_counts": {
+    "15 days": 49779,
+    "30 days": 50255,
+    "45 days": 50100,
+    "60 days": 49866
+  },
+  "duration_days_counts": {
+    "15": 49779,
+    "30": 50255,
+    "45": 50100,
+    "60": 49866
+  },
+  "scope": "Input-domain verification only; only Duration column read; no ROI, model selection or fitting."
+}

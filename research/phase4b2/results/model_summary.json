@@ -1,0 +1,127 @@
+[
+  {
+    "model": "Dummy",
+    "outer_folds_completed": 15,
+    "MAE_mean": 1.5028091275080737,
+    "MSE_mean": 3.008424910948255,
+    "RMSE_mean": 1.7344760014629985,
+    "R2_mean": -2.347082456373902e-05,
+    "RMSE_fold_sd_descriptive_15": 0.004380716328708184,
+    "delta_RMSE_mean": 0.0,
+    "RMSE_improvement_pct_mean": 0.0,
+    "folds_beating_Dummy": 0,
+    "folds_beating_Dummy_per_repeat": [
+      0,
+      0,
+      0
+    ],
+    "train_RMSE_mean": 1.734472718343593,
+    "train_assessment_RMSE_gap_mean": 3.2831194052877303e-06,
+    "mean_outer_refit_seconds": 0.21911963333065312,
+    "total_inner_fit_seconds": 6.93857740011299,
+    "selected_candidate_counts": {
+      "mean": 15
+    },
+    "passes_proposed_5pct_and_4of5_each_repeat": false
+  },
+  {
+    "model": "LinearRegression",
+    "outer_folds_completed": 15,
+    "MAE_mean": 1.5028376583406644,
+    "MSE_mean": 3.008734575983686,
+    "RMSE_mean": 1.7345652776912963,
+    "R2_mean": -0.0001264369810039782,
+    "RMSE_fold_sd_descriptive_15": 0.004376080854662222,
+    "delta_RMSE_mean": 8.92762282974117e-05,
+    "RMSE_improvement_pct_mean": -0.00514794404658002,
+    "folds_beating_Dummy": 4,
+    "folds_beating_Dummy_per_repeat": [
+      1,
+      2,
+      1
+    ],
+    "train_RMSE_mean": 1.7343276906115883,
+    "train_assessment_RMSE_gap_mean": 0.00023758707970813475,
+    "mean_outer_refit_seconds": 0.2948368933284655,
+    "total_inner_fit_seconds": 8.823937999783084,
+    "selected_candidate_counts": {
+      "ols": 15
+    },
+    "passes_proposed_5pct_and_4of5_each_repeat": false
+  },
+  {
+    "model": "DecisionTree",
+    "outer_folds_completed": 15,
+    "MAE_mean": 1.5029908125464206,
+    "MSE_mean": 3.0092492463800142,
+    "RMSE_mean": 1.7347136342842704,
+    "R2_mean": -0.0002975355207871289,
+    "RMSE_fold_sd_descriptive_15": 0.004373631411228704,
+    "delta_RMSE_mean": 0.00023763282127172344,
+    "RMSE_improvement_pct_mean": -0.013701818793827968,
+    "folds_beating_Dummy": 0,
+    "folds_beating_Dummy_per_repeat": [
+      0,
+      0,
+      0
+    ],
+    "train_RMSE_mean": 1.734284344464867,
+    "train_assessment_RMSE_gap_mean": 0.00042928981940379234,
+    "mean_outer_refit_seconds": 0.3532938666602907,
+    "total_inner_fit_seconds": 20.803824700124096,
+    "selected_candidate_counts": {
+      "depth3_leaf200": 15
+    },
+    "passes_proposed_5pct_and_4of5_each_repeat": false
+  },
+  {
+    "model": "RandomForest",
+    "outer_folds_completed": 15,
+    "MAE_mean": 1.5028991773737956,
+    "MSE_mean": 3.008883957350277,
+    "RMSE_mean": 1.7346083165212323,
+    "R2_mean": -0.00017604554407711542,
+    "RMSE_fold_sd_descriptive_15": 0.004384909876800522,
+    "delta_RMSE_mean": 0.00013231505823371552,
+    "RMSE_improvement_pct_mean": -0.007628174164508737,
+    "folds_beating_Dummy": 1,
+    "folds_beating_Dummy_per_repeat": [
+      0,
+      1,
+      0
+    ],
+    "train_RMSE_mean": 1.733917743319195,
+    "train_assessment_RMSE_gap_mean": 0.000690573202037544,
+    "mean_outer_refit_seconds": 2.3703810666610177,
+    "total_inner_fit_seconds": 132.51129599963315,
+    "selected_candidate_counts": {
+      "trees32_depth4_leaf200": 15
+    },
+    "passes_proposed_5pct_and_4of5_each_repeat": false
+  },
+  {
+    "model": "HistGradientBoosting",
+    "outer_folds_completed": 15,
+    "MAE_mean": 1.50292093682937,
+    "MSE_mean": 3.009138151340211,
+    "RMSE_mean": 1.7346815934662108,
+    "R2_mean": -0.0002605663437382555,
+    "RMSE_fold_sd_descriptive_15": 0.004381857450774776,
+    "delta_RMSE_mean": 0.0002055920032123441,
+    "RMSE_improvement_pct_mean": -0.011853527125292269,
+    "folds_beating_Dummy": 2,
+    "folds_beating_Dummy_per_repeat": [
+      1,
+      1,
+      0
+    ],
+    "train_RMSE_mean": 1.7337918462977717,
+    "train_assessment_RMSE_gap_mean": 0.0008897471684392884,
+    "mean_outer_refit_seconds": 0.5861716933276815,
+    "total_inner_fit_seconds": 44.40162689983845,
+    "selected_candidate_counts": {
+      "iter80_leaf7_l210": 15
+    },
+    "passes_proposed_5pct_and_4of5_each_repeat": false
+  }
+]

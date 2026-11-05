@@ -1,0 +1,36 @@
+[
+  {
+    "model": "S_Learner",
+    "AUUC": 0.007267532872549026,
+    "Qini": 0.003087140715686278,
+    "U1_descriptive_benchmark_contrast": 0.008360784313725497,
+    "log_loss": 0.10687895944429113,
+    "Brier": 0.03075421136842692,
+    "ROC_AUC": 0.9413913945722086,
+    "average_precision": 0.49022529321690284
+  },
+  {
+    "model": "T_Learner",
+    "AUUC": 0.007329818343137258,
+    "Qini": 0.00314942618627451,
+    "U1_descriptive_benchmark_contrast": 0.008360784313725497,
+    "log_loss": 0.10698015537464489,
+    "Brier": 0.03081004048524366,
+    "ROC_AUC": 0.941283014703002,
+    "average_precision": 0.48768014319442277
+  },
+  {
+    "model": "Constant_arm_means",
+    "train_arm_means": [
+      0.03772497561840589,
+      0.04839848715494107
+    ],
+    "AUUC": 0.003757657431372551,
+    "Qini": -0.00042273472549019713,
+    "U1_descriptive_benchmark_contrast": 0.008360784313725497,
+    "log_loss": 0.1899136283252686,
+    "Brier": 0.04490969330885468,
+    "ROC_AUC": 0.5118739855418274,
+    "average_precision": 0.04823510521618704
+  }
+]

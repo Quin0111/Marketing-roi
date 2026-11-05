@@ -1,0 +1,8 @@
+# Python 3.13.17; existing backend/.venv used read-only for research execution.
+numpy==2.4.6
+pandas==2.2.3
+scipy==1.18.1
+scikit-learn==1.6.1
+joblib==1.6.0
+threadpoolctl==3.7.0
+# Plotting only: isolated research/.deps, pinned in ../requirements-extra.txt.

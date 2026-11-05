@@ -1,0 +1,81 @@
+{
+  "status": "COMPLETE",
+  "sources_sha256": {
+    "common.py": "87e3e5dace31da8d62afc89d345c01408132ddb0b630bb17f101d8b66860828a",
+    "run_experiment.py": "6942ae8d65a656ebf55717cdb867436c3775ca2421abfa9cefa1f5907fd46027",
+    "experiment_config.json": "9cabbdf6266f33743054c4936dea897c8ba65fb249995718b8e2180f3eb2da95",
+    "phase4b2_evaluation_protocol.json": "9114f91eb9f393ac5e65ec63def4fe5dbdcf974d627461ddcfe952a8daf4c9bb"
+  },
+  "repeat": 1,
+  "outer_seed": 42,
+  "outer_fold": 3,
+  "model": "HistGradientBoosting",
+  "feature_group": "current5",
+  "selected": {
+    "candidate_order": 0,
+    "candidate": "iter80_leaf7_l210",
+    "mean_inner_RMSE": 1.734564599615731,
+    "params": {
+      "max_iter": 80,
+      "max_leaf_nodes": 7,
+      "max_depth": 3,
+      "min_samples_leaf": 200,
+      "l2_regularization": 10.0,
+      "learning_rate": 0.05,
+      "early_stopping": false
+    }
+  },
+  "all_candidate_means": [
+    {
+      "candidate_order": 0,
+      "candidate": "iter80_leaf7_l210",
+      "mean_inner_RMSE": 1.734564599615731,
+      "params": {
+        "max_iter": 80,
+        "max_leaf_nodes": 7,
+        "max_depth": 3,
+        "min_samples_leaf": 200,
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05,
+        "early_stopping": false
+      }
+    },
+    {
+      "candidate_order": 1,
+      "candidate": "iter120_leaf15_l21",
+      "mean_inner_RMSE": 1.7352562978956019,
+      "params": {
+        "max_iter": 120,
+        "max_leaf_nodes": 15,
+        "max_depth": 5,
+        "min_samples_leaf": 100,
+        "l2_regularization": 1.0,
+        "learning_rate": 0.05,
+        "early_stopping": false
+      }
+    }
+  ],
+  "inner_trials": 6,
+  "inner_total_fit_seconds": 2.886700400034897,
+  "fit_rows": 136000,
+  "assessment_rows": 34000,
+  "fit_ids_sha256": "6d8a4dd2321e79107ed2e27206736f358dd79054059270311c78b06e0303a4ba",
+  "assessment_ids_sha256": "4e2851a9e80d79a6f1976acc0caf15c213a5602ce04b47d3c4c7b3160acb261f",
+  "train_metrics": {
+    "MAE": 1.5020018595410092,
+    "MSE": 3.0061449462320478,
+    "RMSE": 1.733823793305435,
+    "R2": 0.00065674196966925
+  },
+  "assessment_metrics": {
+    "MAE": 1.5036482556118609,
+    "MSE": 3.009783351855684,
+    "RMSE": 1.7348727192090156,
+    "R2": -9.025811991270061e-05
+  },
+  "train_assessment_RMSE_gap": 0.001048925903580633,
+  "outer_refit_seconds": 0.5609916999819688,
+  "prediction_sha256_f64_le": "fbf45601e34fb2701aba0a0e31c390eb2ed3e06a595116b72649bae42c5e20eb",
+  "prediction_file_sha256": "47694329374b4a21036b7d6475d76e380c41de7383697145e463f58064972d41",
+  "warnings": []
+}

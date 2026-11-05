@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "model": "Dummy",
+      "candidate": "mean",
+      "fit_rows": 10000,
+      "assessment_rows": 1000,
+      "fit_seconds": 0.02596519998041913,
+      "finite_predictions": true,
+      "warnings": [],
+      "used_to_select_or_change_config": false
+    },
+    {
+      "model": "LinearRegression",
+      "candidate": "ols",
+      "fit_rows": 10000,
+      "assessment_rows": 1000,
+      "fit_seconds": 0.04169939999701455,
+      "finite_predictions": true,
+      "warnings": [],
+      "used_to_select_or_change_config": false
+    },
+    {
+      "model": "DecisionTree",
+      "candidate": "depth3_leaf200",
+      "fit_rows": 10000,
+      "assessment_rows": 1000,
+      "fit_seconds": 0.043622400029562414,
+      "finite_predictions": true,
+      "warnings": [],
+      "used_to_select_or_change_config": false
+    },
+    {
+      "model": "RandomForest",
+      "candidate": "trees32_depth4_leaf200",
+      "fit_rows": 10000,
+      "assessment_rows": 1000,
+      "fit_seconds": 0.15921630000229925,
+      "finite_predictions": true,
+      "warnings": [],
+      "used_to_select_or_change_config": false
+    },
+    {
+      "model": "HistGradientBoosting",
+      "candidate": "iter80_leaf7_l210",
+      "fit_rows": 10000,
+      "assessment_rows": 1000,
+      "fit_seconds": 0.0989246999961324,
+      "finite_predictions": true,
+      "warnings": [],
+      "used_to_select_or_change_config": false
+    }
+  ],
+  "original_config_sha256": "9cabbdf6266f33743054c4936dea897c8ba65fb249995718b8e2180f3eb2da95",
+  "outer_assessment_used": false
+}

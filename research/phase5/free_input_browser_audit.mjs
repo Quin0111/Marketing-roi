@@ -1,0 +1,31 @@
+import { chromium } from '@playwright/test';
+import assert from 'node:assert/strict';
+import { readFileSync,writeFileSync,mkdirSync } from 'node:fs';
+import { resolve } from 'node:path';
+import setup from '../../tests/support/e2e-global-setup.mjs';
+const out=resolve(process.env.DM_FINAL_AUDIT_DIR||'research/phase5/run_free_input/browser_audit');mkdirSync(out,{recursive:true});
+process.env.DM_TEST_API_PORT='18000';process.env.DM_TEST_RESULTS_DIR=out;process.env.DM_TEST_BUILD_DIR=resolve(process.env.DM_FINAL_AUDIT_BUILD||'research/phase5/run_free_input/build-isolated-confirm');
+const reference=JSON.parse(readFileSync('backend/models/reference_prediction.json','utf8'));
+const scenarios=reference.cases.map((row,i)=>({id:i?'b':'a',name:i?'Google audit':'Facebook audit',createdAt:'audit',updatedAt:'audit',features:{campaignType:row.features.Campaign_Type,channelUsed:row.features.Channel_Used,targetAudience:row.features.Target_Audience,customerSegment:row.features.Customer_Segment,durationDays:row.features.Duration_days}}));
+const cleanup=await setup();let browser;const checks=[];
+try{
+ browser=await chromium.launch({channel:'msedge',headless:true});
+ for(const width of [1440,390]){
+  const page=await browser.newPage({viewport:{width,height:1000}}),errors=[],network=[],consoleErrors=[];
+  page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error'){consoleErrors.push({text:m.text(),location:m.location()});writeFileSync(resolve(out,'console-errors.json'),JSON.stringify(consoleErrors,null,2));}});page.on('requestfailed',r=>network.push({url:r.url(),error:r.failure()?.errorText}));page.on('response',r=>{if(r.status()>=400)network.push({url:r.url(),status:r.status()});});
+  await page.addInitScript(rows=>localStorage.setItem('dm_scenarios',JSON.stringify({version:1,scenarios:rows})),scenarios);
+  const url='http://127.0.0.1:4173';
+  const ready=async()=>{await page.getByRole('button',{name:'Quality Gate: BASELINE_ONLY'}).waitFor();assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);};
+  await page.goto(`${url}/#dashboard`);await ready();await page.screenshot({path:resolve(out,`dashboard-${width}.png`),fullPage:true});
+  if(process.env.DM_FINAL_AUDIT_DIAGNOSTIC==='1'){const response=await page.request.get(`${url}/favicon.ico`);writeFileSync(resolve(out,'diagnostic.json'),JSON.stringify({favicon_status:response.status(),consoleErrors,network},null,2));assert.equal(response.status(),200);}
+  if(width===390){await page.getByRole('button',{name:'Mở thanh điều hướng'}).click();assert.equal(await page.getByRole('navigation',{name:'Điều hướng chính trên di động',exact:true}).getByRole('button').count(),3);await page.screenshot({path:resolve(out,'navigation-390.png')});await page.getByRole('button',{name:'Đóng thanh điều hướng'}).click();}
+  await page.goto(`${url}/#predict`);await ready();const f=reference.cases[0].features;
+  for(const [label,value] of [['1. Loại chiến dịch',f.Campaign_Type],['2. Kênh Marketing',f.Channel_Used],['3. Đối tượng mục tiêu',f.Target_Audience],['4. Phân khúc khách hàng',f.Customer_Segment]])await page.getByLabel(new RegExp(label)).fill(value);
+  await page.locator('#predict-durationDays').fill('30');const prediction=page.waitForResponse(r=>new URL(r.url()).pathname==='/predict'&&r.request().method()==='POST');await page.getByRole('button',{name:'Dự đoán ROI',exact:true}).click();const body=await (await prediction).json();assert.equal(body.predicted_roi,reference.cases[0].expected_predictions['Linear Regression']);await page.getByTestId('predicted-roi').waitFor();await page.getByText('Thông tin mô hình',{exact:true}).click();await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:resolve(out,`predict-${width}.png`),fullPage:true});
+  await page.goto(`${url}/#scenarios`);await ready();await page.getByLabel('Lĩnh vực kinh doanh',{exact:true}).selectOption('technology');await page.getByLabel('Mục tiêu Marketing',{exact:true}).selectOption('conversion');await page.getByLabel('Kênh Marketing mong muốn',{exact:true}).selectOption('Google Ads');await page.getByRole('button',{name:'Đánh giá phương án theo lĩnh vực'}).click();await page.getByRole('button',{name:'Xem kế hoạch triển khai'}).click();await page.getByTestId('action-plan-details').waitFor();await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:resolve(out,`compare-plan-${width}.png`),fullPage:true});
+  await page.getByRole('button',{name:'Tạo chiến dịch từ phương án'}).click();await page.getByTestId('campaign-editor').waitFor();await page.getByLabel('Nội dung khoản chi',{exact:true}).fill('Audit fixture — không phải thực chi');await page.getByLabel('Số tiền khoản chi',{exact:true}).fill('100');await page.getByRole('button',{name:'Thêm khoản chi',exact:true}).click();await page.getByLabel('Doanh thu thực tế',{exact:true}).fill('150');await page.getByRole('button',{name:'Lưu số liệu tài chính'}).click();await page.getByTestId('campaign-actual-roi').filter({hasText:'50.00%'}).waitFor();await page.getByTestId('campaign-actual-roi').scrollIntoViewIfNeeded();await page.screenshot({path:resolve(out,`campaign-${width}.png`)});
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);assert.deepEqual(errors,[]);assert.deepEqual(consoleErrors,[]);assert.deepEqual(network,[]);
+  checks.push({width,pageerrors:errors,console_errors:consoleErrors,unexpected_network:network,overflow:false,prediction:body,finance_fixture:{cost:100,revenue:150,roiPercent:50,notice:'Test inputs, not business results'}});await page.close();
+ }
+ writeFileSync(resolve(out,'checks.json'),JSON.stringify({status:'PASS',interception:false,checks},null,2));console.log(JSON.stringify({status:'PASS',viewports:2,screenshots:9,pageerrors:0,consoleErrors:0,unexpectedNetwork:0}));
+}finally{await browser?.close();await cleanup();}

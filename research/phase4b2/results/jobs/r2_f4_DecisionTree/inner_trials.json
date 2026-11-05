@@ -1,0 +1,188 @@
+[
+  {
+    "repeat": 2,
+    "outer_fold": 4,
+    "model": "DecisionTree",
+    "candidate_order": 0,
+    "candidate": "depth3_leaf200",
+    "params": {
+      "max_depth": 3,
+      "min_samples_leaf": 200
+    },
+    "inner_fold": 1,
+    "inner_seed": 204017,
+    "fit_rows": 90666,
+    "assessment_rows": 45334,
+    "fit_ids_sha256": "51aa62c356af4d02439d5a228cc828217307ffea4695978acc49092d00a58578",
+    "assessment_ids_sha256": "7c5602cc1d588397318b5c4472ed0738b54b91347a1d3a7859dfb4c95c6a139c",
+    "metrics": {
+      "MAE": 1.5101400989602398,
+      "MSE": 3.030432252340796,
+      "RMSE": 1.7408136753658607,
+      "R2": -0.000723595155898149
+    },
+    "train_metrics": {
+      "MAE": 1.4996699492995644,
+      "MSE": 2.9994432006615237,
+      "RMSE": 1.7318900659861536,
+      "R2": 0.0003850521387941397
+    },
+    "fit_seconds": 0.19786489999387413,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 4,
+    "model": "DecisionTree",
+    "candidate_order": 0,
+    "candidate": "depth3_leaf200",
+    "params": {
+      "max_depth": 3,
+      "min_samples_leaf": 200
+    },
+    "inner_fold": 2,
+    "inner_seed": 204017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "879b051c6688c7faa09c440427a4cd8ebac67d15a2a14619b983ea881159ea79",
+    "assessment_ids_sha256": "4896348d22ec8934a51efbcf66cbbda47463cbb8f755f22dba4aaa2da7397beb",
+    "metrics": {
+      "MAE": 1.5033107224211468,
+      "MSE": 3.01460260551872,
+      "RMSE": 1.736261099465953,
+      "R2": -0.00012836928376125378
+    },
+    "train_metrics": {
+      "MAE": 1.5031075058563623,
+      "MSE": 3.006970906567847,
+      "RMSE": 1.734061967337917,
+      "R2": 0.00021442892611300834
+    },
+    "fit_seconds": 0.1810016999952495,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 4,
+    "model": "DecisionTree",
+    "candidate_order": 0,
+    "candidate": "depth3_leaf200",
+    "params": {
+      "max_depth": 3,
+      "min_samples_leaf": 200
+    },
+    "inner_fold": 3,
+    "inner_seed": 204017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "e681475c3ef4d16342d57c20fde8b37ecd8d33ea3314d243d3c521e3fcf7793e",
+    "assessment_ids_sha256": "a4be23cddaf1d805a88a09d9e5df6fa57988be810b036830d9bb43033b9ff47f",
+    "metrics": {
+      "MAE": 1.4968243195782325,
+      "MSE": 2.987265361208523,
+      "RMSE": 1.728370724471033,
+      "R2": -0.00010024546221276687
+    },
+    "train_metrics": {
+      "MAE": 1.5064079504364873,
+      "MSE": 3.0205474307729117,
+      "RMSE": 1.737972218067053,
+      "R2": 0.00023841878669250693
+    },
+    "fit_seconds": 0.25809299998218194,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 4,
+    "model": "DecisionTree",
+    "candidate_order": 1,
+    "candidate": "depth6_leaf100",
+    "params": {
+      "max_depth": 6,
+      "min_samples_leaf": 100
+    },
+    "inner_fold": 1,
+    "inner_seed": 204017,
+    "fit_rows": 90666,
+    "assessment_rows": 45334,
+    "fit_ids_sha256": "51aa62c356af4d02439d5a228cc828217307ffea4695978acc49092d00a58578",
+    "assessment_ids_sha256": "7c5602cc1d588397318b5c4472ed0738b54b91347a1d3a7859dfb4c95c6a139c",
+    "metrics": {
+      "MAE": 1.5110799535651902,
+      "MSE": 3.03573403045587,
+      "RMSE": 1.7423357972721187,
+      "R2": -0.0024743732674818997
+    },
+    "train_metrics": {
+      "MAE": 1.498191918533776,
+      "MSE": 2.9949304956878557,
+      "RMSE": 1.7305867489634421,
+      "R2": 0.001888987051104296
+    },
+    "fit_seconds": 0.24007060000440106,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 4,
+    "model": "DecisionTree",
+    "candidate_order": 1,
+    "candidate": "depth6_leaf100",
+    "params": {
+      "max_depth": 6,
+      "min_samples_leaf": 100
+    },
+    "inner_fold": 2,
+    "inner_seed": 204017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "879b051c6688c7faa09c440427a4cd8ebac67d15a2a14619b983ea881159ea79",
+    "assessment_ids_sha256": "4896348d22ec8934a51efbcf66cbbda47463cbb8f755f22dba4aaa2da7397beb",
+    "metrics": {
+      "MAE": 1.5039514714252837,
+      "MSE": 3.0190184031921277,
+      "RMSE": 1.7375322740001486,
+      "R2": -0.0015933598991435538
+    },
+    "train_metrics": {
+      "MAE": 1.5016888733963518,
+      "MSE": 3.0031529500957745,
+      "RMSE": 1.7329607468421708,
+      "R2": 0.0014838584983875025
+    },
+    "fit_seconds": 0.23795929999323562,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 4,
+    "model": "DecisionTree",
+    "candidate_order": 1,
+    "candidate": "depth6_leaf100",
+    "params": {
+      "max_depth": 6,
+      "min_samples_leaf": 100
+    },
+    "inner_fold": 3,
+    "inner_seed": 204017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "e681475c3ef4d16342d57c20fde8b37ecd8d33ea3314d243d3c521e3fcf7793e",
+    "assessment_ids_sha256": "a4be23cddaf1d805a88a09d9e5df6fa57988be810b036830d9bb43033b9ff47f",
+    "metrics": {
+      "MAE": 1.4979129871470938,
+      "MSE": 2.9928574297891712,
+      "RMSE": 1.729987696427108,
+      "R2": -0.0019724022624663107
+    },
+    "train_metrics": {
+      "MAE": 1.5048736726773004,
+      "MSE": 3.016228630692799,
+      "RMSE": 1.7367292911368768,
+      "R2": 0.0016678849665805462
+    },
+    "fit_seconds": 0.23005020001437515,
+    "warnings": []
+  }
+]

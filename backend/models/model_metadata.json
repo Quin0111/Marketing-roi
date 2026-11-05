@@ -1,0 +1,60 @@
+{
+  "features": [
+    "Campaign_Type",
+    "Channel_Used",
+    "Target_Audience",
+    "Customer_Segment",
+    "Duration_days"
+  ],
+  "target": "ROI",
+  "split": {
+    "train": 140000,
+    "val": 30000,
+    "test": 30000,
+    "random_state": 42
+  },
+  "params": {
+    "Linear Regression": {},
+    "Decision Tree": {
+      "max_depth": "5",
+      "min_samples_leaf": "50",
+      "random_state": "42"
+    },
+    "Random Forest": {
+      "n_estimators": "200",
+      "max_depth": "10",
+      "min_samples_leaf": "50",
+      "max_features": "1.0",
+      "n_jobs": "-1",
+      "random_state": "42"
+    }
+  },
+  "train_time_seconds": {
+    "Linear Regression": 0.4082,
+    "Decision Tree": 1.7032,
+    "Random Forest": 60.1042
+  },
+  "sklearn_version": "1.6.1",
+  "artifact_version": "1.0.0",
+  "deployed_model": "Linear Regression",
+  "model_quality_status": "BASELINE_ONLY",
+  "prediction_purpose": "research_demonstration",
+  "runtime_versions": {
+    "python": "3.13.18",
+    "scikit_learn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "joblib": "1.6.0"
+  },
+  "model_files": {
+    "Dummy Regressor": "dummy_regressor_pipeline.joblib",
+    "Linear Regression": "linear_regression_pipeline.joblib",
+    "Decision Tree": "decision_tree_pipeline.joblib",
+    "Random Forest": "random_forest_pipeline.joblib"
+  },
+  "quality_gate_rules": {
+    "allow_prediction": true,
+    "allow_automatic_ranking": false,
+    "allow_optimization_recommendation": false
+  }
+}

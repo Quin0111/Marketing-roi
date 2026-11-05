@@ -1,0 +1,55 @@
+{
+  "status": "COMPLETE",
+  "sources_sha256": {
+    "common.py": "87e3e5dace31da8d62afc89d345c01408132ddb0b630bb17f101d8b66860828a",
+    "run_experiment.py": "6942ae8d65a656ebf55717cdb867436c3775ca2421abfa9cefa1f5907fd46027",
+    "experiment_config.json": "9cabbdf6266f33743054c4936dea897c8ba65fb249995718b8e2180f3eb2da95",
+    "phase4b2_evaluation_protocol.json": "9114f91eb9f393ac5e65ec63def4fe5dbdcf974d627461ddcfe952a8daf4c9bb"
+  },
+  "repeat": 2,
+  "outer_seed": 2026,
+  "outer_fold": 2,
+  "model": "Dummy",
+  "feature_group": "current5",
+  "selected": {
+    "candidate_order": 0,
+    "candidate": "mean",
+    "mean_inner_RMSE": 1.7354548805169412,
+    "params": {
+      "strategy": "mean"
+    }
+  },
+  "all_candidate_means": [
+    {
+      "candidate_order": 0,
+      "candidate": "mean",
+      "mean_inner_RMSE": 1.7354548805169412,
+      "params": {
+        "strategy": "mean"
+      }
+    }
+  ],
+  "inner_trials": 3,
+  "inner_total_fit_seconds": 0.5038484999677166,
+  "fit_rows": 136000,
+  "assessment_rows": 34000,
+  "fit_ids_sha256": "f733bffa915ebdc18a3aca00c135e99fa60ad8ecb6e01f8f1657b862c0eaa041",
+  "assessment_ids_sha256": "d6460840bea956c93b00d5d4acc200c0d17040298a8f2a5239abc70f4c259c76",
+  "train_metrics": {
+    "MAE": 1.5039505972102076,
+    "MSE": 3.0117408110583423,
+    "RMSE": 1.7354367781795863,
+    "R2": 0.0
+  },
+  "assessment_metrics": {
+    "MAE": 1.4982448640397925,
+    "MSE": 2.9950651030849103,
+    "RMSE": 1.7306256392082344,
+    "R2": -5.1084388046795937e-05
+  },
+  "train_assessment_RMSE_gap": -0.00481113897135188,
+  "outer_refit_seconds": 0.2172906000050716,
+  "prediction_sha256_f64_le": "802b43ee0f8cf70bf85001e552aac3e48f2e34c10ac5414775645883836a0929",
+  "prediction_file_sha256": "37013324fbaf78a0c889779263f72ac8514f9badb0ebccfda3405f644705338c",
+  "warnings": []
+}

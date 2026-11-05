@@ -1,0 +1,6 @@
+{
+  "status": "COMPLETE",
+  "outer_jobs_completed": 75,
+  "outer_jobs_required": 75,
+  "last_completed": "r3_f5_HistGradientBoosting"
+}

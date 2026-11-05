@@ -1,0 +1,565 @@
+{
+  "status": "PASS",
+  "python": "3.13.17",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2"
+  },
+  "sources_sha256": {
+    "D:\\HK7 ĐẠI HỌC\\MachineLearning\\marketing_campaign_dataset.csv": "f06c1b95a8207b4631c35e6b83b4a2a7872892a8bfa133967e1e7ec401c7bb60",
+    "C:\\Users\\ASUS\\Downloads\\MachineLearningcki (8).ipynb": "f66eace5d41e3a09b1b44ea51d2402ad8cee729551547b2aa3c2db56b2c22469",
+    "C:\\Users\\ASUS\\Downloads\\models_roi (4).zip": "9e793ec2c903e6d56b47583fa8a1c23be1ba5ad0d4f303f3d28a1ee58234bbb0"
+  },
+  "structural_full_csv": {
+    "rows": 200000,
+    "columns": 16,
+    "dtypes": {
+      "Campaign_ID": "int64",
+      "Company": "object",
+      "Campaign_Type": "object",
+      "Target_Audience": "object",
+      "Duration": "object",
+      "Channel_Used": "object",
+      "Conversion_Rate": "float64",
+      "Acquisition_Cost": "object",
+      "ROI": "float64",
+      "Location": "object",
+      "Language": "object",
+      "Clicks": "int64",
+      "Impressions": "int64",
+      "Engagement_Score": "int64",
+      "Customer_Segment": "object",
+      "Date": "object"
+    },
+    "missing": {
+      "Campaign_ID": 0,
+      "Company": 0,
+      "Campaign_Type": 0,
+      "Target_Audience": 0,
+      "Duration": 0,
+      "Channel_Used": 0,
+      "Conversion_Rate": 0,
+      "Acquisition_Cost": 0,
+      "ROI": 0,
+      "Location": 0,
+      "Language": 0,
+      "Clicks": 0,
+      "Impressions": 0,
+      "Engagement_Score": 0,
+      "Customer_Segment": 0,
+      "Date": 0
+    },
+    "exact_duplicate_rows": 0,
+    "duplicate_campaign_ids": 0,
+    "invalid_target_rows_removed_for_notebook_replay": 0
+  },
+  "split_protocol": {
+    "status": "PASS",
+    "train_rows": 140000,
+    "validation_rows": 30000,
+    "development_rows": 170000,
+    "final_test_rows": 30000,
+    "archive_index_order_matches": {
+      "train": true,
+      "val": true,
+      "test": true
+    },
+    "train_validation_feature_and_target_values_match": true,
+    "archived_split_sha256": "578a792a63aed7e9787edab351f9301547908952b2293619146587d413ee6f84",
+    "development_order": "concatenate original Train then original Validation; NEW diagnostic CV only",
+    "test_access": "index identity only; no held-out feature/target summaries, fits, predictions, scores or optimization",
+    "historical_5fold_code_found": false,
+    "note": "Notebook contains 3-fold tuning. Historical metrics are preserved, not claimed to be reproduced by new diagnostics."
+  },
+  "development_audit": {
+    "scope": "original Development only (170000 rows)",
+    "roi": {
+      "count": 170000.0,
+      "mean": 4.999617705882353,
+      "std": 1.7344789552789615,
+      "min": 2.0,
+      "1%": 2.06,
+      "5%": 2.29,
+      "25%": 3.49,
+      "50%": 5.0,
+      "75%": 6.5,
+      "95%": 7.69,
+      "99%": 7.94,
+      "max": 8.0
+    },
+    "roi_skew": -0.003598204652927299,
+    "roi_excess_kurtosis": -1.2041262258131713,
+    "roi_unique": 601,
+    "roi_two_decimal_fraction": 1.0,
+    "date_min": "2021-01-01",
+    "date_max": "2021-12-31",
+    "date_unique": 365,
+    "development_missing": {
+      "Campaign_ID": 0,
+      "Company": 0,
+      "Campaign_Type": 0,
+      "Target_Audience": 0,
+      "Duration": 0,
+      "Channel_Used": 0,
+      "Conversion_Rate": 0,
+      "Acquisition_Cost": 0,
+      "ROI": 0,
+      "Location": 0,
+      "Language": 0,
+      "Clicks": 0,
+      "Impressions": 0,
+      "Engagement_Score": 0,
+      "Customer_Segment": 0,
+      "Date": 0,
+      "Duration_days": 0,
+      "Acquisition_Cost_USD": 0,
+      "Date_parsed": 0,
+      "Month": 0,
+      "Weekday": 0
+    },
+    "roi_histogram_12bins": [
+      14246,
+      14074,
+      14209,
+      14138,
+      13949,
+      14122,
+      14137,
+      14198,
+      14178,
+      14254,
+      14199,
+      14296
+    ],
+    "uniform_2_8_reference_std": 1.7320508075688774,
+    "uniform_2_8_bin_chisquare": {
+      "statistic": 6.65355294117647,
+      "p_value": 0.8264056834124777
+    },
+    "date_equals_id_minus_one_mod365_fraction": 1.0,
+    "numeric_ranges": {
+      "ROI": {
+        "min": 2.0,
+        "max": 8.0
+      },
+      "Duration_days": {
+        "min": 15.0,
+        "max": 60.0
+      },
+      "Conversion_Rate": {
+        "min": 0.01,
+        "max": 0.15
+      },
+      "Acquisition_Cost_USD": {
+        "min": 5000.0,
+        "max": 20000.0
+      },
+      "Clicks": {
+        "min": 100.0,
+        "max": 1000.0
+      },
+      "Impressions": {
+        "min": 1000.0,
+        "max": 10000.0
+      },
+      "Engagement_Score": {
+        "min": 1.0,
+        "max": 10.0
+      }
+    },
+    "joint_five_feature_cells": {
+      "observed_cells": 3000,
+      "possible_cells": 3000,
+      "min_count": 35,
+      "median_count": 57.0,
+      "max_count": 87,
+      "in_sample_eta_squared": 0.01747865289542036,
+      "null_expected_iid_approx": 0.017641280242824957
+    },
+    "effects": [
+      {
+        "feature": "Campaign_Type",
+        "levels": 5,
+        "eta_squared": 3.287595433464882e-05,
+        "anova_F": 1.3972328996467291,
+        "anova_p": 0.23202725427377624,
+        "mean_range": 0.027259943786135388,
+        "eta_null_expected_iid_approx": 2.3529550173824553e-05,
+        "anova_p_holm_10_tests": 1.0
+      },
+      {
+        "feature": "Channel_Used",
+        "levels": 6,
+        "eta_squared": 5.3839363973905754e-05,
+        "anova_F": 1.8305723247259928,
+        "anova_p": 0.10312645031205768,
+        "mean_range": 0.036202561368925856,
+        "eta_null_expected_iid_approx": 2.941193771728069e-05,
+        "anova_p_holm_10_tests": 0.8703789461736058
+      },
+      {
+        "feature": "Target_Audience",
+        "levels": 5,
+        "eta_squared": 4.6255828075760783e-05,
+        "anova_F": 1.965905808038469,
+        "anova_p": 0.09670877179706731,
+        "mean_range": 0.03538120523128985,
+        "eta_null_expected_iid_approx": 2.3529550173824553e-05,
+        "anova_p_holm_10_tests": 0.8703789461736058
+      },
+      {
+        "feature": "Customer_Segment",
+        "levels": 5,
+        "eta_squared": 6.863688038227682e-06,
+        "anova_F": 0.2917001641522904,
+        "anova_p": 0.8835333732915857,
+        "mean_range": 0.012559993500797617,
+        "eta_null_expected_iid_approx": 2.3529550173824553e-05,
+        "anova_p_holm_10_tests": 1.0
+      },
+      {
+        "feature": "Duration_days",
+        "levels": 4,
+        "eta_squared": 1.8835176690236154e-05,
+        "anova_F": 1.0673216687391989,
+        "anova_p": 0.3615249842697726,
+        "mean_range": 0.019146629990247632,
+        "eta_null_expected_iid_approx": 1.7647162630368413e-05,
+        "anova_p_holm_10_tests": 1.0
+      },
+      {
+        "feature": "Company",
+        "levels": 5,
+        "eta_squared": 2.6994614283112796e-05,
+        "anova_F": 1.1472683338296503,
+        "anova_p": 0.33211999086863137,
+        "mean_range": 0.026571374160888617,
+        "eta_null_expected_iid_approx": 2.3529550173824553e-05,
+        "anova_p_holm_10_tests": 1.0
+      },
+      {
+        "feature": "Location",
+        "levels": 5,
+        "eta_squared": 4.9966771676781756e-05,
+        "anova_F": 2.1236314488073624,
+        "anova_p": 0.07505826186377779,
+        "mean_range": 0.035968251634306725,
+        "eta_null_expected_iid_approx": 2.3529550173824553e-05,
+        "anova_p_holm_10_tests": 0.7505826186377779
+      },
+      {
+        "feature": "Language",
+        "levels": 5,
+        "eta_squared": 5.87096331763427e-06,
+        "anova_F": 0.24951006716046942,
+        "anova_p": 0.9100925575779342,
+        "mean_range": 0.012294104407800432,
+        "eta_null_expected_iid_approx": 2.3529550173824553e-05,
+        "anova_p_holm_10_tests": 1.0
+      },
+      {
+        "feature": "Month",
+        "levels": 12,
+        "eta_squared": 7.138975280589483e-05,
+        "anova_F": 1.103297064101822,
+        "anova_p": 0.35349637696351754,
+        "mean_range": 0.04517214572837869,
+        "eta_null_expected_iid_approx": 6.470626297801752e-05,
+        "anova_p_holm_10_tests": 1.0
+      },
+      {
+        "feature": "Weekday",
+        "levels": 7,
+        "eta_squared": 5.5968090375776406e-05,
+        "anova_F": 1.585786017960085,
+        "anova_p": 0.14664005111315834,
+        "mean_range": 0.040582121773092616,
+        "eta_null_expected_iid_approx": 3.5294325260736826e-05,
+        "anova_p_holm_10_tests": 1.0
+      }
+    ],
+    "numeric_associations": [
+      {
+        "feature": "Duration_days",
+        "pearson_r": 0.00048414748231811685,
+        "pearson_p": 0.8417796113969492,
+        "spearman_r": 0.0004877587424233513,
+        "spearman_p": 0.8406152098756299,
+        "pearson_p_holm_7_tests": 1.0
+      },
+      {
+        "feature": "Conversion_Rate",
+        "pearson_r": -0.0017775227914505075,
+        "pearson_p": 0.4636275892440709,
+        "spearman_r": -0.0017287234968787523,
+        "spearman_p": 0.475990413884747,
+        "pearson_p_holm_7_tests": 1.0
+      },
+      {
+        "feature": "Acquisition_Cost_USD",
+        "pearson_r": 0.0060577105902439275,
+        "pearson_p": 0.012501511408164783,
+        "spearman_r": 0.006054225666350335,
+        "spearman_p": 0.01255227032208598,
+        "pearson_p_holm_7_tests": 0.08751057985715348
+      },
+      {
+        "feature": "Clicks",
+        "pearson_r": -0.0022162776365481944,
+        "pearson_p": 0.3608276843864394,
+        "spearman_r": -0.002215602538283223,
+        "spearman_p": 0.3609739913254472,
+        "pearson_p_holm_7_tests": 1.0
+      },
+      {
+        "feature": "Impressions",
+        "pearson_r": 0.004480624228126562,
+        "pearson_p": 0.06468855424356638,
+        "spearman_r": 0.0044772449422417595,
+        "spearman_p": 0.06489059977993092,
+        "pearson_p_holm_7_tests": 0.3881313254613983
+      },
+      {
+        "feature": "Engagement_Score",
+        "pearson_r": -0.0012174225733277842,
+        "pearson_p": 0.6157008066193581,
+        "spearman_r": -0.0012164571496616904,
+        "spearman_p": 0.6159808410748748,
+        "pearson_p_holm_7_tests": 1.0
+      },
+      {
+        "feature": "Campaign_ID",
+        "pearson_r": -0.0010648480141476435,
+        "pearson_p": 0.6606289447407325,
+        "spearman_r": -0.0010684374751174903,
+        "spearman_p": 0.65955695092851,
+        "pearson_p_holm_7_tests": 1.0
+      }
+    ],
+    "permutation_tests": [
+      {
+        "feature": "Campaign_Type",
+        "observed_eta_squared": 3.287595433464882e-05,
+        "null_mean": 2.3295158682976172e-05,
+        "null_95_percentile": 5.383524509006046e-05,
+        "monte_carlo_p_one_sided": 0.225,
+        "permutations": 199
+      },
+      {
+        "feature": "Channel_Used",
+        "observed_eta_squared": 5.3839363973905754e-05,
+        "null_mean": 3.115677810415686e-05,
+        "null_95_percentile": 6.622300113985939e-05,
+        "monte_carlo_p_one_sided": 0.14,
+        "permutations": 199
+      },
+      {
+        "feature": "Target_Audience",
+        "observed_eta_squared": 4.6255828075760783e-05,
+        "null_mean": 2.583743882903415e-05,
+        "null_95_percentile": 5.8110829765780396e-05,
+        "monte_carlo_p_one_sided": 0.13,
+        "permutations": 199
+      },
+      {
+        "feature": "Customer_Segment",
+        "observed_eta_squared": 6.863688038227682e-06,
+        "null_mean": 2.5138574513005697e-05,
+        "null_95_percentile": 5.591267715515697e-05,
+        "monte_carlo_p_one_sided": 0.89,
+        "permutations": 199
+      },
+      {
+        "feature": "Duration_days",
+        "observed_eta_squared": 1.8835176690236154e-05,
+        "null_mean": 1.7752988970909274e-05,
+        "null_95_percentile": 4.8267967971896055e-05,
+        "monte_carlo_p_one_sided": 0.365,
+        "permutations": 199
+      },
+      {
+        "feature": "Company",
+        "observed_eta_squared": 2.6994614283112796e-05,
+        "null_mean": 2.4190561273171593e-05,
+        "null_95_percentile": 5.4767987618136767e-05,
+        "monte_carlo_p_one_sided": 0.35,
+        "permutations": 199
+      },
+      {
+        "feature": "Location",
+        "observed_eta_squared": 4.9966771676781756e-05,
+        "null_mean": 2.3168027732432767e-05,
+        "null_95_percentile": 4.8908959912392696e-05,
+        "monte_carlo_p_one_sided": 0.05,
+        "permutations": 199
+      },
+      {
+        "feature": "Language",
+        "observed_eta_squared": 5.87096331763427e-06,
+        "null_mean": 2.323205244289948e-05,
+        "null_95_percentile": 5.552011321215698e-05,
+        "monte_carlo_p_one_sided": 0.905,
+        "permutations": 199
+      },
+      {
+        "feature": "Month",
+        "observed_eta_squared": 7.138975280589483e-05,
+        "null_mean": 6.475657700708549e-05,
+        "null_95_percentile": 0.00011381252008441687,
+        "monte_carlo_p_one_sided": 0.355,
+        "permutations": 199
+      },
+      {
+        "feature": "Weekday",
+        "observed_eta_squared": 5.5968090375776406e-05,
+        "null_mean": 3.478688072035225e-05,
+        "null_95_percentile": 7.40467268055985e-05,
+        "monte_carlo_p_one_sided": 0.14,
+        "permutations": 199
+      },
+      {
+        "feature": "Joint_five_features",
+        "observed_eta_squared": 0.01747865289542036,
+        "null_mean": 0.0176157129786471,
+        "null_95_percentile": 0.018316530723938535,
+        "monte_carlo_p_one_sided": 0.61,
+        "permutations": 199
+      }
+    ]
+  },
+  "diagnostic_cv": [
+    {
+      "model": "Dummy_mean",
+      "MAE_mean": 1.5028088747448098,
+      "RMSE_mean": 1.7344738959662471,
+      "RMSE_fold_sd": 0.004560067988389547,
+      "R2_mean": -1.556823571604582e-05,
+      "delta_RMSE_mean": 0.0,
+      "folds_beating_dummy": 0,
+      "OOF_metrics": {
+        "MAE": 1.5028088747448096,
+        "RMSE": 1.7344786914702583,
+        "R2": -5.5781921721731464e-06
+      }
+    },
+    {
+      "model": "Fresh_linear_current5",
+      "MAE_mean": 1.5028588643821559,
+      "RMSE_mean": 1.734586255653187,
+      "RMSE_fold_sd": 0.004551240005605143,
+      "R2_mean": -0.00014516210001378483,
+      "delta_RMSE_mean": 0.00011235968693976695,
+      "folds_beating_dummy": 1,
+      "OOF_metrics": {
+        "MAE": 1.5028588643821559,
+        "RMSE": 1.734591032298223,
+        "R2": -0.00013512154523831477
+      }
+    },
+    {
+      "model": "Fresh_linear_plus_Company_Location_Language",
+      "MAE_mean": 1.502906159348764,
+      "RMSE_mean": 1.7346322957427038,
+      "RMSE_fold_sd": 0.004520530410639917,
+      "R2_mean": -0.00019832886344506306,
+      "delta_RMSE_mean": 0.00015839977645635273,
+      "folds_beating_dummy": 0,
+      "OOF_metrics": {
+        "MAE": 1.5029061593487643,
+        "RMSE": 1.734637008019187,
+        "R2": -0.00018813985537491362
+      }
+    },
+    {
+      "model": "GroupMean_Campaign_Type",
+      "MAE_mean": 1.5028455651927177,
+      "RMSE_mean": 1.734510738407171,
+      "RMSE_fold_sd": 0.004595693519229882,
+      "R2_mean": -5.796886449722649e-05,
+      "delta_RMSE_mean": 3.684244092378996e-05,
+      "folds_beating_dummy": 2,
+      "OOF_metrics": {
+        "MAE": 1.5028455651927182,
+        "RMSE": 1.7345156090300624,
+        "R2": -4.814793812224494e-05
+      }
+    },
+    {
+      "model": "GroupMean_Channel_Used",
+      "MAE_mean": 1.5027777305913173,
+      "RMSE_mean": 1.7345014543912627,
+      "RMSE_fold_sd": 0.004532744404336613,
+      "R2_mean": -4.741441441187266e-05,
+      "delta_RMSE_mean": 2.7558425015383747e-05,
+      "folds_beating_dummy": 2,
+      "OOF_metrics": {
+        "MAE": 1.5027777305913173,
+        "RMSE": 1.7345061925236454,
+        "R2": -3.728965101168491e-05
+      }
+    },
+    {
+      "model": "GroupMean_Target_Audience",
+      "MAE_mean": 1.5028298973102254,
+      "RMSE_mean": 1.7344907440242185,
+      "RMSE_fold_sd": 0.004561836522874262,
+      "R2_mean": -3.499838537497357e-05,
+      "delta_RMSE_mean": 1.6848057971285967e-05,
+      "folds_beating_dummy": 2,
+      "OOF_metrics": {
+        "MAE": 1.5028298973102256,
+        "RMSE": 1.734495543202016,
+        "R2": -2.5009860842084564e-05
+      }
+    },
+    {
+      "model": "GroupMean_Customer_Segment",
+      "MAE_mean": 1.502819788113257,
+      "RMSE_mean": 1.7344879508224473,
+      "RMSE_fold_sd": 0.004553181188042569,
+      "R2_mean": -3.1791940557690523e-05,
+      "delta_RMSE_mean": 1.4054856199985366e-05,
+      "folds_beating_dummy": 1,
+      "OOF_metrics": {
+        "MAE": 1.5028197881132568,
+        "RMSE": 1.7344927318139436,
+        "R2": -2.176804668208021e-05
+      }
+    },
+    {
+      "model": "GroupMean_Duration_days",
+      "MAE_mean": 1.5028171127274461,
+      "RMSE_mean": 1.734492880183658,
+      "RMSE_fold_sd": 0.004564444652184663,
+      "R2_mean": -3.744926043882657e-05,
+      "delta_RMSE_mean": 1.898421741084455e-05,
+      "folds_beating_dummy": 2,
+      "OOF_metrics": {
+        "MAE": 1.502817112727446,
+        "RMSE": 1.7344976848447473,
+        "R2": -2.7479394562046622e-05
+      }
+    },
+    {
+      "model": "GroupMean_joint_current5",
+      "MAE_mean": 1.51354510239014,
+      "RMSE_mean": 1.7533287497488126,
+      "RMSE_fold_sd": 0.00438040014846016,
+      "R2_mean": -0.021877465101719017,
+      "delta_RMSE_mean": 0.01885485378256533,
+      "folds_beating_dummy": 0,
+      "OOF_metrics": {
+        "MAE": 1.51354510239014,
+        "RMSE": 1.753333127223718,
+        "R2": -0.02186461744829349
+      }
+    }
+  ],
+  "quality_gate": "BASELINE_ONLY",
+  "production_models_fitted": false,
+  "test_outcomes_used_for_research": false
+}

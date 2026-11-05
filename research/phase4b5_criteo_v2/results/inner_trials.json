@@ -1,0 +1,248 @@
+[
+  {
+    "model": "S_Learner",
+    "C": 0.1,
+    "fold": 1,
+    "fit_rows": 400000,
+    "assessment_rows": 200000,
+    "fit_ids_sha256": "40e82a1ba64fefe3738d50353e0ba41e2fb55021aa942f19555a68c4183260fd",
+    "assessment_ids_sha256": "0312ce01c517461ae442ac99ea30e1455a05a0b07a9fdba27610e914593f9b35",
+    "fit_seconds": 2.3716528000077233,
+    "AUUC": 0.009463227901960788,
+    "Qini": 0.0041749926078431384,
+    "U1_descriptive_benchmark_contrast": 0.0105764705882353,
+    "log_loss": 0.1070263074998029,
+    "Brier": 0.03062131426853875,
+    "ROC_AUC": 0.9405766996115413,
+    "average_precision": 0.48573181862003373,
+    "warnings": [
+      "Unknown solver options: iprint"
+    ]
+  },
+  {
+    "model": "S_Learner",
+    "C": 0.1,
+    "fold": 2,
+    "fit_rows": 400000,
+    "assessment_rows": 200000,
+    "fit_ids_sha256": "5e491e19ac8eac9335a6e844defbb7ad18eba230fe71d2a4cf098f480f7c79ce",
+    "assessment_ids_sha256": "e1c6c8217ca76ca443da4642d7a8579980e921e94bb1a5ca6c027493b3f403f7",
+    "fit_seconds": 2.260845499986317,
+    "AUUC": 0.009814726034313728,
+    "Qini": 0.004543157406862745,
+    "U1_descriptive_benchmark_contrast": 0.010543137254901967,
+    "log_loss": 0.10571661907518436,
+    "Brier": 0.03040867651088067,
+    "ROC_AUC": 0.9425095733411057,
+    "average_precision": 0.4904207331627319,
+    "warnings": [
+      "Unknown solver options: iprint"
+    ]
+  },
+  {
+    "model": "S_Learner",
+    "C": 0.1,
+    "fold": 3,
+    "fit_rows": 400000,
+    "assessment_rows": 200000,
+    "fit_ids_sha256": "25ab99dd3f1ffd94243e4170adbf3993177ded7378b926f8e55f826c9671f502",
+    "assessment_ids_sha256": "109c9095b3cb9e5e97d2097c7e224e6b15501097147e09cabdf85e83610a0678",
+    "fit_seconds": 2.3358693000045605,
+    "AUUC": 0.009432116622549022,
+    "Qini": 0.004160547995098038,
+    "U1_descriptive_benchmark_contrast": 0.010543137254901967,
+    "log_loss": 0.10544506947387666,
+    "Brier": 0.0304158577245867,
+    "ROC_AUC": 0.943113802682005,
+    "average_precision": 0.4889374954578076,
+    "warnings": [
+      "Unknown solver options: iprint"
+    ]
+  },
+  {
+    "model": "S_Learner",
+    "C": 1.0,
+    "fold": 1,
+    "fit_rows": 400000,
+    "assessment_rows": 200000,
+    "fit_ids_sha256": "40e82a1ba64fefe3738d50353e0ba41e2fb55021aa942f19555a68c4183260fd",
+    "assessment_ids_sha256": "0312ce01c517461ae442ac99ea30e1455a05a0b07a9fdba27610e914593f9b35",
+    "fit_seconds": 2.3538086999906227,
+    "AUUC": 0.009463264627450986,
+    "Qini": 0.004175029333333336,
+    "U1_descriptive_benchmark_contrast": 0.0105764705882353,
+    "log_loss": 0.10708120292998147,
+    "Brier": 0.03063634055972966,
+    "ROC_AUC": 0.9405471681216525,
+    "average_precision": 0.4845247973409464,
+    "warnings": [
+      "Unknown solver options: iprint"
+    ]
+  },
+  {
+    "model": "S_Learner",
+    "C": 1.0,
+    "fold": 2,
+    "fit_rows": 400000,
+    "assessment_rows": 200000,
+    "fit_ids_sha256": "5e491e19ac8eac9335a6e844defbb7ad18eba230fe71d2a4cf098f480f7c79ce",
+    "assessment_ids_sha256": "e1c6c8217ca76ca443da4642d7a8579980e921e94bb1a5ca6c027493b3f403f7",
+    "fit_seconds": 2.2234219000092708,
+    "AUUC": 0.00981392224019608,
+    "Qini": 0.004542353612745096,
+    "U1_descriptive_benchmark_contrast": 0.010543137254901967,
+    "log_loss": 0.10567664033773447,
+    "Brier": 0.030412236968528288,
+    "ROC_AUC": 0.9425397525389511,
+    "average_precision": 0.49007487890026047,
+    "warnings": [
+      "Unknown solver options: iprint"
+    ]
+  },
+  {
+    "model": "S_Learner",
+    "C": 1.0,
+    "fold": 3,
+    "fit_rows": 400000,
+    "assessment_rows": 200000,
+    "fit_ids_sha256": "25ab99dd3f1ffd94243e4170adbf3993177ded7378b926f8e55f826c9671f502",
+    "assessment_ids_sha256": "109c9095b3cb9e5e97d2097c7e224e6b15501097147e09cabdf85e83610a0678",
+    "fit_seconds": 2.224246600002516,
+    "AUUC": 0.009429509583333337,
+    "Qini": 0.004157940955882354,
+    "U1_descriptive_benchmark_contrast": 0.010543137254901967,
+    "log_loss": 0.10544527750785372,
+    "Brier": 0.030419927129266812,
+    "ROC_AUC": 0.9430688668058534,
+    "average_precision": 0.48874250515722667,
+    "warnings": [
+      "Unknown solver options: iprint"
+    ]
+  },
+  {
+    "model": "T_Learner",
+    "C": 0.1,
+    "fold": 1,
+    "fit_rows": 400000,
+    "assessment_rows": 200000,
+    "fit_ids_sha256": "40e82a1ba64fefe3738d50353e0ba41e2fb55021aa942f19555a68c4183260fd",
+    "assessment_ids_sha256": "0312ce01c517461ae442ac99ea30e1455a05a0b07a9fdba27610e914593f9b35",
+    "fit_seconds": 1.5100018000230193,
+    "AUUC": 0.007807413617647065,
+    "Qini": 0.0025191783235294146,
+    "U1_descriptive_benchmark_contrast": 0.0105764705882353,
+    "log_loss": 0.10736527461431018,
+    "Brier": 0.030759101046677097,
+    "ROC_AUC": 0.9399725128504104,
+    "average_precision": 0.481543132645399,
+    "warnings": [
+      "Unknown solver options: iprint",
+      "Unknown solver options: iprint"
+    ]
+  },
+  {
+    "model": "T_Learner",
+    "C": 0.1,
+    "fold": 2,
+    "fit_rows": 400000,
+    "assessment_rows": 200000,
+    "fit_ids_sha256": "5e491e19ac8eac9335a6e844defbb7ad18eba230fe71d2a4cf098f480f7c79ce",
+    "assessment_ids_sha256": "e1c6c8217ca76ca443da4642d7a8579980e921e94bb1a5ca6c027493b3f403f7",
+    "fit_seconds": 1.9369728000019677,
+    "AUUC": 0.008944960014705884,
+    "Qini": 0.0036733913872549007,
+    "U1_descriptive_benchmark_contrast": 0.010543137254901967,
+    "log_loss": 0.10587353065810418,
+    "Brier": 0.030458985867755018,
+    "ROC_AUC": 0.9422336611765744,
+    "average_precision": 0.4893470121724817,
+    "warnings": [
+      "Unknown solver options: iprint",
+      "Unknown solver options: iprint"
+    ]
+  },
+  {
+    "model": "T_Learner",
+    "C": 0.1,
+    "fold": 3,
+    "fit_rows": 400000,
+    "assessment_rows": 200000,
+    "fit_ids_sha256": "25ab99dd3f1ffd94243e4170adbf3993177ded7378b926f8e55f826c9671f502",
+    "assessment_ids_sha256": "109c9095b3cb9e5e97d2097c7e224e6b15501097147e09cabdf85e83610a0678",
+    "fit_seconds": 2.0699611000018194,
+    "AUUC": 0.008779575093137258,
+    "Qini": 0.0035080064656862744,
+    "U1_descriptive_benchmark_contrast": 0.010543137254901967,
+    "log_loss": 0.10568328356300581,
+    "Brier": 0.030487528724503336,
+    "ROC_AUC": 0.9426216028100012,
+    "average_precision": 0.48670894837211703,
+    "warnings": [
+      "Unknown solver options: iprint",
+      "Unknown solver options: iprint"
+    ]
+  },
+  {
+    "model": "T_Learner",
+    "C": 1.0,
+    "fold": 1,
+    "fit_rows": 400000,
+    "assessment_rows": 200000,
+    "fit_ids_sha256": "40e82a1ba64fefe3738d50353e0ba41e2fb55021aa942f19555a68c4183260fd",
+    "assessment_ids_sha256": "0312ce01c517461ae442ac99ea30e1455a05a0b07a9fdba27610e914593f9b35",
+    "fit_seconds": 2.0943729000282474,
+    "AUUC": 0.007891581225490201,
+    "Qini": 0.002603345931372551,
+    "U1_descriptive_benchmark_contrast": 0.0105764705882353,
+    "log_loss": 0.10741401399778978,
+    "Brier": 0.03077032776201216,
+    "ROC_AUC": 0.9400606874835781,
+    "average_precision": 0.48044629976172676,
+    "warnings": [
+      "Unknown solver options: iprint",
+      "Unknown solver options: iprint"
+    ]
+  },
+  {
+    "model": "T_Learner",
+    "C": 1.0,
+    "fold": 2,
+    "fit_rows": 400000,
+    "assessment_rows": 200000,
+    "fit_ids_sha256": "5e491e19ac8eac9335a6e844defbb7ad18eba230fe71d2a4cf098f480f7c79ce",
+    "assessment_ids_sha256": "e1c6c8217ca76ca443da4642d7a8579980e921e94bb1a5ca6c027493b3f403f7",
+    "fit_seconds": 2.021862699999474,
+    "AUUC": 0.009160322102941182,
+    "Qini": 0.0038887534754901984,
+    "U1_descriptive_benchmark_contrast": 0.010543137254901967,
+    "log_loss": 0.1058171016707192,
+    "Brier": 0.03047096685867919,
+    "ROC_AUC": 0.9423234034597487,
+    "average_precision": 0.48788923851536065,
+    "warnings": [
+      "Unknown solver options: iprint",
+      "Unknown solver options: iprint"
+    ]
+  },
+  {
+    "model": "T_Learner",
+    "C": 1.0,
+    "fold": 3,
+    "fit_rows": 400000,
+    "assessment_rows": 200000,
+    "fit_ids_sha256": "25ab99dd3f1ffd94243e4170adbf3993177ded7378b926f8e55f826c9671f502",
+    "assessment_ids_sha256": "109c9095b3cb9e5e97d2097c7e224e6b15501097147e09cabdf85e83610a0678",
+    "fit_seconds": 2.357315299974289,
+    "AUUC": 0.009000407240196084,
+    "Qini": 0.0037288386127451003,
+    "U1_descriptive_benchmark_contrast": 0.010543137254901967,
+    "log_loss": 0.10563613779052863,
+    "Brier": 0.03050110551279045,
+    "ROC_AUC": 0.9428608073939565,
+    "average_precision": 0.485886462354358,
+    "warnings": [
+      "Unknown solver options: iprint",
+      "Unknown solver options: iprint"
+    ]
+  }
+]

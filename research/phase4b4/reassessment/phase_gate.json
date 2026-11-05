@@ -1,0 +1,15 @@
+{
+  "review_date": "2026-11-04",
+  "decision": "GO",
+  "scope": "Academic CRITEO-UPLIFTv2.1 released-benchmark ranking and policy evaluation under the publisher's RCT-compatible-release assumptions; visit outcome only as primary, no ROI or transport to the original advertising population",
+  "dataset_revision": "2424920019e49d52d72c13ac1143ec5d53af276b",
+  "dataset_sha256": "2716e1bf0fd157a93b5bf86924d9088419dfbac2022c6cd90030220634f616dc",
+  "evidence": ["evidence/download_manifest.json", "evidence/criteo_schema_audit.json", "https://arxiv.org/html/2111.10106v1#S3", "https://arxiv.org/html/2111.10106v1#A1", "https://ailab.criteo.com/criteo-uplift-prediction-dataset/"],
+  "rationale": "New original-author evidence establishes pre-assignment covariates, two-week outcomes and common treatment ratio across experiments in v2; authors present balance validation and release explicitly for uplift benchmarking. File and rights verified; bounded protocol and prospective precision assessed before any new fit. GO is for this conditional benchmark claim, not identification of original-population effects after undisclosed label sampling.",
+  "assumptions": ["Publisher's corrected release retains RCT-compatible comparisons for its intended benchmark", "Rows behave as independent user observations for benchmark uncertainty", "Consistency and no material interference within the benchmark action definition"],
+  "not_independently_verifiable": ["Original user/advertiser identity and cluster structure", "Label-selection probabilities and original-population causal scale", "Semantic mapping of anonymized feature values to business inputs"],
+  "blocked_claims": ["Original-population absolute causal lift", "Actual ROI or profit", "Multi-channel campaign optimization", "Deployment in DreamMakers", "Production quality gate promotion"],
+  "fallbacks": {"Hillstrom": "NOT_SELECTED: explicit reuse terms unresolved", "Lazada": "NOT_SELECTED: dataset-folder license and fingerprints found, but sufficient pre-treatment feature timing and assignment details not established for this run", "MT_LIFT": "NOT_SELECTED: dataset reuse terms not established in publisher repository"},
+  "historical_addendum_preserved": true,
+  "production_quality_gate": "BASELINE_ONLY"
+}

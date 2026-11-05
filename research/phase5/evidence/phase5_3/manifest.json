@@ -1,0 +1,264 @@
+{
+  "method": "Automated headless Edge; real production preview and API; no request interception or manual browser claim",
+  "count": 20,
+  "images": [
+    {
+      "file": "evidence/phase5_3/desktop-dashboard.png",
+      "bytes": 391693,
+      "url": "http://127.0.0.1:4173/#dashboard",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "width": 1440,
+      "height": 2264,
+      "sha256": "3e63e9947da216a8845b50b739e3e042fb2c7d889a09fa8c4218f237e10e8d21",
+      "captured_at_bangkok": "2026-11-04T10:20:44.584527+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/desktop-prediction-form.png",
+      "bytes": 55302,
+      "url": "http://127.0.0.1:4173/#predict",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "case": "Chien dich A",
+      "width": 580,
+      "height": 545,
+      "sha256": "e14c785ea7af514d5738f52fb4dd1a64af96d9ed8bfcf2527f2d9d38f6e9109f",
+      "captured_at_bangkok": "2026-11-04T10:20:44.929156+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/desktop-prediction-a.png",
+      "bytes": 347952,
+      "url": "http://127.0.0.1:4173/#predict",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "case": "Chien dich A",
+      "width": 1440,
+      "height": 1507,
+      "sha256": "426911e823a1b76add32d3aa6f8c48b418f7a7b67d105855f645290db4f901d9",
+      "captured_at_bangkok": "2026-11-04T10:20:45.409848+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/desktop-baseline-warning.png",
+      "bytes": 83661,
+      "url": "http://127.0.0.1:4173/#predict",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "width": 1088,
+      "height": 143,
+      "sha256": "80dc558e39375173dfe2c7c0a50ba8ed58790d21fb5fc3032d05423f0f0bb414",
+      "captured_at_bangkok": "2026-11-04T10:20:45.542619+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/desktop-prediction-b.png",
+      "bytes": 346321,
+      "url": "http://127.0.0.1:4173/#predict",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "case": "Chien dich B",
+      "width": 1440,
+      "height": 1506,
+      "sha256": "926d903e48cdb0e61346ca622d203827931519928bb54c60068b1e01e991bc84",
+      "captured_at_bangkok": "2026-11-04T10:20:45.947964+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/desktop-scenario-modal.png",
+      "bytes": 210023,
+      "url": "http://127.0.0.1:4173/#scenarios",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "viewportOnly": true,
+      "width": 1440,
+      "height": 1080,
+      "sha256": "ed58fbbcd89f85a526dfa107b1624598c8dc845094583d2a7ae73f7db76d58c6",
+      "captured_at_bangkok": "2026-11-04T10:20:46.540966+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/desktop-compare.png",
+      "bytes": 161587,
+      "url": "http://127.0.0.1:4173/#scenarios",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "viewportOnly": true,
+      "width": 1440,
+      "height": 1080,
+      "sha256": "7556126b5213ef2968b49aa5689a8b7a3c644b9fa6d6aa0b566a32d340925a92",
+      "captured_at_bangkok": "2026-11-04T10:20:49.083831+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/desktop-model-insights.png",
+      "bytes": 428049,
+      "url": "http://127.0.0.1:4173/#insights",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "width": 1440,
+      "height": 3277,
+      "sha256": "5f3f72064ebffd7ece0184d29c30b222d2e27dddc8862eca763346cbb23c2632",
+      "captured_at_bangkok": "2026-11-04T10:20:49.689574+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/mobile-dashboard.png",
+      "bytes": 326677,
+      "url": "http://127.0.0.1:4173/#dashboard",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 390,
+      "height": 4967,
+      "sha256": "c5fb83dc9900ecfd3c662911ff97605d323cc013bd2c46f9fc91860b8e61b9a5",
+      "captured_at_bangkok": "2026-11-04T10:20:50.537852+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/mobile-prediction-form.png",
+      "bytes": 59323,
+      "url": "http://127.0.0.1:4173/#predict",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "case": "Chien dich A",
+      "width": 300,
+      "height": 984,
+      "sha256": "f5fe706338155853fc843c3d24ffbe717d7c1d6437585d3c5d7234602e3bcaee",
+      "captured_at_bangkok": "2026-11-04T10:20:50.713978+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/mobile-prediction-a.png",
+      "bytes": 222158,
+      "url": "http://127.0.0.1:4173/#predict",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "case": "Chien dich A",
+      "width": 390,
+      "height": 3122,
+      "sha256": "c4ebc2a9731cab8ee1b54d1551bfc476e2cbccdf2a9aee8f900145bf449c67e8",
+      "captured_at_bangkok": "2026-11-04T10:20:50.935183+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/mobile-baseline-warning.png",
+      "bytes": 50320,
+      "url": "http://127.0.0.1:4173/#predict",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 342,
+      "height": 254,
+      "sha256": "7b9046b0c4b8284d516afb9f87d604a9bd44dfe68d94e5a8e9460ba5069c186b",
+      "captured_at_bangkok": "2026-11-04T10:20:51.024111+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/mobile-prediction-b.png",
+      "bytes": 223294,
+      "url": "http://127.0.0.1:4173/#predict",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "case": "Chien dich B",
+      "width": 390,
+      "height": 3122,
+      "sha256": "a1dfead78ae1a038cca73ad03adb80bb0c80614e1f55d675266616d10b87670d",
+      "captured_at_bangkok": "2026-11-04T10:20:51.265622+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/mobile-scenario-modal.png",
+      "bytes": 52392,
+      "url": "http://127.0.0.1:4173/#scenarios",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "viewportOnly": true,
+      "width": 390,
+      "height": 844,
+      "sha256": "7bcb75692413765c9ef989e4689159b990c3d32dde6fe02dd35750f9785e28c2",
+      "captured_at_bangkok": "2026-11-04T10:20:51.498032+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/mobile-compare.png",
+      "bytes": 34588,
+      "url": "http://127.0.0.1:4173/#scenarios",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "viewportOnly": true,
+      "width": 390,
+      "height": 844,
+      "sha256": "0504060d0e4c1233be7862c15bb48b19eb39afe9c6c2a29abb860a25b1f13630",
+      "captured_at_bangkok": "2026-11-04T10:20:53.769737+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/mobile-model-insights.png",
+      "bytes": 368385,
+      "url": "http://127.0.0.1:4173/#insights",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 390,
+      "height": 6940,
+      "sha256": "32694a571b3ae8c8f44bb5232974b586d140476eb01ed8bb71731400279f9114",
+      "captured_at_bangkok": "2026-11-04T10:20:54.367698+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/backend-tests.png",
+      "bytes": 24304,
+      "source": "run_phase5_3/backend.log",
+      "type": "Actual raw log/HTTP record opened in browser file viewer; not a terminal screenshot or simulated UI",
+      "width": 1440,
+      "height": 1080,
+      "sha256": "7afbe58ef1d563290954ae3a86baa9d16aae0553fa4d20b5ee8240c5d5d775fa",
+      "captured_at_bangkok": "2026-11-04T10:20:54.868110+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/frontend-tests.png",
+      "bytes": 158929,
+      "source": "run_phase5_3/frontend.log",
+      "type": "Actual raw log/HTTP record opened in browser file viewer; not a terminal screenshot or simulated UI",
+      "width": 1440,
+      "height": 1264,
+      "sha256": "868ec13df95624f0df85d1bc3fae233ec5c77216a4ac30d3f7a6deaf5f37ae32",
+      "captured_at_bangkok": "2026-11-04T10:20:55.070515+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/e2e-tests.png",
+      "bytes": 117526,
+      "source": "run_phase5_3/e2e.log",
+      "type": "Actual raw log/HTTP record opened in browser file viewer; not a terminal screenshot or simulated UI",
+      "width": 1440,
+      "height": 1080,
+      "sha256": "c71c6cc982b5d09695f6d5f100bdfcacb7ec7aa2f3a823928b26663e34d6219d",
+      "captured_at_bangkok": "2026-11-04T10:20:55.247844+07:00"
+    },
+    {
+      "file": "evidence/phase5_3/api-predict.png",
+      "bytes": 33572,
+      "source": "run_phase5_3/desktop-api-predict-a.json",
+      "type": "Actual raw log/HTTP record opened in browser file viewer; not a terminal screenshot or simulated UI",
+      "width": 1440,
+      "height": 1080,
+      "sha256": "e837077d60ea25bc54a5de3eabf6284780d25027d0bd3b24427afaa8274a700a",
+      "captured_at_bangkok": "2026-11-04T10:20:55.427168+07:00"
+    }
+  ]
+}

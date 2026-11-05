@@ -1,0 +1,86 @@
+[
+  {
+    "repeat": 2,
+    "outer_fold": 4,
+    "model": "LinearRegression",
+    "candidate_order": 0,
+    "candidate": "ols",
+    "params": {},
+    "inner_fold": 1,
+    "inner_seed": 204017,
+    "fit_rows": 90666,
+    "assessment_rows": 45334,
+    "fit_ids_sha256": "51aa62c356af4d02439d5a228cc828217307ffea4695978acc49092d00a58578",
+    "assessment_ids_sha256": "7c5602cc1d588397318b5c4472ed0738b54b91347a1d3a7859dfb4c95c6a139c",
+    "metrics": {
+      "MAE": 1.5098952348200891,
+      "MSE": 3.0291081455394897,
+      "RMSE": 1.7404333211989162,
+      "R2": -0.00028634237865809986
+    },
+    "train_metrics": {
+      "MAE": 1.499800735635925,
+      "MSE": 2.999823958525471,
+      "RMSE": 1.7319999880269836,
+      "R2": 0.0002581581698622992
+    },
+    "fit_seconds": 0.19526879995828494,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 4,
+    "model": "LinearRegression",
+    "candidate_order": 0,
+    "candidate": "ols",
+    "params": {},
+    "inner_fold": 2,
+    "inner_seed": 204017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "879b051c6688c7faa09c440427a4cd8ebac67d15a2a14619b983ea881159ea79",
+    "assessment_ids_sha256": "4896348d22ec8934a51efbcf66cbbda47463cbb8f755f22dba4aaa2da7397beb",
+    "metrics": {
+      "MAE": 1.5032259938467967,
+      "MSE": 3.0143041663466765,
+      "RMSE": 1.7361751542821584,
+      "R2": -2.9358726973294225e-05
+    },
+    "train_metrics": {
+      "MAE": 1.5031819552668058,
+      "MSE": 3.0071523150149915,
+      "RMSE": 1.7341142739205486,
+      "R2": 0.000154112563380715
+    },
+    "fit_seconds": 0.19984929997008294,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 4,
+    "model": "LinearRegression",
+    "candidate_order": 0,
+    "candidate": "ols",
+    "params": {},
+    "inner_fold": 3,
+    "inner_seed": 204017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "e681475c3ef4d16342d57c20fde8b37ecd8d33ea3314d243d3c521e3fcf7793e",
+    "assessment_ids_sha256": "a4be23cddaf1d805a88a09d9e5df6fa57988be810b036830d9bb43033b9ff47f",
+    "metrics": {
+      "MAE": 1.4967681549808278,
+      "MSE": 2.9867113063624298,
+      "RMSE": 1.7282104346295417,
+      "R2": 8.524538663268189e-05
+    },
+    "train_metrics": {
+      "MAE": 1.5063976796011762,
+      "MSE": 3.020819292080597,
+      "RMSE": 1.7380504285205873,
+      "R2": 0.00014843625965998974
+    },
+    "fit_seconds": 0.21981899999082088,
+    "warnings": []
+  }
+]

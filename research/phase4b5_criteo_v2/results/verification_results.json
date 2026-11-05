@@ -1,0 +1,230 @@
+{
+  "status": "PASS",
+  "count": 41,
+  "checks": [
+    {
+      "check": "Locked source hash: common.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Locked source hash: run.py",
+      "status": "PASS"
+    },
+    {
+      "check": "Locked protocol hash",
+      "status": "PASS"
+    },
+    {
+      "check": "Locked gate hash",
+      "status": "PASS"
+    },
+    {
+      "check": "Run completed exact budget",
+      "status": "PASS"
+    },
+    {
+      "check": "Uniform sample unique IDs",
+      "status": "PASS"
+    },
+    {
+      "check": "Exact disjoint train/selection/test partitions",
+      "status": "PASS"
+    },
+    {
+      "check": "Inner fit scope ('S_Learner', 0.1, 1)",
+      "status": "PASS"
+    },
+    {
+      "check": "Inner fit scope ('S_Learner', 0.1, 2)",
+      "status": "PASS"
+    },
+    {
+      "check": "Inner fit scope ('S_Learner', 0.1, 3)",
+      "status": "PASS"
+    },
+    {
+      "check": "Inner fit scope ('S_Learner', 1.0, 1)",
+      "status": "PASS"
+    },
+    {
+      "check": "Inner fit scope ('S_Learner', 1.0, 2)",
+      "status": "PASS"
+    },
+    {
+      "check": "Inner fit scope ('S_Learner', 1.0, 3)",
+      "status": "PASS"
+    },
+    {
+      "check": "Inner fit scope ('T_Learner', 0.1, 1)",
+      "status": "PASS"
+    },
+    {
+      "check": "Inner fit scope ('T_Learner', 0.1, 2)",
+      "status": "PASS"
+    },
+    {
+      "check": "Inner fit scope ('T_Learner', 0.1, 3)",
+      "status": "PASS"
+    },
+    {
+      "check": "Inner fit scope ('T_Learner', 1.0, 1)",
+      "status": "PASS"
+    },
+    {
+      "check": "Inner fit scope ('T_Learner', 1.0, 2)",
+      "status": "PASS"
+    },
+    {
+      "check": "Inner fit scope ('T_Learner', 1.0, 3)",
+      "status": "PASS"
+    },
+    {
+      "check": "Inner-only hyperparameter selection S_Learner",
+      "status": "PASS"
+    },
+    {
+      "check": "Inner-only hyperparameter selection T_Learner",
+      "status": "PASS"
+    },
+    {
+      "check": "Validation-only frozen policy selection",
+      "status": "PASS"
+    },
+    {
+      "check": "Prediction rows/outcome match frozen evaluation S_Learner",
+      "status": "PASS"
+    },
+    {
+      "check": "Independent refit predictions S_Learner",
+      "status": "PASS"
+    },
+    {
+      "check": "Raw final metrics recompute S_Learner",
+      "status": "PASS"
+    },
+    {
+      "check": "Fit-only numeric preprocessing S_Learner0",
+      "status": "PASS"
+    },
+    {
+      "check": "Prediction rows/outcome match frozen evaluation T_Learner",
+      "status": "PASS"
+    },
+    {
+      "check": "Independent refit predictions T_Learner",
+      "status": "PASS"
+    },
+    {
+      "check": "Raw final metrics recompute T_Learner",
+      "status": "PASS"
+    },
+    {
+      "check": "Fit-only numeric preprocessing T_Learner0",
+      "status": "PASS"
+    },
+    {
+      "check": "Fit-only numeric preprocessing T_Learner1",
+      "status": "PASS"
+    },
+    {
+      "check": "Policy frozen file unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "Bootstrap exact budget",
+      "status": "PASS"
+    },
+    {
+      "check": "Policy target capacity exact",
+      "status": "PASS"
+    },
+    {
+      "check": "Sensitivity predeclared full grid",
+      "status": "PASS"
+    },
+    {
+      "check": "Treat-all value identity",
+      "status": "PASS"
+    },
+    {
+      "check": "No-treatment value identity",
+      "status": "PASS"
+    },
+    {
+      "check": "Random20 policy mixture identity",
+      "status": "PASS"
+    },
+    {
+      "check": "All preexisting source/artifact/research files unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "Seven original artifacts included",
+      "status": "PASS"
+    },
+    {
+      "check": "Production BASELINE_ONLY no rank/optimize",
+      "status": "PASS"
+    }
+  ],
+  "independent_replays": [
+    {
+      "model": "S_Learner",
+      "max_abs_probability_error": 0.0,
+      "classifier_refits": 1
+    },
+    {
+      "model": "T_Learner",
+      "max_abs_probability_error": 0.0,
+      "classifier_refits": 2
+    }
+  ],
+  "protected_files": 433,
+  "changed": [],
+  "environment": {
+    "python": "3.13.17",
+    "versions": {
+      "numpy": "2.4.6",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.6.1",
+      "joblib": "1.6.0",
+      "threadpoolctl": "3.7.0"
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "D:\\HK7 ĐẠI HỌC\\MachineLearning\\Marketing ROI Intelligence\\backend\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+        "version": "0.3.31.188.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "vcomp",
+        "filepath": "D:\\HK7 ĐẠI HỌC\\MachineLearning\\Marketing ROI Intelligence\\backend\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "D:\\HK7 ĐẠI HỌC\\MachineLearning\\Marketing ROI Intelligence\\backend\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+        "version": "0.3.31.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "unicode_wide_module_fallback": true
+  },
+  "old_roi_test_loaded": false,
+  "scope": "Independent selected refits (3 classifiers), not a repeat of all 18 CV fits; no causal-assumption proof",
+  "scientific_status": "RESEARCH_LIMITED",
+  "production_quality_gate": "BASELINE_ONLY"
+}

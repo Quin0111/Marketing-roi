@@ -1,0 +1,1057 @@
+{
+  "status": "PASS",
+  "outer_refits_repeated": 75,
+  "outer_refits_required": 75,
+  "inner_fits_repeated": 24,
+  "inner_fits_original_experiment": 360,
+  "scope": "All selected outer refits independently repeated; all first-outer-fold inner trials repeated. Not a second full 360-fit nested search.",
+  "prediction_tolerance": 1e-12,
+  "metric_tolerance": 1e-12,
+  "max_abs_prediction_error": 1.7763568394002505e-15,
+  "max_metric_error": 2.220446049250313e-16,
+  "outer": [
+    {
+      "repeat": 1,
+      "outer_fold": 1,
+      "model": "DecisionTree",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.421638100000564,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 1,
+      "model": "Dummy",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.28242299996782094,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 1,
+      "model": "HistGradientBoosting",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.6743419999838807,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 1,
+      "model": "LinearRegression",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2909306000219658,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 1,
+      "model": "RandomForest",
+      "max_abs_prediction_error": 8.881784197001252e-16,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": false,
+      "replay_fit_seconds": 2.04587430000538,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 2,
+      "model": "DecisionTree",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.30694719997700304,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 2,
+      "model": "Dummy",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2131387999979779,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 2,
+      "model": "HistGradientBoosting",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.5194196999655105,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 2,
+      "model": "LinearRegression",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2942820999887772,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 2,
+      "model": "RandomForest",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 1.9446491999551654,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 3,
+      "model": "DecisionTree",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.29684080003062263,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 3,
+      "model": "Dummy",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.21003099996596575,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 3,
+      "model": "HistGradientBoosting",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.5533465999760665,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 3,
+      "model": "LinearRegression",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2949318999890238,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 3,
+      "model": "RandomForest",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 2.166731200006325,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 4,
+      "model": "DecisionTree",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.300301099952776,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 4,
+      "model": "Dummy",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.20794870000099763,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 4,
+      "model": "HistGradientBoosting",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.5800393999670632,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 4,
+      "model": "LinearRegression",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.31271829997422174,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 4,
+      "model": "RandomForest",
+      "max_abs_prediction_error": 1.7763568394002505e-15,
+      "max_metric_error": 2.220446049250313e-16,
+      "bitwise_prediction_hash_equal": false,
+      "replay_fit_seconds": 2.0479193000355735,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 5,
+      "model": "DecisionTree",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.31448289996478707,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 5,
+      "model": "Dummy",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2226914000348188,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 5,
+      "model": "HistGradientBoosting",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.5217929999926127,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 5,
+      "model": "LinearRegression",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2822005999623798,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 1,
+      "outer_fold": 5,
+      "model": "RandomForest",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 2.3206407999969088,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 1,
+      "model": "DecisionTree",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.3393648999626748,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 1,
+      "model": "Dummy",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.21491069998592138,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 1,
+      "model": "HistGradientBoosting",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.5189305999665521,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 1,
+      "model": "LinearRegression",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2882840999518521,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 1,
+      "model": "RandomForest",
+      "max_abs_prediction_error": 1.7763568394002505e-15,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": false,
+      "replay_fit_seconds": 1.8719742000102997,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 2,
+      "model": "DecisionTree",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.30678340001031756,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 2,
+      "model": "Dummy",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.21180910000111908,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 2,
+      "model": "HistGradientBoosting",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.5305802000220865,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 2,
+      "model": "LinearRegression",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2831902000471018,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 2,
+      "model": "RandomForest",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 2.142118300020229,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 3,
+      "model": "DecisionTree",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.3421274999855086,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 3,
+      "model": "Dummy",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.21625289996154606,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 3,
+      "model": "HistGradientBoosting",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.5643478000420146,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 3,
+      "model": "LinearRegression",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.29768949997378513,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 3,
+      "model": "RandomForest",
+      "max_abs_prediction_error": 1.7763568394002505e-15,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": false,
+      "replay_fit_seconds": 2.170195100014098,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 4,
+      "model": "DecisionTree",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.3164136999985203,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 4,
+      "model": "Dummy",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.20912149996729568,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 4,
+      "model": "HistGradientBoosting",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.5582670000148937,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 4,
+      "model": "LinearRegression",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2808550000190735,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 4,
+      "model": "RandomForest",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 2.487311500008218,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 5,
+      "model": "DecisionTree",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.30093500000657514,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 5,
+      "model": "Dummy",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.21123770001577213,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 5,
+      "model": "HistGradientBoosting",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.5307511999853887,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 5,
+      "model": "LinearRegression",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.28335519996471703,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 2,
+      "outer_fold": 5,
+      "model": "RandomForest",
+      "max_abs_prediction_error": 8.881784197001252e-16,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": false,
+      "replay_fit_seconds": 1.9080577999702655,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 1,
+      "model": "DecisionTree",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.33948560000862926,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 1,
+      "model": "Dummy",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2271852000267245,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 1,
+      "model": "HistGradientBoosting",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.5435457999701612,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 1,
+      "model": "LinearRegression",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.3076094000134617,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 1,
+      "model": "RandomForest",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 1.960708099999465,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 2,
+      "model": "DecisionTree",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.3238386000157334,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 2,
+      "model": "Dummy",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.20353640004759654,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 2,
+      "model": "HistGradientBoosting",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.5565873000305146,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 2,
+      "model": "LinearRegression",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.27826809999533,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 2,
+      "model": "RandomForest",
+      "max_abs_prediction_error": 1.7763568394002505e-15,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": false,
+      "replay_fit_seconds": 1.884635399968829,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 3,
+      "model": "DecisionTree",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.300131700001657,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 3,
+      "model": "Dummy",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2060471000149846,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 3,
+      "model": "HistGradientBoosting",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.5116853999788873,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 3,
+      "model": "LinearRegression",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2882244000211358,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 3,
+      "model": "RandomForest",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 1.8298671999946237,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 4,
+      "model": "DecisionTree",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2855159000027925,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 4,
+      "model": "Dummy",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2096832999959588,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 4,
+      "model": "HistGradientBoosting",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.5481194000458345,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 4,
+      "model": "LinearRegression",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2759486999711953,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 4,
+      "model": "RandomForest",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 1.8493920000037178,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 5,
+      "model": "DecisionTree",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2889615999883972,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 5,
+      "model": "Dummy",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.20476619998225942,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 5,
+      "model": "HistGradientBoosting",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.5466898999875411,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 5,
+      "model": "LinearRegression",
+      "max_abs_prediction_error": 0.0,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": true,
+      "replay_fit_seconds": 0.2837436000118032,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    },
+    {
+      "repeat": 3,
+      "outer_fold": 5,
+      "model": "RandomForest",
+      "max_abs_prediction_error": 1.7763568394002505e-15,
+      "max_metric_error": 0.0,
+      "bitwise_prediction_hash_equal": false,
+      "replay_fit_seconds": 1.9212346999556758,
+      "preprocessor_statistics_match_fit_only": true,
+      "status": "PASS"
+    }
+  ],
+  "inner_first_outer_fold": [
+    {
+      "model": "Dummy",
+      "candidate": "mean",
+      "inner_fold": 1,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "Dummy",
+      "candidate": "mean",
+      "inner_fold": 2,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "Dummy",
+      "candidate": "mean",
+      "inner_fold": 3,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "LinearRegression",
+      "candidate": "ols",
+      "inner_fold": 1,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "LinearRegression",
+      "candidate": "ols",
+      "inner_fold": 2,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "LinearRegression",
+      "candidate": "ols",
+      "inner_fold": 3,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "DecisionTree",
+      "candidate": "depth3_leaf200",
+      "inner_fold": 1,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "DecisionTree",
+      "candidate": "depth3_leaf200",
+      "inner_fold": 2,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "DecisionTree",
+      "candidate": "depth3_leaf200",
+      "inner_fold": 3,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "DecisionTree",
+      "candidate": "depth6_leaf100",
+      "inner_fold": 1,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "DecisionTree",
+      "candidate": "depth6_leaf100",
+      "inner_fold": 2,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "DecisionTree",
+      "candidate": "depth6_leaf100",
+      "inner_fold": 3,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "RandomForest",
+      "candidate": "trees32_depth4_leaf200",
+      "inner_fold": 1,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "RandomForest",
+      "candidate": "trees32_depth4_leaf200",
+      "inner_fold": 2,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "RandomForest",
+      "candidate": "trees32_depth4_leaf200",
+      "inner_fold": 3,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "RandomForest",
+      "candidate": "trees32_depth8_leaf100",
+      "inner_fold": 1,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "RandomForest",
+      "candidate": "trees32_depth8_leaf100",
+      "inner_fold": 2,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "RandomForest",
+      "candidate": "trees32_depth8_leaf100",
+      "inner_fold": 3,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "HistGradientBoosting",
+      "candidate": "iter80_leaf7_l210",
+      "inner_fold": 1,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "HistGradientBoosting",
+      "candidate": "iter80_leaf7_l210",
+      "inner_fold": 2,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "HistGradientBoosting",
+      "candidate": "iter80_leaf7_l210",
+      "inner_fold": 3,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "HistGradientBoosting",
+      "candidate": "iter120_leaf15_l21",
+      "inner_fold": 1,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "HistGradientBoosting",
+      "candidate": "iter120_leaf15_l21",
+      "inner_fold": 2,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "model": "HistGradientBoosting",
+      "candidate": "iter120_leaf15_l21",
+      "inner_fold": 3,
+      "max_metric_error": 0.0,
+      "status": "PASS"
+    }
+  ],
+  "environment": {
+    "python": "3.13.17",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "logical_cpus": 12,
+    "versions": {
+      "numpy": "2.4.6",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.6.1",
+      "joblib": "1.6.0",
+      "threadpoolctl": "3.7.0"
+    },
+    "threadpool_wide_enum_fallback": true,
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "D:\\HK7 ĐẠI HỌC\\MachineLearning\\Marketing ROI Intelligence\\backend\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+        "version": "0.3.31.188.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "vcomp",
+        "filepath": "D:\\HK7 ĐẠI HỌC\\MachineLearning\\Marketing ROI Intelligence\\backend\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "D:\\HK7 ĐẠI HỌC\\MachineLearning\\Marketing ROI Intelligence\\backend\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+        "version": "0.3.31.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "thread_budget": 2,
+    "fits_parallel": false
+  },
+  "verifier_source_sha256": "3c12622e403959373f4ccd5bf4bff92a9fec00d18b83f16feb918d517498c920",
+  "test_roi_materialized": false
+}

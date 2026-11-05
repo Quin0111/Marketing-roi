@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "repeat_exit_code": 0,
+  "byte_identical_numerical_outputs": true,
+  "before": {
+    "audit_results.json": "076953ba4ef09ef1224e4ca269ec8f279e1b163faf39cb3b2fbce638309e7559",
+    "diagnostic_cv_folds.csv": "a393c9b4dee52baa57324ac2b7c1abda4c1a25c45c52c9210eb6692e9324bdb7",
+    "development_effect_sizes.csv": "9b8b9670decb2c361d91d597ac755841425aa31ce191508db36b5e6652f023cc",
+    "development_permutation_tests.csv": "75790a34cf26531f41b9d3662694d0964edf3cbe436ccafa67d586b2ee5a41cb",
+    "development_numeric_associations.csv": "955f465e7a81fbb4a02eb5c50dff34b2cc2d7343f938daf6861ac586dc2e5f9e",
+    "development_group_statistics.csv": "462998cbc0197a0778a9f9b96658f11c7fcae504f3fb94a6e9c6ba82ce0bff97"
+  },
+  "after": {
+    "audit_results.json": "076953ba4ef09ef1224e4ca269ec8f279e1b163faf39cb3b2fbce638309e7559",
+    "diagnostic_cv_folds.csv": "a393c9b4dee52baa57324ac2b7c1abda4c1a25c45c52c9210eb6692e9324bdb7",
+    "development_effect_sizes.csv": "9b8b9670decb2c361d91d597ac755841425aa31ce191508db36b5e6652f023cc",
+    "development_permutation_tests.csv": "75790a34cf26531f41b9d3662694d0964edf3cbe436ccafa67d586b2ee5a41cb",
+    "development_numeric_associations.csv": "955f465e7a81fbb4a02eb5c50dff34b2cc2d7343f938daf6861ac586dc2e5f9e",
+    "development_group_statistics.csv": "462998cbc0197a0778a9f9b96658f11c7fcae504f3fb94a6e9c6ba82ce0bff97"
+  }
+}

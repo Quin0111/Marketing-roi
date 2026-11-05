@@ -1,0 +1,66 @@
+{
+  "status": "COMPLETE",
+  "sources_sha256": {
+    "common.py": "87e3e5dace31da8d62afc89d345c01408132ddb0b630bb17f101d8b66860828a",
+    "run_experiment.py": "6942ae8d65a656ebf55717cdb867436c3775ca2421abfa9cefa1f5907fd46027",
+    "experiment_config.json": "9cabbdf6266f33743054c4936dea897c8ba65fb249995718b8e2180f3eb2da95",
+    "phase4b2_evaluation_protocol.json": "9114f91eb9f393ac5e65ec63def4fe5dbdcf974d627461ddcfe952a8daf4c9bb"
+  },
+  "repeat": 3,
+  "outer_seed": 20261103,
+  "outer_fold": 5,
+  "model": "DecisionTree",
+  "feature_group": "current5",
+  "selected": {
+    "candidate_order": 0,
+    "candidate": "depth3_leaf200",
+    "mean_inner_RMSE": 1.7347243607450797,
+    "params": {
+      "max_depth": 3,
+      "min_samples_leaf": 200
+    }
+  },
+  "all_candidate_means": [
+    {
+      "candidate_order": 0,
+      "candidate": "depth3_leaf200",
+      "mean_inner_RMSE": 1.7347243607450797,
+      "params": {
+        "max_depth": 3,
+        "min_samples_leaf": 200
+      }
+    },
+    {
+      "candidate_order": 1,
+      "candidate": "depth6_leaf100",
+      "mean_inner_RMSE": 1.735897525591441,
+      "params": {
+        "max_depth": 6,
+        "min_samples_leaf": 100
+      }
+    }
+  ],
+  "inner_trials": 6,
+  "inner_total_fit_seconds": 1.2904914000537246,
+  "fit_rows": 136000,
+  "assessment_rows": 34000,
+  "fit_ids_sha256": "d0d2089ceb7d5d0333748b09cf4a9ab88a904e57d239ae68d1b6cc566715ce7e",
+  "assessment_ids_sha256": "62e95e600d0d3f7e1fcf8d1877d7f89aa0285bb4fe2f29297d0324f9f45ba53e",
+  "train_metrics": {
+    "MAE": 1.502606232759907,
+    "MSE": 3.0081749467778143,
+    "RMSE": 1.7344091059429474,
+    "R2": 0.00020542438389059559
+  },
+  "assessment_metrics": {
+    "MAE": 1.5026595412309252,
+    "MSE": 3.007188330349626,
+    "RMSE": 1.7341246582496963,
+    "R2": -0.00015488377012395915
+  },
+  "train_assessment_RMSE_gap": -0.00028444769325108865,
+  "outer_refit_seconds": 0.31735139997908846,
+  "prediction_sha256_f64_le": "3cbfe481d078ecc37c76d7b2ebd04e22171a6bfb36f8b3213700f079d57aa8fb",
+  "prediction_file_sha256": "bee47f160e7545b9269b9043638feaae3fc1e2819ad37a239e213525ad0402b8",
+  "warnings": []
+}

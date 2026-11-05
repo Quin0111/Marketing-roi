@@ -1,0 +1,147 @@
+{
+  "status": "COMPLETE_CONDITIONAL_BENCHMARK_ONLY",
+  "selected_policy_frozen_before_test": {
+    "selected_model": "S_Learner",
+    "selected_C": 0.1,
+    "capacity": 0.2,
+    "primary_outcome": "visit",
+    "propensity": 0.85,
+    "selected_by": "Validation Qini only, prior to any final evaluation metric",
+    "model_sha256": "932e3fd920e44ef59a26a2f1ab76c6c5d6d942e99df30d2697ca16ecde359e00",
+    "validation_selection_sha256": "27aa25abec1a09bf233eafc54bc494bd44a3e2555145d7c4716116bf943cc9e6",
+    "protocol_sha256": "afedf0aa5039647a7cfffe86e8935ee0c6bd11bd8521c09032df30e8d3d70b7b",
+    "test_rows": 200000,
+    "test_outcomes_used_for_selection": false
+  },
+  "primary_visit": {
+    "V_candidate": 0.04648039215686275,
+    "V_none": 0.04003333333333333,
+    "V_all": 0.04839411764705883,
+    "V_random_20pct": 0.041705490196078436,
+    "V_response_20pct": 0.04648039215686275,
+    "gain_vs_random20": 0.004774901960784311,
+    "gain_vs_response20": 0.0,
+    "gain_vs_none": 0.006447058823529417,
+    "AUUC": 0.007267532872549026,
+    "Qini": 0.003087140715686278,
+    "U1_descriptive_benchmark_contrast": 0.008360784313725497
+  },
+  "secondary_conversion_same_visit_policy": {
+    "V_candidate": 0.003011764705882353,
+    "V_none": 0.0021999999999999997,
+    "V_all": 0.0030411764705882355,
+    "V_random_20pct": 0.002368235294117647,
+    "V_response_20pct": 0.003011764705882353,
+    "gain_vs_random20": 0.000643529411764706,
+    "gain_vs_response20": 0.0,
+    "gain_vs_none": 0.0008117647058823534,
+    "AUUC": 0.0008559179754901964,
+    "Qini": 0.0004353297401960786,
+    "U1_descriptive_benchmark_contrast": 0.0008411764705882356
+  },
+  "bootstrap_replicates": 400,
+  "intervals": {
+    "V_candidate": {
+      "lower_95": 0.04529990196078432,
+      "upper_95": 0.04766132352941176
+    },
+    "V_none": {
+      "lower_95": 0.037732499999999995,
+      "upper_95": 0.04240083333333333
+    },
+    "V_all": {
+      "lower_95": 0.047428970588235295,
+      "upper_95": 0.049347058823529404
+    },
+    "V_random_20pct": {
+      "lower_95": 0.03987171568627451,
+      "upper_95": 0.043539754901960784
+    },
+    "V_response_20pct": {
+      "lower_95": 0.04529990196078432,
+      "upper_95": 0.04766132352941176
+    },
+    "gain_vs_random20": {
+      "lower_95": 0.0028251960784313793,
+      "upper_95": 0.006676725490196082
+    },
+    "gain_vs_response20": {
+      "lower_95": 0.0,
+      "upper_95": 0.0
+    },
+    "gain_vs_none": {
+      "lower_95": 0.00402132352941176,
+      "upper_95": 0.008764460784313734
+    },
+    "AUUC": {
+      "lower_95": 0.004970147044485299,
+      "upper_95": 0.009591935760661773
+    },
+    "Qini": {
+      "lower_95": 0.0020441421172794137,
+      "upper_95": 0.004157095832475495
+    },
+    "U1_descriptive_benchmark_contrast": {
+      "lower_95": 0.005801862745098045,
+      "upper_95": 0.010835441176470591
+    },
+    "Qini_constant_arm_baseline": {
+      "lower_95": -0.001129632565196078,
+      "upper_95": 0.00035987941041666383
+    },
+    "Qini_delta_vs_constant": {
+      "lower_95": 0.0022116644982843156,
+      "upper_95": 0.00471156717622549
+    },
+    "secondary_conversion_gain_vs_random20": {
+      "lower_95": 0.0002540294117647063,
+      "upper_95": 0.0011165490196078428
+    }
+  },
+  "policy_cells": [
+    {
+      "targeted": 0,
+      "logged_treatment": 0,
+      "rows": 24169,
+      "visit_events": 76,
+      "conversion_events": 3
+    },
+    {
+      "targeted": 0,
+      "logged_treatment": 1,
+      "rows": 135831,
+      "visit_events": 756,
+      "conversion_events": 22
+    },
+    {
+      "targeted": 1,
+      "logged_treatment": 0,
+      "rows": 5834,
+      "visit_events": 1125,
+      "conversion_events": 63
+    },
+    {
+      "targeted": 1,
+      "logged_treatment": 1,
+      "rows": 34166,
+      "visit_events": 7471,
+      "conversion_events": 495
+    }
+  ],
+  "benchmark_success_by_preregistered_rule": true,
+  "recommendation_validation": "NOT_VALIDATED_FOR_REAL_MARKETING",
+  "inference_assumptions": [
+    "Publisher RCT-compatible released benchmark",
+    "IID rows",
+    "No hidden dependence/interference"
+  ],
+  "sampling_sensitivity_resolves_original_causal_scale": false,
+  "limitations": [
+    "No released label-selection probabilities: no original-population lift or profit claim.",
+    "No user/advertiser IDs: cluster-robust or repeated-user checks unavailable.",
+    "Bootstrap is conditional on fitted/frozen models and excludes training/model-selection uncertainty.",
+    "Sensitivity comparisons are descriptive, not new policy selection or confirmatory tests.",
+    "Secondary outcomes/comparisons not multiplicity-adjusted; no secondary significance claim."
+  ],
+  "production_quality_gate": "BASELINE_ONLY"
+}

@@ -1,0 +1,21 @@
+{
+  "protocol": "DM-CRITEO-V21-VISIT-001",
+  "sample_ids_sha256": "665d7e9312e6c21a53605d0eb080d64f0cff114143568387f31128ed86701697",
+  "parts": {
+    "train": {
+      "rows": 600000,
+      "source_row_ids_sha256": "4577f6df57d750d416d631b083da1d5592342785545435a73abbe7636b3e76ca"
+    },
+    "validation": {
+      "rows": 200000,
+      "source_row_ids_sha256": "28f7b5e887f6bcfe26161b27ca7b12ae7976659b8f7f6e42227d0be8330b6e99"
+    },
+    "test": {
+      "rows": 200000,
+      "source_row_ids_sha256": "b767c633cef1f3d3200f677b53af30a25edb651ca40618feecc95c9a771d6313"
+    }
+  },
+  "old_dataset_or_test_loaded": false,
+  "index_only_split": true,
+  "manifest_file_sha256": "9a33bae90d7def4cbf2eac01b9412f0c678e055c0b51e108d4bd5d0e7da20358"
+}

@@ -1,0 +1,218 @@
+[
+  {
+    "repeat": 2,
+    "outer_fold": 2,
+    "model": "HistGradientBoosting",
+    "candidate_order": 0,
+    "candidate": "iter80_leaf7_l210",
+    "params": {
+      "max_iter": 80,
+      "max_leaf_nodes": 7,
+      "max_depth": 3,
+      "min_samples_leaf": 200,
+      "l2_regularization": 10.0,
+      "learning_rate": 0.05,
+      "early_stopping": false
+    },
+    "inner_fold": 1,
+    "inner_seed": 202017,
+    "fit_rows": 90666,
+    "assessment_rows": 45334,
+    "fit_ids_sha256": "a49845a89403bdd767fc12576ec2557cb49ccd6e312b9a454e5fbd46ae36aed7",
+    "assessment_ids_sha256": "aa54fa8f26425a522a1a3ca877884d36ed5dc7161c0a162f446ae0abfa80f53f",
+    "metrics": {
+      "MAE": 1.5053196126393968,
+      "MSE": 3.0143057053049103,
+      "RMSE": 1.7361755974857238,
+      "R2": -0.0004814005055322479
+    },
+    "train_metrics": {
+      "MAE": 1.5022766378706933,
+      "MSE": 3.0071735061755986,
+      "RMSE": 1.7341203839917223,
+      "R2": 0.0013123941798731664
+    },
+    "fit_seconds": 0.41235639998922125,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 2,
+    "model": "HistGradientBoosting",
+    "candidate_order": 0,
+    "candidate": "iter80_leaf7_l210",
+    "params": {
+      "max_iter": 80,
+      "max_leaf_nodes": 7,
+      "max_depth": 3,
+      "min_samples_leaf": 200,
+      "l2_regularization": 10.0,
+      "learning_rate": 0.05,
+      "early_stopping": false
+    },
+    "inner_fold": 2,
+    "inner_seed": 202017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "12f73c33988269e60eab6566bb1af92ec46cf3c35052078f5657f6b1eb391466",
+    "assessment_ids_sha256": "4c91fc4c2b8a903e99f5c40e36f51a171e919f84d681116fe292e285bd6575b6",
+    "metrics": {
+      "MAE": 1.5026744175893822,
+      "MSE": 3.011215424753638,
+      "RMSE": 1.735285401527264,
+      "R2": -0.00032403400722791353
+    },
+    "train_metrics": {
+      "MAE": 1.5036246982209989,
+      "MSE": 3.0089345214886003,
+      "RMSE": 1.734628064309061,
+      "R2": 0.001162415693296226
+    },
+    "fit_seconds": 0.40869909996399656,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 2,
+    "model": "HistGradientBoosting",
+    "candidate_order": 0,
+    "candidate": "iter80_leaf7_l210",
+    "params": {
+      "max_iter": 80,
+      "max_leaf_nodes": 7,
+      "max_depth": 3,
+      "min_samples_leaf": 200,
+      "l2_regularization": 10.0,
+      "learning_rate": 0.05,
+      "early_stopping": false
+    },
+    "inner_fold": 3,
+    "inner_seed": 202017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "09909ed2136f65e255a0fa7da7453b86bfb7cf49341af1862868ca5fbe610c3d",
+    "assessment_ids_sha256": "bec3d11fae40c8df469b6852d69d882e440ace318539d628c160dfb7b612a8f6",
+    "metrics": {
+      "MAE": 1.5043693004666525,
+      "MSE": 3.013259494081099,
+      "RMSE": 1.7358742736964272,
+      "R2": -0.00042611686903515356
+    },
+    "train_metrics": {
+      "MAE": 1.5027817776871393,
+      "MSE": 3.0080152611231523,
+      "RMSE": 1.7343630707332165,
+      "R2": 0.001197988276889994
+    },
+    "fit_seconds": 0.4008400000166148,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 2,
+    "model": "HistGradientBoosting",
+    "candidate_order": 1,
+    "candidate": "iter120_leaf15_l21",
+    "params": {
+      "max_iter": 120,
+      "max_leaf_nodes": 15,
+      "max_depth": 5,
+      "min_samples_leaf": 100,
+      "l2_regularization": 1.0,
+      "learning_rate": 0.05,
+      "early_stopping": false
+    },
+    "inner_fold": 1,
+    "inner_seed": 202017,
+    "fit_rows": 90666,
+    "assessment_rows": 45334,
+    "fit_ids_sha256": "a49845a89403bdd767fc12576ec2557cb49ccd6e312b9a454e5fbd46ae36aed7",
+    "assessment_ids_sha256": "aa54fa8f26425a522a1a3ca877884d36ed5dc7161c0a162f446ae0abfa80f53f",
+    "metrics": {
+      "MAE": 1.5059213592642262,
+      "MSE": 3.0169901427185914,
+      "RMSE": 1.7369485147000159,
+      "R2": -0.0013723949718476014
+    },
+    "train_metrics": {
+      "MAE": 1.4999753499205326,
+      "MSE": 2.9986853265379287,
+      "RMSE": 1.7316712524431215,
+      "R2": 0.004131333553576533
+    },
+    "fit_seconds": 0.539837800024543,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 2,
+    "model": "HistGradientBoosting",
+    "candidate_order": 1,
+    "candidate": "iter120_leaf15_l21",
+    "params": {
+      "max_iter": 120,
+      "max_leaf_nodes": 15,
+      "max_depth": 5,
+      "min_samples_leaf": 100,
+      "l2_regularization": 1.0,
+      "learning_rate": 0.05,
+      "early_stopping": false
+    },
+    "inner_fold": 2,
+    "inner_seed": 202017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "12f73c33988269e60eab6566bb1af92ec46cf3c35052078f5657f6b1eb391466",
+    "assessment_ids_sha256": "4c91fc4c2b8a903e99f5c40e36f51a171e919f84d681116fe292e285bd6575b6",
+    "metrics": {
+      "MAE": 1.503478827104302,
+      "MSE": 3.0139835599721247,
+      "RMSE": 1.7360828205970258,
+      "R2": -0.0012436069363754854
+    },
+    "train_metrics": {
+      "MAE": 1.5012118405602755,
+      "MSE": 3.000111610481909,
+      "RMSE": 1.7320830264401037,
+      "R2": 0.004091244836482932
+    },
+    "fit_seconds": 0.5935485999798402,
+    "warnings": []
+  },
+  {
+    "repeat": 2,
+    "outer_fold": 2,
+    "model": "HistGradientBoosting",
+    "candidate_order": 1,
+    "candidate": "iter120_leaf15_l21",
+    "params": {
+      "max_iter": 120,
+      "max_leaf_nodes": 15,
+      "max_depth": 5,
+      "min_samples_leaf": 100,
+      "l2_regularization": 1.0,
+      "learning_rate": 0.05,
+      "early_stopping": false
+    },
+    "inner_fold": 3,
+    "inner_seed": 202017,
+    "fit_rows": 90667,
+    "assessment_rows": 45333,
+    "fit_ids_sha256": "09909ed2136f65e255a0fa7da7453b86bfb7cf49341af1862868ca5fbe610c3d",
+    "assessment_ids_sha256": "bec3d11fae40c8df469b6852d69d882e440ace318539d628c160dfb7b612a8f6",
+    "metrics": {
+      "MAE": 1.505178775979579,
+      "MSE": 3.0167088751610436,
+      "RMSE": 1.7368675468097858,
+      "R2": -0.0015713388209410706
+    },
+    "train_metrics": {
+      "MAE": 1.5003189163779256,
+      "MSE": 2.998834243120439,
+      "RMSE": 1.731714249846215,
+      "R2": 0.004246516444048387
+    },
+    "fit_seconds": 0.6060521999606863,
+    "warnings": []
+  }
+]
