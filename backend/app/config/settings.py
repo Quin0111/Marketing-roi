@@ -22,15 +22,42 @@ def model_directory():
 
 
 def cors_origins():
-    origins = tuple(x.strip() for x in os.getenv(
-        "DREAMMAKERS_CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173,http://localhost:4173,http://127.0.0.1:4173"
-    ).split(",") if x.strip())
+    origins = tuple(
+        x.strip()
+        for x in os.getenv(
+            "DREAMMAKERS_CORS_ORIGINS",
+            "http://localhost:5173,"
+            "http://127.0.0.1:5173,"
+            "http://localhost:4173,"
+            "http://127.0.0.1:4173"
+        ).split(",")
+        if x.strip()
+    )
+
+    production_origin = "https://marketing-roi-omega.vercel.app"
+
     for origin in origins:
         url = urlsplit(origin)
-        if (url.scheme != "http" or url.hostname not in {"localhost", "127.0.0.1"}
-                or url.path or url.query or url.fragment or url.username or url.password
-                or url.port is None):
-            raise ValueError("CORS origins must be explicit local HTTP origins with ports")
+
+        # Cho phép website production đã xác định
+        if origin == production_origin:
+            continue
+
+        # Cho phép frontend local có cổng cụ thể
+        is_local = (
+            url.scheme == "http"
+            and url.hostname in {"localhost", "127.0.0.1"}
+            and url.port is not None
+            and not url.path
+            and not url.query
+            and not url.fragment
+            and not url.username
+            and not url.password
+        )
+
+        if not is_local:
+            raise ValueError(f"CORS origin is not allowed: {origin}")
+
     return origins
 
 
